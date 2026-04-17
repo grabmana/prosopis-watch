@@ -1,0 +1,308 @@
+// ============================================================
+// Prosopis Mapping - Afar Region, Ethiopia
+// Workflow: Ground data + Vegetation Indices + Environmental
+//           criteria -> Supervised Classification -> Accuracy
+// ============================================================
+
+// ------------------------------------------------------------
+// 1. STUDY AREA — Afar
+// ------------------------------------------------------------
+
+var Afar = ee.FeatureCollection('FAO/GAUL/2015/level1')
+  .filter(ee.Filter.and(ee.Filter.eq('ADM0_NAME', 'Ethiopia')))
+   .filter(ee.Filter.and(ee.Filter.eq('ADM1_NAME', 'Afar')));
+
+Map.centerObject(Afar, 7);
+Map.addLayer(Afar, {color: '888888'}, 'Afar Region', true);
+
+var geometry = 
+    /* color: #d63000 */
+    /* shown: false */
+    /* displayProperties: [
+      {
+        "type": "rectangle"
+      }
+    ] */
+    ee.Geometry.Polygon(
+        [[[38.10164648805493, 14.694609699887478],
+          [38.10164648805493, 6.898560072409943],
+          [43.06746680055493, 6.898560072409943],
+          [43.06746680055493, 14.694609699887478]]], null, false);
+var studyArea = geometry;
+Map.centerObject(studyArea, 9);
+Map.addLayer(studyArea, {color: 'white'}, 'Study Area',0);
+
+// ------------------------------------------------------------
+// 2. SATELLITE DATA — Sentinel-2, dry season NDVI
+//    Dry season in Afar: roughly Nov–Feb
+// ------------------------------------------------------------
+var s2_dry = ee.ImageCollection('COPERNICUS/S2_SR_HARMONIZED')
+  .filterBounds(studyArea)
+  .filter(ee.Filter.calendarRange(11, 2, 'month'))   // Nov–Feb
+  .filter(ee.Filter.lt('CLOUDY_PIXEL_PERCENTAGE', 20))
+  .select(['B2', 'B4', 'B5', 'B8', 'B8A', 'B11'])   // Red, NIR — only what we need
+  .median()
+  .clip(studyArea);
+
+// NDVI
+var ndvi_dry = s2_dry.normalizedDifference(['B8', 'B4']).rename('NDVI_dry');
+
+// EVI — less saturated than NDVI in dense canopy
+var evi_dry = s2_dry.expression(
+  '2.5 * ((NIR - RED) / (NIR + 6 * RED - 7.5 * BLUE + 1))', {
+    'NIR':  s2_dry.select('B8'),
+    'RED':  s2_dry.select('B4'),
+    'BLUE': s2_dry.select('B2')
+  }).rename('EVI_dry');
+  
+  // NDRE — Red Edge, sensitive to chlorophyll/canopy density
+var ndre_dry = s2_dry.normalizedDifference(['B8A', 'B5']).rename('NDRE_dry');
+
+// ------------------------------------------------------------
+// 2b. WET SEASON NDVI — for amplitude calculation
+//     Wet season in Afar: roughly Jun–Sep
+// ------------------------------------------------------------
+var s2_wet = ee.ImageCollection('COPERNICUS/S2_SR_HARMONIZED')
+  .filterBounds(studyArea)
+  .filter(ee.Filter.calendarRange(6, 9, 'month'))   // Jun–Sep
+  .filter(ee.Filter.lt('CLOUDY_PIXEL_PERCENTAGE', 20))
+  .select(['B4', 'B8'])
+  .median()
+  .clip(studyArea);
+
+// NDVI
+var ndvi_wet = s2_wet.normalizedDifference(['B8', 'B4']).rename('NDVI_wet');
+
+// NDVI Amplitude: wet - dry
+// Prosopis stays green in dry season → LOW amplitude
+// Surrounding vegetation browns → HIGH amplitude
+var ndvi_amplitude = ndvi_wet.subtract(ndvi_dry).rename('NDVI_amplitude');
+
+Map.addLayer(ndvi_wet, {min: -0.1, max: 0.6, palette: ['brown','white','darkgreen']}, 'NDVI (wet season)',0);
+Map.addLayer(ndvi_amplitude, {min: 0, max: 0.5, palette: ['darkgreen','white','brown']}, 'NDVI Amplitude (low = Prosopis)',0);
+
+
+
+// ------------------------------------------------------------
+// 3. ADDITIONAL CRITERIA — distance to rivers + elevation
+// ------------------------------------------------------------
+
+// Elevation from SRTM
+var dem = ee.Image('USGS/SRTMGL1_003').clip(studyArea).rename('elevation');
+
+// Distance to rivers (JRC water occurrence as proxy for water bodies)
+var water = ee.Image('JRC/GSW1_4/GlobalSurfaceWater')
+  .select('occurrence')
+  .clip(studyArea)
+  .gt(30);   // pixels with >30% water occurrence = river/water
+
+var distToRiver = water.fastDistanceTransform(256)
+  .sqrt()
+  .multiply(ee.Image.pixelArea().sqrt())   // convert to metres approx.
+  .rename('dist_river')
+  .clip(studyArea);
+
+// Stack all features
+var features = ndvi_dry
+  //.addBands(ndvi_wet)
+ // .addBands(ndvi_amplitude)
+ // .addBands(ndre_dry)
+  .addBands(evi_dry)
+  .addBands(dem)
+  .addBands(distToRiver);
+
+print('Feature stack bands:', features.bandNames());
+
+
+/// // --- MASK: ESA WorldCover ---
+
+//// WORLD COVER 2021 
+var old_landcover_classes = [10,20,30,40,50,60,70,80,90,95,100];
+var new_landcover_classes = [3,4,5,2,1,8,9,6,7,7,5];
+var land_cover = ee.Image("ESA/WorldCover/v200/2021")
+                //.filterBounds(country.geometry()).mosaic()
+                 .remap(old_landcover_classes,
+                        new_landcover_classes)
+                        .rename('constant');
+var palette = [
+  '#c4281b', // 1. urban
+  '#e49634', // 2. croplands
+  '#397e48', // 3. forest
+  '#DFC35A', // 4. shrub & scrub
+  '#88af52', // 5. grass
+  '#429ae4', // 6. water
+  '#7c85c9', // 7. wetlands
+  '#a6a6a6' // 8. bare surface
+  //'#B39FE1' // 9. ice and snow
+  ];
+
+Map.addLayer(land_cover.clip(studyArea),{palette: palette, min: 1, max: 8},'WorldCover Land Cover 2021', 0);
+
+// WorldCover classes to EXCLUDE:
+var excludeClasses = [1, 6, 7, 8];
+
+// Build mask: 1 = keep, 0 = exclude
+var wcMask = land_cover.remap(
+  excludeClasses, 
+  ee.List.repeat(0, excludeClasses.length),
+  1   // default: keep everything not in the list
+).rename('mask');
+
+// Apply to feature stack
+var featuresMasked = features.updateMask(wcMask);
+
+/*
+// --- OR MASK: Dynamic World (dry season, same period as S2) ---
+var dw = ee.ImageCollection('GOOGLE/DYNAMICWORLD/V1')
+  .filterBounds(studyArea)
+  .filter(ee.Filter.calendarRange(11, 2, 'month'))
+  .select('label')
+  .mode()   // majority class across the season
+  .clip(studyArea);
+
+// Dynamic World classes to EXCLUDE:
+// 0 = Water, 6 = Built, 7 = Bare ground, 8 = Snow/ice
+var dwMask = dw.remap(
+  [0, 6, 7, 8],
+  [0, 0, 0, 0],
+  1
+).rename('mask');
+
+// Apply to feature stack
+var featuresMasked = features.updateMask(dwMask);
+*/
+
+// ------------------------------------------------------------
+// 4. GROUND TRUTH — replace coordinates with your field data!
+//    Label: 1 = Prosopis, 0 = Not Prosopis
+// ------------------------------------------------------------
+
+// --- Example Prosopis presence points (label = 1) ---
+var prosopisPoints = ee.FeatureCollection("projects/ee-ferraina/assets/prosopis_juliflora_ethiopia_clean_shp")
+var prosopisPoints = prosopisPoints.map(function(f) {
+  return f.set('label', 1);
+});
+print(prosopisPoints,"prosopisPoints")
+
+// --- Example absence points (label = 0) ---
+var absencePoints = ee.FeatureCollection("projects/ee-ferraina/assets/acacia-balanites")
+var absencePoints = absencePoints.map(function(f) {
+  return f.set('label', 0);
+});
+print(absencePoints,"absencePoints")
+
+
+// Sample random points from grassland + cropland + bare (WC classes 4,5,8 → remapped)
+var pseudoAbsence = land_cover
+  .updateMask(land_cover.eq(2).or(land_cover.eq(3)).or(land_cover.eq(4)).or(land_cover.eq(5)))
+  .sample({
+    region: studyArea,
+    scale: 30,
+    numPixels: 200,
+    seed: 42,
+    geometries: true
+  })
+  .map(function(f) { return f.set('label', 0); });
+
+// check samples balance
+print('Prosopis count:', prosopisPoints.size());
+print('Absence count:', absencePoints.size());
+print('Pseudo-absence count:', pseudoAbsence.size());
+
+
+// Merge all ground truth
+var groundTruth = prosopisPoints
+  .merge(absencePoints)
+  .merge(pseudoAbsence);
+  
+// Sample the feature stack at ground truth points
+var training = featuresMasked.sampleRegions({
+  collection: groundTruth,
+  properties: ['label'],
+  scale: 30,
+  tileScale: 4   // reduces memory load
+});
+
+print('Training sample size:', training.size());
+
+
+// See class distribution in training
+var class0 = training.filter(ee.Filter.eq('label', 0));
+var class1 = training.filter(ee.Filter.eq('label', 1));
+print('Class 0 samples:', class0.size());
+print('Class 1 samples:', class1.size());
+
+// ------------------------------------------------------------
+// 5. TRAIN CLASSIFIER — Random Forest (simple, robust)
+// ------------------------------------------------------------
+
+var classifier = ee.Classifier.smileRandomForest({
+  numberOfTrees: 50   // kept low to avoid memory issues
+}).train({
+  features: training,
+  classProperty: 'label',
+  inputProperties: 
+  ['NDVI_dry',
+ // "NDVI_wet",
+ // "NDVI_amplitude", 
+//  'NDRE_dry',
+  'EVI_dry',
+  'elevation', 
+  'dist_river']
+});
+
+print('Feature importance:', classifier.explain().get('importance'));
+
+// ------------------------------------------------------------
+// 6. CLASSIFY — produce Prosopis map
+// ------------------------------------------------------------
+var classified = featuresMasked.classify(classifier).clip(studyArea);
+
+// Visualisation: green = Prosopis (1), grey = Not Prosopis (0)
+Map.addLayer(ndvi_dry, {min: -0.1, max: 0.6, palette: ['brown','white','darkgreen']}, 'NDVI (dry season)',0);
+Map.addLayer(classified, {min: 0, max: 1, palette: ['lightgrey', 'darkgreen']}, 'Prosopis Map');
+Map.addLayer(prosopisPoints, {color: 'lime'}, 'Prosopis presence');
+Map.addLayer(absencePoints, {color: 'red'}, 'Absence points');
+
+// ------------------------------------------------------------
+// 7. ACCURACY ASSESSMENT — using a hold-out split (70/30)
+// ------------------------------------------------------------
+var withRandom = training.randomColumn('random', 42);
+var trainSet   = withRandom.filter(ee.Filter.lt('random', 0.7));
+var testSet    = withRandom.filter(ee.Filter.gte('random', 0.7));
+
+var classifierVal = ee.Classifier.smileRandomForest(50).train({
+  features: trainSet,
+  classProperty: 'label',
+  inputProperties:
+  ['NDVI_dry',
+ // "NDVI_wet",
+ // "NDVI_amplitude", 
+ // 'NDRE_dry',
+  'EVI_dry',
+  'elevation', 
+  'dist_river']
+});
+
+var validated = testSet.classify(classifierVal);
+
+var confMatrix = validated.errorMatrix('label', 'classification');
+print('Confusion Matrix:', confMatrix);
+print('Overall Accuracy:', confMatrix.accuracy());
+print('Kappa Coefficient:', confMatrix.kappa());
+print('Producers Accuracy (per class):', confMatrix.producersAccuracy());
+print('Consumers Accuracy (per class):', confMatrix.consumersAccuracy());
+
+// ------------------------------------------------------------
+// 8. EXPORT — classified map as GeoTIFF to Google Drive
+// ------------------------------------------------------------
+Export.image.toDrive({
+  image: classified,
+  description: 'Prosopis_Afar_Map',
+  folder: 'GEE_Exports',
+  fileNamePrefix: 'prosopis_afar',
+  region: studyArea,
+  scale: 30,
+  maxPixels: 1e9,
+  crs: 'EPSG:4326'
+});
