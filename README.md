@@ -3,7 +3,7 @@ Updates
 Datasets for ground truth: 
 - prosopis juliflora (world registers download from https://www.gbif.org/)  - presence
 - prosopis_juliflora_ethiopia (only Ethiopia registers download from https://www.gbif.org/)  - presence
-- acacia-tortilis_balanites-aegyptiaca (Acacia tortilis and Balanites aegyptiaca only Ethiopia registers download from https://www.gbif.org/ for )  - used for abscense of prosopis
+- acacia-tortilis_balanites-aegyptiaca (Acacia tortilis and Balanites aegyptiaca only Ethiopia registers download from https://www.gbif.org/)  - used for abscense of prosopis
 
 Models (run in Google Earth Engine):
 - version_1_17-04-26: uses prosopis_juliflora_ethiopia and acacia-tortilis_balanites-aegyptiaca.
