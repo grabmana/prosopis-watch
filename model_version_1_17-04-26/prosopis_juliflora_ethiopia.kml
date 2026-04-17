@@ -1,0 +1,3501 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="prosopis_juliflora_ethiopia_clean" id="prosopis_juliflora_ethiopia_clean">
+	<SimpleField name="SW-ID" type="int"></SimpleField>
+	<SimpleField name="species" type="string"></SimpleField>
+	<SimpleField name="countryCode" type="string"></SimpleField>
+	<SimpleField name="occurrenceStatus" type="string"></SimpleField>
+	<SimpleField name="decimalLatitude" type="float"></SimpleField>
+	<SimpleField name="decimalLongitude" type="float"></SimpleField>
+	<SimpleField name="coordinateUncertaintyInMeters" type="int"></SimpleField>
+	<SimpleField name="elevation" type="int"></SimpleField>
+	<SimpleField name="eventDate" type="string"></SimpleField>
+	<SimpleField name="day" type="int"></SimpleField>
+	<SimpleField name="month" type="int"></SimpleField>
+	<SimpleField name="year" type="int"></SimpleField>
+	<SimpleField name="basisOfRecord" type="string"></SimpleField>
+	<SimpleField name="institutionCode" type="string"></SimpleField>
+	<SimpleField name="collectionCode" type="string"></SimpleField>
+	<SimpleField name="rightsHolder" type="string"></SimpleField>
+</Schema>
+<Folder><name>prosopis_juliflora_ethiopia_clean</name>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">3</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">15.633333</SimpleData>
+		<SimpleData name="decimalLongitude">39.55</SimpleData>
+		<SimpleData name="eventDate">1985-02-05T00:00</SimpleData>
+		<SimpleData name="day">5</SimpleData>
+		<SimpleData name="month">2</SimpleData>
+		<SimpleData name="year">1985</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="institutionCode">K</SimpleData>
+		<SimpleData name="collectionCode">Herbarium</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.55,15.633333</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">4</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.6</SimpleData>
+		<SimpleData name="decimalLongitude">41.833334</SimpleData>
+		<SimpleData name="elevation">1200</SimpleData>
+		<SimpleData name="eventDate">1990-10-21T00:00</SimpleData>
+		<SimpleData name="day">21</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">1990</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="institutionCode">K</SimpleData>
+		<SimpleData name="collectionCode">Herbarium</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.833334,9.6</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">11</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.560267</SimpleData>
+		<SimpleData name="decimalLongitude">41.870106</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">16/12/2015</SimpleData>
+		<SimpleData name="day">16</SimpleData>
+		<SimpleData name="month">12</SimpleData>
+		<SimpleData name="year">2015</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.870106,9.560267</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">12</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.532528</SimpleData>
+		<SimpleData name="decimalLongitude">41.879117</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">18/12/2015</SimpleData>
+		<SimpleData name="day">18</SimpleData>
+		<SimpleData name="month">12</SimpleData>
+		<SimpleData name="year">2015</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.879117,9.532528</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">13</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.602522</SimpleData>
+		<SimpleData name="decimalLongitude">41.850242</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">16/12/2015</SimpleData>
+		<SimpleData name="day">16</SimpleData>
+		<SimpleData name="month">12</SimpleData>
+		<SimpleData name="year">2015</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.850242,9.602522</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">14</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.584964</SimpleData>
+		<SimpleData name="decimalLongitude">41.858975</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">16/12/2015</SimpleData>
+		<SimpleData name="day">16</SimpleData>
+		<SimpleData name="month">12</SimpleData>
+		<SimpleData name="year">2015</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.858975,9.584964</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">15</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.602522</SimpleData>
+		<SimpleData name="decimalLongitude">41.850242</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">16/12/2015</SimpleData>
+		<SimpleData name="day">16</SimpleData>
+		<SimpleData name="month">12</SimpleData>
+		<SimpleData name="year">2015</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.850242,9.602522</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">16</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.602522</SimpleData>
+		<SimpleData name="decimalLongitude">41.850242</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">16/12/2015</SimpleData>
+		<SimpleData name="day">16</SimpleData>
+		<SimpleData name="month">12</SimpleData>
+		<SimpleData name="year">2015</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.850242,9.602522</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">17</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">6.03589</SimpleData>
+		<SimpleData name="decimalLongitude">37.56703</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>37.56703,6.03589</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">18</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.38768</SimpleData>
+		<SimpleData name="decimalLongitude">39.33044</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">14/6/2010</SimpleData>
+		<SimpleData name="day">14</SimpleData>
+		<SimpleData name="month">6</SimpleData>
+		<SimpleData name="year">2010</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.33044,8.38768</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">19</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">5.9919</SimpleData>
+		<SimpleData name="decimalLongitude">37.53881</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>37.53881,5.9919</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">20</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.31913</SimpleData>
+		<SimpleData name="decimalLongitude">39.32183</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">14/6/2010</SimpleData>
+		<SimpleData name="day">14</SimpleData>
+		<SimpleData name="month">6</SimpleData>
+		<SimpleData name="year">2010</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.32183,8.31913</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">21</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.851007</SimpleData>
+		<SimpleData name="decimalLongitude">40.510216</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.510216,9.851007</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">22</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.87273</SimpleData>
+		<SimpleData name="decimalLongitude">40.507381</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.507381,9.87273</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">23</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.388491</SimpleData>
+		<SimpleData name="decimalLongitude">40.314974</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.314974,9.388491</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">24</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.635104</SimpleData>
+		<SimpleData name="decimalLongitude">40.430911</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.430911,9.635104</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">25</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.733043</SimpleData>
+		<SimpleData name="decimalLongitude">40.455116</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.455116,9.733043</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">26</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.754225</SimpleData>
+		<SimpleData name="decimalLongitude">40.464572</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.464572,9.754225</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">27</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.772814</SimpleData>
+		<SimpleData name="decimalLongitude">40.479401</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.479401,9.772814</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">28</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.819074</SimpleData>
+		<SimpleData name="decimalLongitude">40.510987</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.510987,9.819074</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">29</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">10.137979</SimpleData>
+		<SimpleData name="decimalLongitude">40.646884</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.646884,10.137979</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">30</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">10.15678</SimpleData>
+		<SimpleData name="decimalLongitude">40.65835</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.65835,10.15678</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">31</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">10.197375</SimpleData>
+		<SimpleData name="decimalLongitude">40.678817</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.678817,10.197375</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">32</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">10.463877</SimpleData>
+		<SimpleData name="decimalLongitude">40.734124</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.734124,10.463877</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">33</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.883994</SimpleData>
+		<SimpleData name="decimalLongitude">40.513394</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.513394,9.883994</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">34</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.902777</SimpleData>
+		<SimpleData name="decimalLongitude">40.519985</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.519985,9.902777</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">35</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.927343</SimpleData>
+		<SimpleData name="decimalLongitude">40.527611</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.527611,9.927343</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">36</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.995945</SimpleData>
+		<SimpleData name="decimalLongitude">40.551288</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.551288,9.995945</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">37</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">10.00364</SimpleData>
+		<SimpleData name="decimalLongitude">40.561733</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.561733,10.00364</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">38</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">10.047376</SimpleData>
+		<SimpleData name="decimalLongitude">40.620181</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.620181,10.047376</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">39</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">10.104326</SimpleData>
+		<SimpleData name="decimalLongitude">40.64305</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.64305,10.104326</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">40</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.61771</SimpleData>
+		<SimpleData name="decimalLongitude">41.775522</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">20/10/2008</SimpleData>
+		<SimpleData name="day">20</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.775522,9.61771</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">41</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.60501</SimpleData>
+		<SimpleData name="decimalLongitude">41.833339</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">20/10/2008</SimpleData>
+		<SimpleData name="day">20</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.833339,9.60501</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">42</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.612585</SimpleData>
+		<SimpleData name="decimalLongitude">41.809843</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">20/10/2008</SimpleData>
+		<SimpleData name="day">20</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.809843,9.612585</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">43</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.984487</SimpleData>
+		<SimpleData name="decimalLongitude">40.161408</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">19/10/2008</SimpleData>
+		<SimpleData name="day">19</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.161408,8.984487</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">44</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.030159</SimpleData>
+		<SimpleData name="decimalLongitude">40.185844</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">20/10/2008</SimpleData>
+		<SimpleData name="day">20</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.185844,9.030159</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">45</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.0139</SimpleData>
+		<SimpleData name="decimalLongitude">40.328815</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">20/10/2008</SimpleData>
+		<SimpleData name="day">20</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.328815,9.0139</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">46</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.01816</SimpleData>
+		<SimpleData name="decimalLongitude">40.352938</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">20/10/2008</SimpleData>
+		<SimpleData name="day">20</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.352938,9.01816</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">47</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.020742</SimpleData>
+		<SimpleData name="decimalLongitude">40.369727</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">20/10/2008</SimpleData>
+		<SimpleData name="day">20</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.369727,9.020742</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">48</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.526421</SimpleData>
+		<SimpleData name="decimalLongitude">41.880808</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">20/10/2008</SimpleData>
+		<SimpleData name="day">20</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.880808,9.526421</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">49</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.542688</SimpleData>
+		<SimpleData name="decimalLongitude">41.876811</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">20/10/2008</SimpleData>
+		<SimpleData name="day">20</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.876811,9.542688</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">50</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.577148</SimpleData>
+		<SimpleData name="decimalLongitude">41.861107</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">20/10/2008</SimpleData>
+		<SimpleData name="day">20</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.861107,9.577148</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">51</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.317035</SimpleData>
+		<SimpleData name="decimalLongitude">40.26393</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.26393,9.317035</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">52</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.373596</SimpleData>
+		<SimpleData name="decimalLongitude">40.309632</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.309632,9.373596</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">53</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.365736</SimpleData>
+		<SimpleData name="decimalLongitude">42.68374</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">21/10/2008</SimpleData>
+		<SimpleData name="day">21</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.68374,9.365736</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">54</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.14765</SimpleData>
+		<SimpleData name="decimalLongitude">40.523778</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">22/10/2008</SimpleData>
+		<SimpleData name="day">22</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.523778,9.14765</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">55</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.099124</SimpleData>
+		<SimpleData name="decimalLongitude">40.179861</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.179861,9.099124</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">56</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.130239</SimpleData>
+		<SimpleData name="decimalLongitude">40.166867</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.166867,9.130239</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">57</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.13987</SimpleData>
+		<SimpleData name="decimalLongitude">40.15883</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.15883,9.13987</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">58</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.183793</SimpleData>
+		<SimpleData name="decimalLongitude">40.148651</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.148651,9.183793</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">59</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.217706</SimpleData>
+		<SimpleData name="decimalLongitude">40.174609</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.174609,9.217706</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">60</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.250179</SimpleData>
+		<SimpleData name="decimalLongitude">40.203472</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.203472,9.250179</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">61</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">11.114243</SimpleData>
+		<SimpleData name="decimalLongitude">40.756542</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.756542,11.114243</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">62</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">11.127515</SimpleData>
+		<SimpleData name="decimalLongitude">40.760815</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.760815,11.127515</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">63</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">11.159438</SimpleData>
+		<SimpleData name="decimalLongitude">40.754642</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.754642,11.159438</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">64</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">11.324135</SimpleData>
+		<SimpleData name="decimalLongitude">40.727975</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.727975,11.324135</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">65</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">11.394096</SimpleData>
+		<SimpleData name="decimalLongitude">40.749322</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.749322,11.394096</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">66</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.287032</SimpleData>
+		<SimpleData name="decimalLongitude">40.238913</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.238913,9.287032</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">67</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">10.516505</SimpleData>
+		<SimpleData name="decimalLongitude">40.753789</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.753789,10.516505</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">68</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">10.758428</SimpleData>
+		<SimpleData name="decimalLongitude">40.668597</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.668597,10.758428</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">69</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">10.875516</SimpleData>
+		<SimpleData name="decimalLongitude">40.688497</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.688497,10.875516</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">70</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">10.990849</SimpleData>
+		<SimpleData name="decimalLongitude">40.7213</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.7213,10.990849</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">71</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">11.061091</SimpleData>
+		<SimpleData name="decimalLongitude">40.745366</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.745366,11.061091</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">72</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">11.112559</SimpleData>
+		<SimpleData name="decimalLongitude">40.755655</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.755655,11.112559</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">73</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">11.29618</SimpleData>
+		<SimpleData name="decimalLongitude">40.506587</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.506587,11.29618</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">74</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">11.274232</SimpleData>
+		<SimpleData name="decimalLongitude">40.403097</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.403097,11.274232</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">75</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">11.266818</SimpleData>
+		<SimpleData name="decimalLongitude">40.390481</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.390481,11.266818</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">76</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">11.253867</SimpleData>
+		<SimpleData name="decimalLongitude">40.303153</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.303153,11.253867</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">77</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">10.17791</SimpleData>
+		<SimpleData name="decimalLongitude">39.978968</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">24/10/2008</SimpleData>
+		<SimpleData name="day">24</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.978968,10.17791</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">78</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.724282</SimpleData>
+		<SimpleData name="decimalLongitude">40.450557</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.450557,9.724282</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">79</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.607627</SimpleData>
+		<SimpleData name="decimalLongitude">40.411246</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.411246,9.607627</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">80</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.845306</SimpleData>
+		<SimpleData name="decimalLongitude">40.513302</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2008</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.513302,9.845306</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">81</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.666145</SimpleData>
+		<SimpleData name="decimalLongitude">39.440245</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">19/10/2008</SimpleData>
+		<SimpleData name="day">19</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.440245,8.666145</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">82</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.757045</SimpleData>
+		<SimpleData name="decimalLongitude">39.600329</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">19/10/2008</SimpleData>
+		<SimpleData name="day">19</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.600329,8.757045</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">83</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.871017</SimpleData>
+		<SimpleData name="decimalLongitude">39.765532</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">19/10/2008</SimpleData>
+		<SimpleData name="day">19</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.765532,8.871017</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">84</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.903748</SimpleData>
+		<SimpleData name="decimalLongitude">39.923128</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">19/10/2008</SimpleData>
+		<SimpleData name="day">19</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.923128,8.903748</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">85</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.962873</SimpleData>
+		<SimpleData name="decimalLongitude">40.126879</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">19/10/2008</SimpleData>
+		<SimpleData name="day">19</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.126879,8.962873</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">86</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.973454</SimpleData>
+		<SimpleData name="decimalLongitude">40.145884</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">19/10/2008</SimpleData>
+		<SimpleData name="day">19</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.145884,8.973454</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">87</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.904999</SimpleData>
+		<SimpleData name="decimalLongitude">39.892325</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">19/10/2008</SimpleData>
+		<SimpleData name="day">19</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.892325,8.904999</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">88</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.911697</SimpleData>
+		<SimpleData name="decimalLongitude">39.828891</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">19/10/2008</SimpleData>
+		<SimpleData name="day">19</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2008</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.828891,8.911697</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">89</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.769033</SimpleData>
+		<SimpleData name="decimalLongitude">40.0123</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.0123,8.769033</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">90</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.87665</SimpleData>
+		<SimpleData name="decimalLongitude">39.985233</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.985233,8.87665</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">91</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">12.433671</SimpleData>
+		<SimpleData name="decimalLongitude">39.706549</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">22/10/2012</SimpleData>
+		<SimpleData name="day">22</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2012</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.706549,12.433671</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">92</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">12.416938</SimpleData>
+		<SimpleData name="decimalLongitude">39.646558</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">22/10/2012</SimpleData>
+		<SimpleData name="day">22</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2012</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.646558,12.416938</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">93</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">12.42455</SimpleData>
+		<SimpleData name="decimalLongitude">39.673828</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">22/10/2012</SimpleData>
+		<SimpleData name="day">22</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2012</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.673828,12.42455</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">94</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">12.426219</SimpleData>
+		<SimpleData name="decimalLongitude">39.553494</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">22/10/2012</SimpleData>
+		<SimpleData name="day">22</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2012</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.553494,12.426219</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">95</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">12.429432</SimpleData>
+		<SimpleData name="decimalLongitude">39.551248</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">22/10/2012</SimpleData>
+		<SimpleData name="day">22</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2012</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.551248,12.429432</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">96</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">12.328337</SimpleData>
+		<SimpleData name="decimalLongitude">39.592595</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2012</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2012</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.592595,12.328337</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">97</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">12.336844</SimpleData>
+		<SimpleData name="decimalLongitude">39.589272</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2012</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2012</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.589272,12.336844</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">98</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">12.431622</SimpleData>
+		<SimpleData name="decimalLongitude">39.742019</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">22/10/2012</SimpleData>
+		<SimpleData name="day">22</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2012</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.742019,12.431622</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">99</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">12.437356</SimpleData>
+		<SimpleData name="decimalLongitude">39.737273</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">22/10/2012</SimpleData>
+		<SimpleData name="day">22</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2012</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.737273,12.437356</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">100</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">12.441697</SimpleData>
+		<SimpleData name="decimalLongitude">39.727887</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">22/10/2012</SimpleData>
+		<SimpleData name="day">22</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2012</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.727887,12.441697</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">101</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">12.435986</SimpleData>
+		<SimpleData name="decimalLongitude">39.719148</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">22/10/2012</SimpleData>
+		<SimpleData name="day">22</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2012</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.719148,12.435986</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">102</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">13.525855</SimpleData>
+		<SimpleData name="decimalLongitude">39.501704</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">21/10/2012</SimpleData>
+		<SimpleData name="day">21</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2012</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.501704,13.525855</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">103</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.751417</SimpleData>
+		<SimpleData name="decimalLongitude">39.59195</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">27/7/2014</SimpleData>
+		<SimpleData name="day">27</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.59195,8.751417</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">104</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.856617</SimpleData>
+		<SimpleData name="decimalLongitude">39.745033</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">27/7/2014</SimpleData>
+		<SimpleData name="day">27</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.745033,8.856617</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">105</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.891983</SimpleData>
+		<SimpleData name="decimalLongitude">39.796017</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">27/7/2014</SimpleData>
+		<SimpleData name="day">27</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.796017,8.891983</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">106</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.90225</SimpleData>
+		<SimpleData name="decimalLongitude">39.819783</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">27/7/2014</SimpleData>
+		<SimpleData name="day">27</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.819783,8.90225</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">107</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.914283</SimpleData>
+		<SimpleData name="decimalLongitude">39.831717</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">27/7/2014</SimpleData>
+		<SimpleData name="day">27</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.831717,8.914283</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">108</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">12.318775</SimpleData>
+		<SimpleData name="decimalLongitude">39.597954</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/10/2012</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2012</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.597954,12.318775</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">109</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.77585</SimpleData>
+		<SimpleData name="decimalLongitude">39.628883</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">27/7/2014</SimpleData>
+		<SimpleData name="day">27</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.628883,8.77585</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">110</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">3.988156</SimpleData>
+		<SimpleData name="decimalLongitude">41.90703</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.90703,3.988156</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">111</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">3.960025</SimpleData>
+		<SimpleData name="decimalLongitude">41.84677</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.84677,3.960025</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">112</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.781283</SimpleData>
+		<SimpleData name="decimalLongitude">39.646283</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">27/7/2014</SimpleData>
+		<SimpleData name="day">27</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.646283,8.781283</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">113</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.792283</SimpleData>
+		<SimpleData name="decimalLongitude">39.666083</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">27/7/2014</SimpleData>
+		<SimpleData name="day">27</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.666083,8.792283</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">114</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.736083</SimpleData>
+		<SimpleData name="decimalLongitude">39.573283</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">27/7/2014</SimpleData>
+		<SimpleData name="day">27</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.573283,8.736083</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">115</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.7701</SimpleData>
+		<SimpleData name="decimalLongitude">39.614083</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">27/7/2014</SimpleData>
+		<SimpleData name="day">27</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.614083,8.7701</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">116</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.82915</SimpleData>
+		<SimpleData name="decimalLongitude">39.71055</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">27/7/2014</SimpleData>
+		<SimpleData name="day">27</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.71055,8.82915</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">117</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.84525</SimpleData>
+		<SimpleData name="decimalLongitude">39.7263</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">27/7/2014</SimpleData>
+		<SimpleData name="day">27</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.7263,8.84525</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">118</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.803667</SimpleData>
+		<SimpleData name="decimalLongitude">39.67615</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">27/7/2014</SimpleData>
+		<SimpleData name="day">27</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.67615,8.803667</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">119</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.817033</SimpleData>
+		<SimpleData name="decimalLongitude">39.708933</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">27/7/2014</SimpleData>
+		<SimpleData name="day">27</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.708933,8.817033</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">120</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.842983</SimpleData>
+		<SimpleData name="decimalLongitude">39.7337</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">27/7/2014</SimpleData>
+		<SimpleData name="day">27</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.7337,8.842983</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">121</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.7146</SimpleData>
+		<SimpleData name="decimalLongitude">39.5556</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">27/7/2014</SimpleData>
+		<SimpleData name="day">27</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.5556,8.7146</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">122</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.91365</SimpleData>
+		<SimpleData name="decimalLongitude">39.906517</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">27/7/2014</SimpleData>
+		<SimpleData name="day">27</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.906517,8.91365</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">123</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.9065</SimpleData>
+		<SimpleData name="decimalLongitude">39.911583</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">27/7/2014</SimpleData>
+		<SimpleData name="day">27</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.911583,8.9065</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">124</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.91585</SimpleData>
+		<SimpleData name="decimalLongitude">39.867117</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">27/7/2014</SimpleData>
+		<SimpleData name="day">27</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.867117,8.91585</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">125</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.9188</SimpleData>
+		<SimpleData name="decimalLongitude">39.878833</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">27/7/2014</SimpleData>
+		<SimpleData name="day">27</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.878833,8.9188</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">126</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.904617</SimpleData>
+		<SimpleData name="decimalLongitude">39.938733</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">27/7/2014</SimpleData>
+		<SimpleData name="day">27</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.938733,8.904617</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">127</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.905067</SimpleData>
+		<SimpleData name="decimalLongitude">39.94655</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">27/7/2014</SimpleData>
+		<SimpleData name="day">27</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.94655,8.905067</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">128</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.903583</SimpleData>
+		<SimpleData name="decimalLongitude">39.916983</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">27/7/2014</SimpleData>
+		<SimpleData name="day">27</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.916983,8.903583</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">129</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.90395</SimpleData>
+		<SimpleData name="decimalLongitude">39.9256</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">27/7/2014</SimpleData>
+		<SimpleData name="day">27</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.9256,8.90395</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">130</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.8831</SimpleData>
+		<SimpleData name="decimalLongitude">39.7813</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">27/7/2014</SimpleData>
+		<SimpleData name="day">27</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.7813,8.8831</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">131</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.92065</SimpleData>
+		<SimpleData name="decimalLongitude">39.84915</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">27/7/2014</SimpleData>
+		<SimpleData name="day">27</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.84915,8.92065</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">132</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.567467</SimpleData>
+		<SimpleData name="decimalLongitude">39.324633</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">27/7/2014</SimpleData>
+		<SimpleData name="day">27</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.324633,8.567467</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">133</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.396483</SimpleData>
+		<SimpleData name="decimalLongitude">39.333033</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">26/7/2014</SimpleData>
+		<SimpleData name="day">26</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.333033,8.396483</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">134</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.3888</SimpleData>
+		<SimpleData name="decimalLongitude">39.330033</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">26/7/2014</SimpleData>
+		<SimpleData name="day">26</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.330033,8.3888</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">135</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.27135</SimpleData>
+		<SimpleData name="decimalLongitude">39.29625</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">26/7/2014</SimpleData>
+		<SimpleData name="day">26</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.29625,8.27135</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">136</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">5.323667</SimpleData>
+		<SimpleData name="decimalLongitude">39.594167</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">23/7/2014</SimpleData>
+		<SimpleData name="day">23</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.594167,5.323667</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">137</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.317433</SimpleData>
+		<SimpleData name="decimalLongitude">39.322883</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">26/7/2014</SimpleData>
+		<SimpleData name="day">26</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.322883,8.317433</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">138</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.317433</SimpleData>
+		<SimpleData name="decimalLongitude">39.322883</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">26/7/2014</SimpleData>
+		<SimpleData name="day">26</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.322883,8.317433</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">139</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">7.936633</SimpleData>
+		<SimpleData name="decimalLongitude">38.716417</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">19/7/2014</SimpleData>
+		<SimpleData name="day">19</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.716417,7.936633</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">140</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.652083</SimpleData>
+		<SimpleData name="decimalLongitude">39.420417</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">16/7/2014</SimpleData>
+		<SimpleData name="day">16</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.420417,8.652083</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">141</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.4035</SimpleData>
+		<SimpleData name="decimalLongitude">39.336617</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">26/7/2014</SimpleData>
+		<SimpleData name="day">26</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.336617,8.4035</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">142</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.9744</SimpleData>
+		<SimpleData name="decimalLongitude">40.1475</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">27/7/2014</SimpleData>
+		<SimpleData name="day">27</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.1475,8.9744</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">143</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.985</SimpleData>
+		<SimpleData name="decimalLongitude">40.1617</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">27/7/2014</SimpleData>
+		<SimpleData name="day">27</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.1617,8.985</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">144</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.905633</SimpleData>
+		<SimpleData name="decimalLongitude">39.95805</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">27/7/2014</SimpleData>
+		<SimpleData name="day">27</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.95805,8.905633</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">145</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.906633</SimpleData>
+		<SimpleData name="decimalLongitude">39.976833</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">27/7/2014</SimpleData>
+		<SimpleData name="day">27</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.976833,8.906633</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">146</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.803333</SimpleData>
+		<SimpleData name="decimalLongitude">39.675867</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">26/7/2014</SimpleData>
+		<SimpleData name="day">26</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.675867,8.803333</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">147</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.491417</SimpleData>
+		<SimpleData name="decimalLongitude">39.289133</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">26/7/2014</SimpleData>
+		<SimpleData name="day">26</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.289133,8.491417</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">148</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.7363</SimpleData>
+		<SimpleData name="decimalLongitude">39.573533</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">26/7/2014</SimpleData>
+		<SimpleData name="day">26</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.573533,8.7363</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">149</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.994583</SimpleData>
+		<SimpleData name="decimalLongitude">40.168</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">27/7/2014</SimpleData>
+		<SimpleData name="day">27</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.168,8.994583</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">150</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.78735</SimpleData>
+		<SimpleData name="decimalLongitude">39.658767</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">26/7/2014</SimpleData>
+		<SimpleData name="day">26</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.658767,8.78735</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">151</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.792717</SimpleData>
+		<SimpleData name="decimalLongitude">39.666317</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">26/7/2014</SimpleData>
+		<SimpleData name="day">26</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.666317,8.792717</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">152</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.652467</SimpleData>
+		<SimpleData name="decimalLongitude">39.4216</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">26/7/2014</SimpleData>
+		<SimpleData name="day">26</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.4216,8.652467</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">153</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.752933</SimpleData>
+		<SimpleData name="decimalLongitude">39.594267</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">26/7/2014</SimpleData>
+		<SimpleData name="day">26</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.594267,8.752933</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">154</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.72995</SimpleData>
+		<SimpleData name="decimalLongitude">39.565083</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">26/7/2014</SimpleData>
+		<SimpleData name="day">26</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.565083,8.72995</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">155</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.431</SimpleData>
+		<SimpleData name="decimalLongitude">39.322367</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">26/7/2014</SimpleData>
+		<SimpleData name="day">26</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.322367,8.431</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">156</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.4177</SimpleData>
+		<SimpleData name="decimalLongitude">39.32835</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">26/7/2014</SimpleData>
+		<SimpleData name="day">26</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.32835,8.4177</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">157</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.4802</SimpleData>
+		<SimpleData name="decimalLongitude">39.294183</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">26/7/2014</SimpleData>
+		<SimpleData name="day">26</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.294183,8.4802</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">158</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.464633</SimpleData>
+		<SimpleData name="decimalLongitude">39.307117</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">26/7/2014</SimpleData>
+		<SimpleData name="day">26</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.307117,8.464633</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">159</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.775733</SimpleData>
+		<SimpleData name="decimalLongitude">39.628617</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">26/7/2014</SimpleData>
+		<SimpleData name="day">26</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.628617,8.775733</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">160</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.766617</SimpleData>
+		<SimpleData name="decimalLongitude">39.610367</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="eventDate">26/7/2014</SimpleData>
+		<SimpleData name="day">26</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">2014</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.610367,8.766617</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">161</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.905643</SimpleData>
+		<SimpleData name="decimalLongitude">39.822163</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.822163,8.905643</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">162</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.003257</SimpleData>
+		<SimpleData name="decimalLongitude">40.175399</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.175399,9.003257</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">163</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.036657</SimpleData>
+		<SimpleData name="decimalLongitude">40.196067</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.196067,9.036657</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">164</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.953542</SimpleData>
+		<SimpleData name="decimalLongitude">40.110082</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.110082,8.953542</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">165</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.973142</SimpleData>
+		<SimpleData name="decimalLongitude">40.145271</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.145271,8.973142</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">166</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.930941</SimpleData>
+		<SimpleData name="decimalLongitude">40.065305</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.065305,8.930941</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">167</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.91788</SimpleData>
+		<SimpleData name="decimalLongitude">40.03182</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.03182,8.91788</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">168</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.283622</SimpleData>
+		<SimpleData name="decimalLongitude">40.304871</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.304871,9.283622</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">169</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.071312</SimpleData>
+		<SimpleData name="decimalLongitude">40.19571</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.19571,9.071312</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">170</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.301332</SimpleData>
+		<SimpleData name="decimalLongitude">40.145223</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.145223,9.301332</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">171</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.284732</SimpleData>
+		<SimpleData name="decimalLongitude">40.173653</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.173653,9.284732</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">172</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.903183</SimpleData>
+		<SimpleData name="decimalLongitude">39.907694</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.907694,8.903183</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">173</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.90365</SimpleData>
+		<SimpleData name="decimalLongitude">39.912715</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.912715,8.90365</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">174</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.8962</SimpleData>
+		<SimpleData name="decimalLongitude">39.809451</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.809451,8.8962</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">175</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.229135</SimpleData>
+		<SimpleData name="decimalLongitude">40.190167</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.190167,9.229135</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">176</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.118315</SimpleData>
+		<SimpleData name="decimalLongitude">40.173766</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.173766,9.118315</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">177</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.158459</SimpleData>
+		<SimpleData name="decimalLongitude">40.154755</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.154755,9.158459</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">178</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.204238</SimpleData>
+		<SimpleData name="decimalLongitude">40.155864</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.155864,9.204238</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">179</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.334799</SimpleData>
+		<SimpleData name="decimalLongitude">40.177399</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.177399,9.334799</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">180</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">9.271399</SimpleData>
+		<SimpleData name="decimalLongitude">40.222682</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.222682,9.271399</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">181</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.816647</SimpleData>
+		<SimpleData name="decimalLongitude">39.708365</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.708365,8.816647</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">182</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.791129</SimpleData>
+		<SimpleData name="decimalLongitude">39.66545</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.66545,8.791129</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">183</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.868922</SimpleData>
+		<SimpleData name="decimalLongitude">39.76185</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.76185,8.868922</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">184</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.85635</SimpleData>
+		<SimpleData name="decimalLongitude">39.744857</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.744857,8.85635</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">185</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.882718</SimpleData>
+		<SimpleData name="decimalLongitude">39.78</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.78,8.882718</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">186</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.712593</SimpleData>
+		<SimpleData name="decimalLongitude">39.553397</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.553397,8.712593</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">187</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.53644</SimpleData>
+		<SimpleData name="decimalLongitude">39.246724</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.246724,8.53644</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">188</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.758426</SimpleData>
+		<SimpleData name="decimalLongitude">39.601311</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.601311,8.758426</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#prosopis_juliflora_ethiopia_clean">
+		<SimpleData name="SW-ID">189</SimpleData>
+		<SimpleData name="species">Prosopis juliflora</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="decimalLatitude">8.730556</SimpleData>
+		<SimpleData name="decimalLongitude">39.565872</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">2000</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">CABI</SimpleData>
+		<SimpleData name="collectionCode">africaniasdata</SimpleData>
+		<SimpleData name="rightsHolder">CAB International</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.565872,8.730556</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>

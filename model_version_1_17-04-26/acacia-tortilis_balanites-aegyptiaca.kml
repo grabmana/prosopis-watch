@@ -1,0 +1,2875 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="combinado" id="combinado">
+	<SimpleField name="gbifID" type="float"></SimpleField>
+	<SimpleField name="datasetKey" type="string"></SimpleField>
+	<SimpleField name="occurrenceID" type="string"></SimpleField>
+	<SimpleField name="kingdom" type="string"></SimpleField>
+	<SimpleField name="phylum" type="string"></SimpleField>
+	<SimpleField name="class" type="string"></SimpleField>
+	<SimpleField name="order" type="string"></SimpleField>
+	<SimpleField name="family" type="string"></SimpleField>
+	<SimpleField name="genus" type="string"></SimpleField>
+	<SimpleField name="species" type="string"></SimpleField>
+	<SimpleField name="infraspecificEpithet" type="string"></SimpleField>
+	<SimpleField name="taxonRank" type="string"></SimpleField>
+	<SimpleField name="scientificName" type="string"></SimpleField>
+	<SimpleField name="verbatimScientificName" type="string"></SimpleField>
+	<SimpleField name="verbatimScientificNameAuthorship" type="string"></SimpleField>
+	<SimpleField name="countryCode" type="string"></SimpleField>
+	<SimpleField name="locality" type="string"></SimpleField>
+	<SimpleField name="stateProvince" type="string"></SimpleField>
+	<SimpleField name="occurrenceStatus" type="string"></SimpleField>
+	<SimpleField name="individualCount" type="string"></SimpleField>
+	<SimpleField name="publishingOrgKey" type="string"></SimpleField>
+	<SimpleField name="decimalLatitude" type="float"></SimpleField>
+	<SimpleField name="decimalLongitude" type="float"></SimpleField>
+	<SimpleField name="coordinateUncertaintyInMeters" type="string"></SimpleField>
+	<SimpleField name="coordinatePrecision" type="string"></SimpleField>
+	<SimpleField name="elevation" type="string"></SimpleField>
+	<SimpleField name="elevationAccuracy" type="string"></SimpleField>
+	<SimpleField name="depth" type="string"></SimpleField>
+	<SimpleField name="depthAccuracy" type="string"></SimpleField>
+	<SimpleField name="eventDate" type="string"></SimpleField>
+	<SimpleField name="day" type="int"></SimpleField>
+	<SimpleField name="month" type="int"></SimpleField>
+	<SimpleField name="year" type="int"></SimpleField>
+	<SimpleField name="taxonKey" type="int"></SimpleField>
+	<SimpleField name="speciesKey" type="int"></SimpleField>
+	<SimpleField name="basisOfRecord" type="string"></SimpleField>
+	<SimpleField name="institutionCode" type="string"></SimpleField>
+	<SimpleField name="collectionCode" type="string"></SimpleField>
+	<SimpleField name="catalogNumber" type="string"></SimpleField>
+	<SimpleField name="recordNumber" type="string"></SimpleField>
+	<SimpleField name="identifiedBy" type="string"></SimpleField>
+	<SimpleField name="dateIdentified" type="string"></SimpleField>
+	<SimpleField name="license" type="string"></SimpleField>
+	<SimpleField name="rightsHolder" type="string"></SimpleField>
+	<SimpleField name="recordedBy" type="string"></SimpleField>
+	<SimpleField name="typeStatus" type="string"></SimpleField>
+	<SimpleField name="establishmentMeans" type="string"></SimpleField>
+	<SimpleField name="lastInterpreted" type="string"></SimpleField>
+	<SimpleField name="mediaType" type="string"></SimpleField>
+	<SimpleField name="issue" type="string"></SimpleField>
+	<SimpleField name="field_51" type="string"></SimpleField>
+	<SimpleField name="field_52" type="string"></SimpleField>
+	<SimpleField name="field_53" type="string"></SimpleField>
+	<SimpleField name="field_54" type="string"></SimpleField>
+	<SimpleField name="layer" type="string"></SimpleField>
+	<SimpleField name="path" type="string"></SimpleField>
+</Schema>
+<Folder><name>combinado</name>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">4947593640</SimpleData>
+		<SimpleData name="datasetKey">cd6e21c8-9e8a-493a-8a76-fbf7862069e5</SimpleData>
+		<SimpleData name="occurrenceID">http://specimens.kew.org/herbarium/K003200590</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">Acacia tortilis</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(Forssk.) Hayne</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">Harar province</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>0,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">4947572700</SimpleData>
+		<SimpleData name="datasetKey">cd6e21c8-9e8a-493a-8a76-fbf7862069e5</SimpleData>
+		<SimpleData name="occurrenceID">http://specimens.kew.org/herbarium/K003200591</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">Acacia tortilis</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(Forssk.) Hayne</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">Harar Prov</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>0,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">4945340757</SimpleData>
+		<SimpleData name="datasetKey">cd6e21c8-9e8a-493a-8a76-fbf7862069e5</SimpleData>
+		<SimpleData name="occurrenceID">http://specimens.kew.org/herbarium/K003200502</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">Acacia tortilis</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(Forssk.) Hayne</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">Eritea region</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>0,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">4945339516</SimpleData>
+		<SimpleData name="datasetKey">cd6e21c8-9e8a-493a-8a76-fbf7862069e5</SimpleData>
+		<SimpleData name="occurrenceID">http://specimens.kew.org/herbarium/K003200570</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">Acacia tortilis</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(Forssk.) Hayne</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">Shoa Prov</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>0,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">4945334782</SimpleData>
+		<SimpleData name="datasetKey">cd6e21c8-9e8a-493a-8a76-fbf7862069e5</SimpleData>
+		<SimpleData name="occurrenceID">http://specimens.kew.org/herbarium/K003200585</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">Acacia tortilis</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(Forssk.) Hayne</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">Nr. Biche</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>0,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">4945334781</SimpleData>
+		<SimpleData name="datasetKey">cd6e21c8-9e8a-493a-8a76-fbf7862069e5</SimpleData>
+		<SimpleData name="occurrenceID">http://specimens.kew.org/herbarium/K003200574</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">Acacia tortilis</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(Forssk.) Hayne</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">Harar Prov</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>0,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">4945334777</SimpleData>
+		<SimpleData name="datasetKey">cd6e21c8-9e8a-493a-8a76-fbf7862069e5</SimpleData>
+		<SimpleData name="occurrenceID">http://specimens.kew.org/herbarium/K003200497</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">Acacia tortilis</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(Forssk.) Hayne</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">Arussi</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>0,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">4945333009</SimpleData>
+		<SimpleData name="datasetKey">cd6e21c8-9e8a-493a-8a76-fbf7862069e5</SimpleData>
+		<SimpleData name="occurrenceID">http://specimens.kew.org/herbarium/K003200566</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">Acacia tortilis</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(Forssk.) Hayne</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">Eritrea region</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>0,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">4945326974</SimpleData>
+		<SimpleData name="datasetKey">cd6e21c8-9e8a-493a-8a76-fbf7862069e5</SimpleData>
+		<SimpleData name="occurrenceID">http://specimens.kew.org/herbarium/K003200573</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">Acacia tortilis</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(Forssk.) Hayne</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">061b4f20-f241-11da-a328-b8a03c50a862</SimpleData>
+		<SimpleData name="decimalLatitude">14.4</SimpleData>
+		<SimpleData name="decimalLongitude">38.783333</SimpleData>
+		<SimpleData name="elevation">1400</SimpleData>
+		<SimpleData name="eventDate">1993-02-24T00:00</SimpleData>
+		<SimpleData name="day">24</SimpleData>
+		<SimpleData name="month">2</SimpleData>
+		<SimpleData name="year">1993</SimpleData>
+		<SimpleData name="taxonKey">2979907</SimpleData>
+		<SimpleData name="speciesKey">3974700</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="institutionCode">K</SimpleData>
+		<SimpleData name="collectionCode">Herbarium</SimpleData>
+		<SimpleData name="catalogNumber">K003200573</SimpleData>
+		<SimpleData name="recordNumber">610</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="lastInterpreted">2026/03/23 17:28:36</SimpleData>
+		<SimpleData name="mediaType">StillImage</SimpleData>
+		<SimpleData name="issue">COORDINATE_ROUNDED</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.783333,14.4</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">4945326970</SimpleData>
+		<SimpleData name="datasetKey">cd6e21c8-9e8a-493a-8a76-fbf7862069e5</SimpleData>
+		<SimpleData name="occurrenceID">http://specimens.kew.org/herbarium/K003200496</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">Acacia tortilis</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(Forssk.) Hayne</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">Bale Region: 27 Km on the Sof Omar-Goro road.</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">061b4f20-f241-11da-a328-b8a03c50a862</SimpleData>
+		<SimpleData name="decimalLatitude">6.966667</SimpleData>
+		<SimpleData name="decimalLongitude">40.65</SimpleData>
+		<SimpleData name="elevation">1700</SimpleData>
+		<SimpleData name="eventDate">1980-05-18T00:00</SimpleData>
+		<SimpleData name="day">18</SimpleData>
+		<SimpleData name="month">5</SimpleData>
+		<SimpleData name="year">1980</SimpleData>
+		<SimpleData name="taxonKey">2979907</SimpleData>
+		<SimpleData name="speciesKey">3974700</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="institutionCode">K</SimpleData>
+		<SimpleData name="collectionCode">Herbarium</SimpleData>
+		<SimpleData name="catalogNumber">K003200496</SimpleData>
+		<SimpleData name="recordNumber">3834</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="lastInterpreted">2026/03/23 17:27:47</SimpleData>
+		<SimpleData name="mediaType">StillImage</SimpleData>
+		<SimpleData name="issue">COORDINATE_ROUNDED</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.65,6.966667</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">4945326208</SimpleData>
+		<SimpleData name="datasetKey">cd6e21c8-9e8a-493a-8a76-fbf7862069e5</SimpleData>
+		<SimpleData name="occurrenceID">http://specimens.kew.org/herbarium/K003200587</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">Acacia tortilis</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(Forssk.) Hayne</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">Ogaden</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>0,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">4945321373</SimpleData>
+		<SimpleData name="datasetKey">cd6e21c8-9e8a-493a-8a76-fbf7862069e5</SimpleData>
+		<SimpleData name="occurrenceID">http://specimens.kew.org/herbarium/K003200575</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">Acacia tortilis</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(Forssk.) Hayne</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">Harar Prov</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>0,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">4945321290</SimpleData>
+		<SimpleData name="datasetKey">cd6e21c8-9e8a-493a-8a76-fbf7862069e5</SimpleData>
+		<SimpleData name="occurrenceID">http://specimens.kew.org/herbarium/K003200567</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">Acacia tortilis</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(Forssk.) Hayne</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">Gamu-Gofa Region: c. 10 Km north of Turmi along the road to Key Afer.</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">061b4f20-f241-11da-a328-b8a03c50a862</SimpleData>
+		<SimpleData name="decimalLatitude">5.033333</SimpleData>
+		<SimpleData name="decimalLongitude">36.5</SimpleData>
+		<SimpleData name="elevation">950</SimpleData>
+		<SimpleData name="eventDate">1998-12-26T00:00</SimpleData>
+		<SimpleData name="day">26</SimpleData>
+		<SimpleData name="month">12</SimpleData>
+		<SimpleData name="year">1998</SimpleData>
+		<SimpleData name="taxonKey">2979907</SimpleData>
+		<SimpleData name="speciesKey">3974700</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="institutionCode">K</SimpleData>
+		<SimpleData name="collectionCode">Herbarium</SimpleData>
+		<SimpleData name="catalogNumber">K003200567</SimpleData>
+		<SimpleData name="recordNumber">9634</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="lastInterpreted">2026/03/23 17:28:05</SimpleData>
+		<SimpleData name="mediaType">StillImage</SimpleData>
+		<SimpleData name="issue">COORDINATE_ROUNDED</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>36.5,5.033333</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">47445257</SimpleData>
+		<SimpleData name="datasetKey">85818aea-f762-11e1-a439-00145eb45e9a</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">acacia tortilis (FORSSK.)HAYNE</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">Shewa</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>0,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">47445255</SimpleData>
+		<SimpleData name="datasetKey">85818aea-f762-11e1-a439-00145eb45e9a</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">acacia tortilis (FORSSK.)HAYNE</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">Sidamo</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>0,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">47445249</SimpleData>
+		<SimpleData name="datasetKey">85818aea-f762-11e1-a439-00145eb45e9a</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">acacia tortilis (FORSSK.)HAYNE</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">Sidamo</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>0,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">47445241</SimpleData>
+		<SimpleData name="datasetKey">85818aea-f762-11e1-a439-00145eb45e9a</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">acacia tortilis (FORSSK.)HAYNE</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">Shewa</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>0,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">47445239</SimpleData>
+		<SimpleData name="datasetKey">85818aea-f762-11e1-a439-00145eb45e9a</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">acacia tortilis (FORSSK.)HAYNE</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">Shewa</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>0,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">47445234</SimpleData>
+		<SimpleData name="datasetKey">85818aea-f762-11e1-a439-00145eb45e9a</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">acacia tortilis (FORSSK.)HAYNE</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">Shewa</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>0,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">47445227</SimpleData>
+		<SimpleData name="datasetKey">85818aea-f762-11e1-a439-00145eb45e9a</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">acacia tortilis (FORSSK.)HAYNE</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">Shewa</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>0,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">47445222</SimpleData>
+		<SimpleData name="datasetKey">85818aea-f762-11e1-a439-00145eb45e9a</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">acacia tortilis (FORSSK.)HAYNE</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">Shewa</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>0,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">439381970</SimpleData>
+		<SimpleData name="datasetKey">b5cdf794-8fa4-4a85-8b26-755d087bf531</SimpleData>
+		<SimpleData name="occurrenceID">http://coldb.mnhn.fr/catalognumber/mnhn/p/p03643170</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(Forssk.) Hayne</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="stateProvince">Afar</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">2cd829bb-b713-433d-99cf-64bef11e5b3e</SimpleData>
+		<SimpleData name="decimalLatitude">12.41244</SimpleData>
+		<SimpleData name="decimalLongitude">42.17617</SimpleData>
+		<SimpleData name="eventDate">24/2/1971</SimpleData>
+		<SimpleData name="day">24</SimpleData>
+		<SimpleData name="month">2</SimpleData>
+		<SimpleData name="year">1971</SimpleData>
+		<SimpleData name="taxonKey">2979907</SimpleData>
+		<SimpleData name="speciesKey">3974700</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="institutionCode">MNHN</SimpleData>
+		<SimpleData name="collectionCode">P</SimpleData>
+		<SimpleData name="catalogNumber">P03643170</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="recordedBy">Monod</SimpleData>
+		<SimpleData name="typeStatus">T.</SimpleData>
+		<SimpleData name="mediaType">2025-11-25T17:22:41.587Z</SimpleData>
+		<SimpleData name="issue">StillImage</SimpleData>
+		<SimpleData name="field_51">GEODETIC_DATUM_ASSUMED_WGS84</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.17617,12.41244</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">438715243</SimpleData>
+		<SimpleData name="datasetKey">b5cdf794-8fa4-4a85-8b26-755d087bf531</SimpleData>
+		<SimpleData name="occurrenceID">http://coldb.mnhn.fr/catalognumber/mnhn/p/p03635758</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(Forssk.) Hayne</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="stateProvince">Oromia</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">2cd829bb-b713-433d-99cf-64bef11e5b3e</SimpleData>
+		<SimpleData name="decimalLatitude">5.11271</SimpleData>
+		<SimpleData name="decimalLongitude">40.65434</SimpleData>
+		<SimpleData name="eventDate">9/1/1973</SimpleData>
+		<SimpleData name="day">9</SimpleData>
+		<SimpleData name="month">1</SimpleData>
+		<SimpleData name="year">1973</SimpleData>
+		<SimpleData name="taxonKey">2979907</SimpleData>
+		<SimpleData name="speciesKey">3974700</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="institutionCode">MNHN</SimpleData>
+		<SimpleData name="collectionCode">P</SimpleData>
+		<SimpleData name="catalogNumber">P03635758</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="recordedBy">Rippstein</SimpleData>
+		<SimpleData name="typeStatus">G.</SimpleData>
+		<SimpleData name="mediaType">2025-11-25T17:23:34.894Z</SimpleData>
+		<SimpleData name="issue">StillImage</SimpleData>
+		<SimpleData name="field_51">GEODETIC_DATUM_ASSUMED_WGS84</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.65434,5.11271</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">438715230</SimpleData>
+		<SimpleData name="datasetKey">b5cdf794-8fa4-4a85-8b26-755d087bf531</SimpleData>
+		<SimpleData name="occurrenceID">http://coldb.mnhn.fr/catalognumber/mnhn/p/p02997688</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(Forssk.) Hayne</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="stateProvince">Southern Nations</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">2cd829bb-b713-433d-99cf-64bef11e5b3e</SimpleData>
+		<SimpleData name="decimalLatitude">5.16667</SimpleData>
+		<SimpleData name="decimalLongitude">36.15</SimpleData>
+		<SimpleData name="eventDate">15/7/1939</SimpleData>
+		<SimpleData name="day">15</SimpleData>
+		<SimpleData name="month">7</SimpleData>
+		<SimpleData name="year">1939</SimpleData>
+		<SimpleData name="taxonKey">2979907</SimpleData>
+		<SimpleData name="speciesKey">3974700</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="institutionCode">MNHN</SimpleData>
+		<SimpleData name="collectionCode">P</SimpleData>
+		<SimpleData name="catalogNumber">P02997688</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="recordedBy">Corradi</SimpleData>
+		<SimpleData name="typeStatus">R.</SimpleData>
+		<SimpleData name="mediaType">2025-11-25T17:22:52.136Z</SimpleData>
+		<SimpleData name="issue">StillImage</SimpleData>
+		<SimpleData name="field_51">GEODETIC_DATUM_ASSUMED_WGS84</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>36.15,5.16667</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">438715229</SimpleData>
+		<SimpleData name="datasetKey">b5cdf794-8fa4-4a85-8b26-755d087bf531</SimpleData>
+		<SimpleData name="occurrenceID">http://coldb.mnhn.fr/catalognumber/mnhn/p/p03013579</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(Forssk.) Hayne</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="stateProvince">Afar</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">2cd829bb-b713-433d-99cf-64bef11e5b3e</SimpleData>
+		<SimpleData name="decimalLatitude">11.68525</SimpleData>
+		<SimpleData name="decimalLongitude">40.94929</SimpleData>
+		<SimpleData name="eventDate">24/2/1971</SimpleData>
+		<SimpleData name="day">24</SimpleData>
+		<SimpleData name="month">2</SimpleData>
+		<SimpleData name="year">1971</SimpleData>
+		<SimpleData name="taxonKey">2979907</SimpleData>
+		<SimpleData name="speciesKey">3974700</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="institutionCode">MNHN</SimpleData>
+		<SimpleData name="collectionCode">P</SimpleData>
+		<SimpleData name="catalogNumber">P03013579</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="recordedBy">Monod</SimpleData>
+		<SimpleData name="typeStatus">T.</SimpleData>
+		<SimpleData name="mediaType">2025-11-25T17:23:33.677Z</SimpleData>
+		<SimpleData name="issue">StillImage</SimpleData>
+		<SimpleData name="field_51">GEODETIC_DATUM_ASSUMED_WGS84</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.94929,11.68525</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">438715228</SimpleData>
+		<SimpleData name="datasetKey">b5cdf794-8fa4-4a85-8b26-755d087bf531</SimpleData>
+		<SimpleData name="occurrenceID">http://coldb.mnhn.fr/catalognumber/mnhn/p/p03635777</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(Forssk.) Hayne</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="stateProvince">Amhara</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">2cd829bb-b713-433d-99cf-64bef11e5b3e</SimpleData>
+		<SimpleData name="decimalLatitude">12.96667</SimpleData>
+		<SimpleData name="decimalLongitude">38.36667</SimpleData>
+		<SimpleData name="taxonKey">2979907</SimpleData>
+		<SimpleData name="speciesKey">3974700</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="institutionCode">MNHN</SimpleData>
+		<SimpleData name="collectionCode">P</SimpleData>
+		<SimpleData name="catalogNumber">P03635777</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="recordedBy">Schimper</SimpleData>
+		<SimpleData name="typeStatus">W.</SimpleData>
+		<SimpleData name="mediaType">2025-11-25T17:22:28.947Z</SimpleData>
+		<SimpleData name="issue">StillImage</SimpleData>
+		<SimpleData name="field_51">GEODETIC_DATUM_ASSUMED_WGS84</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.36667,12.96667</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">438715227</SimpleData>
+		<SimpleData name="datasetKey">b5cdf794-8fa4-4a85-8b26-755d087bf531</SimpleData>
+		<SimpleData name="occurrenceID">http://coldb.mnhn.fr/catalognumber/mnhn/p/p03635752</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(Forssk.) Hayne</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="stateProvince">Southern Nations</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">2cd829bb-b713-433d-99cf-64bef11e5b3e</SimpleData>
+		<SimpleData name="decimalLatitude">8.35</SimpleData>
+		<SimpleData name="decimalLongitude">37.93333</SimpleData>
+		<SimpleData name="eventDate">11/8/1904</SimpleData>
+		<SimpleData name="day">11</SimpleData>
+		<SimpleData name="month">8</SimpleData>
+		<SimpleData name="year">1904</SimpleData>
+		<SimpleData name="taxonKey">2979907</SimpleData>
+		<SimpleData name="speciesKey">3974700</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="institutionCode">MNHN</SimpleData>
+		<SimpleData name="collectionCode">P</SimpleData>
+		<SimpleData name="catalogNumber">P03635752</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="recordedBy">Neuville</SimpleData>
+		<SimpleData name="lastInterpreted">2025/11/25 17:22:28</SimpleData>
+		<SimpleData name="mediaType">StillImage</SimpleData>
+		<SimpleData name="issue">GEODETIC_DATUM_ASSUMED_WGS84</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>37.93333,8.35</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">438715226</SimpleData>
+		<SimpleData name="datasetKey">b5cdf794-8fa4-4a85-8b26-755d087bf531</SimpleData>
+		<SimpleData name="occurrenceID">http://coldb.mnhn.fr/catalognumber/mnhn/p/p03635739</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(Forssk.) Hayne</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="stateProvince">Dire Dawa</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">2cd829bb-b713-433d-99cf-64bef11e5b3e</SimpleData>
+		<SimpleData name="decimalLatitude">9.7</SimpleData>
+		<SimpleData name="decimalLongitude">41.86667</SimpleData>
+		<SimpleData name="eventDate">25/4/1964</SimpleData>
+		<SimpleData name="day">25</SimpleData>
+		<SimpleData name="month">4</SimpleData>
+		<SimpleData name="year">1964</SimpleData>
+		<SimpleData name="taxonKey">2979907</SimpleData>
+		<SimpleData name="speciesKey">3974700</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="institutionCode">MNHN</SimpleData>
+		<SimpleData name="collectionCode">P</SimpleData>
+		<SimpleData name="catalogNumber">P03635739</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="recordedBy">Burger</SimpleData>
+		<SimpleData name="typeStatus">W.</SimpleData>
+		<SimpleData name="mediaType">2025-11-25T17:22:53.995Z</SimpleData>
+		<SimpleData name="issue">StillImage</SimpleData>
+		<SimpleData name="field_51">GEODETIC_DATUM_ASSUMED_WGS84</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.86667,9.7</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">438382457</SimpleData>
+		<SimpleData name="datasetKey">b5cdf794-8fa4-4a85-8b26-755d087bf531</SimpleData>
+		<SimpleData name="occurrenceID">http://coldb.mnhn.fr/catalognumber/mnhn/p/p03635796</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(Forssk.) Hayne</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="stateProvince">Tigray</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">2cd829bb-b713-433d-99cf-64bef11e5b3e</SimpleData>
+		<SimpleData name="decimalLatitude">13.8</SimpleData>
+		<SimpleData name="decimalLongitude">38.36667</SimpleData>
+		<SimpleData name="eventDate">1852-01-01/1852-12-31</SimpleData>
+		<SimpleData name="year">1852</SimpleData>
+		<SimpleData name="taxonKey">2979907</SimpleData>
+		<SimpleData name="speciesKey">3974700</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="institutionCode">MNHN</SimpleData>
+		<SimpleData name="collectionCode">P</SimpleData>
+		<SimpleData name="catalogNumber">P03635796</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="recordedBy">Schimper</SimpleData>
+		<SimpleData name="typeStatus">W.</SimpleData>
+		<SimpleData name="mediaType">2025-11-25T17:23:04.581Z</SimpleData>
+		<SimpleData name="issue">StillImage</SimpleData>
+		<SimpleData name="field_51">GEODETIC_DATUM_ASSUMED_WGS84</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.36667,13.8</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">438382437</SimpleData>
+		<SimpleData name="datasetKey">b5cdf794-8fa4-4a85-8b26-755d087bf531</SimpleData>
+		<SimpleData name="occurrenceID">http://coldb.mnhn.fr/catalognumber/mnhn/p/p02973501</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(Forssk.) Hayne</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="stateProvince">Oromia</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">2cd829bb-b713-433d-99cf-64bef11e5b3e</SimpleData>
+		<SimpleData name="decimalLatitude">4.9031</SimpleData>
+		<SimpleData name="decimalLongitude">38.10025</SimpleData>
+		<SimpleData name="eventDate">6/2/1973</SimpleData>
+		<SimpleData name="day">6</SimpleData>
+		<SimpleData name="month">2</SimpleData>
+		<SimpleData name="year">1973</SimpleData>
+		<SimpleData name="taxonKey">2979907</SimpleData>
+		<SimpleData name="speciesKey">3974700</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="institutionCode">MNHN</SimpleData>
+		<SimpleData name="collectionCode">P</SimpleData>
+		<SimpleData name="catalogNumber">P02973501</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="recordedBy">Boudet</SimpleData>
+		<SimpleData name="typeStatus">G.</SimpleData>
+		<SimpleData name="mediaType">2025-11-25T17:22:52.846Z</SimpleData>
+		<SimpleData name="issue">StillImage</SimpleData>
+		<SimpleData name="field_51">GEODETIC_DATUM_ASSUMED_WGS84</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.10025,4.9031</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">437715966</SimpleData>
+		<SimpleData name="datasetKey">b5cdf794-8fa4-4a85-8b26-755d087bf531</SimpleData>
+		<SimpleData name="occurrenceID">http://coldb.mnhn.fr/catalognumber/mnhn/p/p02973496</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(Forssk.) Hayne</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="stateProvince">Somali</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">2cd829bb-b713-433d-99cf-64bef11e5b3e</SimpleData>
+		<SimpleData name="decimalLatitude">6.51311</SimpleData>
+		<SimpleData name="decimalLongitude">43.49577</SimpleData>
+		<SimpleData name="eventDate">26/11/1972</SimpleData>
+		<SimpleData name="day">26</SimpleData>
+		<SimpleData name="month">11</SimpleData>
+		<SimpleData name="year">1972</SimpleData>
+		<SimpleData name="taxonKey">2979907</SimpleData>
+		<SimpleData name="speciesKey">3974700</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="institutionCode">MNHN</SimpleData>
+		<SimpleData name="collectionCode">P</SimpleData>
+		<SimpleData name="catalogNumber">P02973496</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="recordedBy">Boudet</SimpleData>
+		<SimpleData name="typeStatus">G.</SimpleData>
+		<SimpleData name="mediaType">2025-11-25T17:23:22.771Z</SimpleData>
+		<SimpleData name="issue">StillImage</SimpleData>
+		<SimpleData name="field_51">GEODETIC_DATUM_ASSUMED_WGS84</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>43.49577,6.51311</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">437383933</SimpleData>
+		<SimpleData name="datasetKey">b5cdf794-8fa4-4a85-8b26-755d087bf531</SimpleData>
+		<SimpleData name="occurrenceID">http://coldb.mnhn.fr/catalognumber/mnhn/p/p03635798</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(Forssk.) Hayne</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="stateProvince">Oromia</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">2cd829bb-b713-433d-99cf-64bef11e5b3e</SimpleData>
+		<SimpleData name="decimalLatitude">4.89121</SimpleData>
+		<SimpleData name="decimalLongitude">38.04146</SimpleData>
+		<SimpleData name="eventDate">3/1/1973</SimpleData>
+		<SimpleData name="day">3</SimpleData>
+		<SimpleData name="month">1</SimpleData>
+		<SimpleData name="year">1973</SimpleData>
+		<SimpleData name="taxonKey">2979907</SimpleData>
+		<SimpleData name="speciesKey">3974700</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="institutionCode">MNHN</SimpleData>
+		<SimpleData name="collectionCode">P</SimpleData>
+		<SimpleData name="catalogNumber">P03635798</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="recordedBy">Rippstein</SimpleData>
+		<SimpleData name="typeStatus">G.</SimpleData>
+		<SimpleData name="mediaType">2025-11-25T17:23:03.499Z</SimpleData>
+		<SimpleData name="issue">StillImage</SimpleData>
+		<SimpleData name="field_51">GEODETIC_DATUM_ASSUMED_WGS84</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.04146,4.89121</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">437383922</SimpleData>
+		<SimpleData name="datasetKey">b5cdf794-8fa4-4a85-8b26-755d087bf531</SimpleData>
+		<SimpleData name="occurrenceID">http://coldb.mnhn.fr/catalognumber/mnhn/p/p03368397</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(Forssk.) Hayne</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="stateProvince">Oromia</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">2cd829bb-b713-433d-99cf-64bef11e5b3e</SimpleData>
+		<SimpleData name="decimalLatitude">4.89498</SimpleData>
+		<SimpleData name="decimalLongitude">38.10016</SimpleData>
+		<SimpleData name="eventDate">5/2/1973</SimpleData>
+		<SimpleData name="day">5</SimpleData>
+		<SimpleData name="month">2</SimpleData>
+		<SimpleData name="year">1973</SimpleData>
+		<SimpleData name="taxonKey">2979907</SimpleData>
+		<SimpleData name="speciesKey">3974700</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="institutionCode">MNHN</SimpleData>
+		<SimpleData name="collectionCode">P</SimpleData>
+		<SimpleData name="catalogNumber">P03368397</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="recordedBy">Boudet</SimpleData>
+		<SimpleData name="typeStatus">G.</SimpleData>
+		<SimpleData name="mediaType">2025-11-25T17:23:21.214Z</SimpleData>
+		<SimpleData name="issue">StillImage</SimpleData>
+		<SimpleData name="field_51">GEODETIC_DATUM_ASSUMED_WGS84</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.10016,4.89498</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">208326803</SimpleData>
+		<SimpleData name="datasetKey">96867b98-f762-11e1-a439-00145eb45e9a</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">acacia tortilis</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">a3c228d0-3110-11db-abb8-b8a03c50a862</SimpleData>
+		<SimpleData name="decimalLatitude">7.9333</SimpleData>
+		<SimpleData name="decimalLongitude">38.700001</SimpleData>
+		<SimpleData name="taxonKey">2979907</SimpleData>
+		<SimpleData name="speciesKey">3974700</SimpleData>
+		<SimpleData name="basisOfRecord">OCCURRENCE</SimpleData>
+		<SimpleData name="institutionCode">ITA303</SimpleData>
+		<SimpleData name="collectionCode">The System-wide Information Network for Genetic Resources (SINGER)</SimpleData>
+		<SimpleData name="catalogNumber">IL-6234</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="lastInterpreted">2026/04/10 21:07:59</SimpleData>
+		<SimpleData name="issue">COORDINATE_ROUNDED</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.700001,7.9333</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">208326802</SimpleData>
+		<SimpleData name="datasetKey">96867b98-f762-11e1-a439-00145eb45e9a</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">acacia tortilis</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">a3c228d0-3110-11db-abb8-b8a03c50a862</SimpleData>
+		<SimpleData name="decimalLatitude">4.1333</SimpleData>
+		<SimpleData name="decimalLongitude">38.200001</SimpleData>
+		<SimpleData name="taxonKey">2979907</SimpleData>
+		<SimpleData name="speciesKey">3974700</SimpleData>
+		<SimpleData name="basisOfRecord">OCCURRENCE</SimpleData>
+		<SimpleData name="institutionCode">ITA303</SimpleData>
+		<SimpleData name="collectionCode">The System-wide Information Network for Genetic Resources (SINGER)</SimpleData>
+		<SimpleData name="catalogNumber">IL-2148</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="lastInterpreted">2026/04/10 21:07:59</SimpleData>
+		<SimpleData name="issue">COORDINATE_ROUNDED</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.200001,4.1333</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">208326801</SimpleData>
+		<SimpleData name="datasetKey">96867b98-f762-11e1-a439-00145eb45e9a</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">acacia tortilis</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">a3c228d0-3110-11db-abb8-b8a03c50a862</SimpleData>
+		<SimpleData name="decimalLatitude">4.1333</SimpleData>
+		<SimpleData name="decimalLongitude">38.200001</SimpleData>
+		<SimpleData name="taxonKey">2979907</SimpleData>
+		<SimpleData name="speciesKey">3974700</SimpleData>
+		<SimpleData name="basisOfRecord">OCCURRENCE</SimpleData>
+		<SimpleData name="institutionCode">ITA303</SimpleData>
+		<SimpleData name="collectionCode">The System-wide Information Network for Genetic Resources (SINGER)</SimpleData>
+		<SimpleData name="catalogNumber">IL-2137</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="lastInterpreted">2026/04/10 21:07:59</SimpleData>
+		<SimpleData name="issue">COORDINATE_ROUNDED</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.200001,4.1333</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">208326800</SimpleData>
+		<SimpleData name="datasetKey">96867b98-f762-11e1-a439-00145eb45e9a</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">acacia tortilis</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">a3c228d0-3110-11db-abb8-b8a03c50a862</SimpleData>
+		<SimpleData name="decimalLatitude">7.2</SimpleData>
+		<SimpleData name="decimalLongitude">38.666698</SimpleData>
+		<SimpleData name="taxonKey">2979907</SimpleData>
+		<SimpleData name="speciesKey">3974700</SimpleData>
+		<SimpleData name="basisOfRecord">OCCURRENCE</SimpleData>
+		<SimpleData name="institutionCode">ITA303</SimpleData>
+		<SimpleData name="collectionCode">The System-wide Information Network for Genetic Resources (SINGER)</SimpleData>
+		<SimpleData name="catalogNumber">IL-2112</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="lastInterpreted">2026/04/10 21:07:59</SimpleData>
+		<SimpleData name="issue">COORDINATE_ROUNDED</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.666698,7.2</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">208326799</SimpleData>
+		<SimpleData name="datasetKey">96867b98-f762-11e1-a439-00145eb45e9a</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">acacia tortilis</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">a3c228d0-3110-11db-abb8-b8a03c50a862</SimpleData>
+		<SimpleData name="decimalLatitude">7.9</SimpleData>
+		<SimpleData name="decimalLongitude">38.666698</SimpleData>
+		<SimpleData name="taxonKey">2979907</SimpleData>
+		<SimpleData name="speciesKey">3974700</SimpleData>
+		<SimpleData name="basisOfRecord">OCCURRENCE</SimpleData>
+		<SimpleData name="institutionCode">ITA303</SimpleData>
+		<SimpleData name="collectionCode">The System-wide Information Network for Genetic Resources (SINGER)</SimpleData>
+		<SimpleData name="catalogNumber">IL-2110</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="lastInterpreted">2026/04/10 21:07:59</SimpleData>
+		<SimpleData name="issue">COORDINATE_ROUNDED</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.666698,7.9</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">208326798</SimpleData>
+		<SimpleData name="datasetKey">96867b98-f762-11e1-a439-00145eb45e9a</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">acacia tortilis</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">a3c228d0-3110-11db-abb8-b8a03c50a862</SimpleData>
+		<SimpleData name="decimalLatitude">7.5</SimpleData>
+		<SimpleData name="decimalLongitude">38.666698</SimpleData>
+		<SimpleData name="taxonKey">2979907</SimpleData>
+		<SimpleData name="speciesKey">3974700</SimpleData>
+		<SimpleData name="basisOfRecord">OCCURRENCE</SimpleData>
+		<SimpleData name="institutionCode">ITA303</SimpleData>
+		<SimpleData name="collectionCode">The System-wide Information Network for Genetic Resources (SINGER)</SimpleData>
+		<SimpleData name="catalogNumber">IL-2107</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="lastInterpreted">2026/04/10 21:07:59</SimpleData>
+		<SimpleData name="issue">COORDINATE_ROUNDED</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.666698,7.5</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">208326797</SimpleData>
+		<SimpleData name="datasetKey">96867b98-f762-11e1-a439-00145eb45e9a</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">acacia tortilis</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">a3c228d0-3110-11db-abb8-b8a03c50a862</SimpleData>
+		<SimpleData name="decimalLatitude">7.5</SimpleData>
+		<SimpleData name="decimalLongitude">38.666698</SimpleData>
+		<SimpleData name="taxonKey">2979907</SimpleData>
+		<SimpleData name="speciesKey">3974700</SimpleData>
+		<SimpleData name="basisOfRecord">OCCURRENCE</SimpleData>
+		<SimpleData name="institutionCode">ITA303</SimpleData>
+		<SimpleData name="collectionCode">The System-wide Information Network for Genetic Resources (SINGER)</SimpleData>
+		<SimpleData name="catalogNumber">IL-2103</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="lastInterpreted">2026/04/10 21:07:59</SimpleData>
+		<SimpleData name="issue">COORDINATE_ROUNDED</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.666698,7.5</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">208326796</SimpleData>
+		<SimpleData name="datasetKey">96867b98-f762-11e1-a439-00145eb45e9a</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">acacia tortilis</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">a3c228d0-3110-11db-abb8-b8a03c50a862</SimpleData>
+		<SimpleData name="decimalLatitude">7.9333</SimpleData>
+		<SimpleData name="decimalLongitude">38.716702</SimpleData>
+		<SimpleData name="taxonKey">2979907</SimpleData>
+		<SimpleData name="speciesKey">3974700</SimpleData>
+		<SimpleData name="basisOfRecord">OCCURRENCE</SimpleData>
+		<SimpleData name="institutionCode">ITA303</SimpleData>
+		<SimpleData name="collectionCode">The System-wide Information Network for Genetic Resources (SINGER)</SimpleData>
+		<SimpleData name="catalogNumber">IL-2100</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="lastInterpreted">2026/04/10 21:07:59</SimpleData>
+		<SimpleData name="issue">COORDINATE_ROUNDED</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.716702,7.9333</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">1563568517</SimpleData>
+		<SimpleData name="datasetKey">33795d9d-3f94-4b0e-a2f6-d3a03cfce7aa</SimpleData>
+		<SimpleData name="occurrenceID">urn:uuid:8d40bdda-ccc7-4906-9b53-c54c26ef0d26</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Fabales</SimpleData>
+		<SimpleData name="family">Fabaceae</SimpleData>
+		<SimpleData name="genus">Vachellia</SimpleData>
+		<SimpleData name="species">Vachellia tortilis</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Acacia tortilis (Forssk.) Hayne</SimpleData>
+		<SimpleData name="verbatimScientificName">Acacia tortilis</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">Medecho crater</SimpleData>
+		<SimpleData name="stateProvince">Sidamo</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">a3c228d0-3110-11db-abb8-b8a03c50a862</SimpleData>
+		<SimpleData name="decimalLatitude">4.133333</SimpleData>
+		<SimpleData name="decimalLongitude">38.2</SimpleData>
+		<SimpleData name="elevation">1475</SimpleData>
+		<SimpleData name="eventDate">26/1/1987</SimpleData>
+		<SimpleData name="day">26</SimpleData>
+		<SimpleData name="month">1</SimpleData>
+		<SimpleData name="year">1987</SimpleData>
+		<SimpleData name="taxonKey">2979907</SimpleData>
+		<SimpleData name="speciesKey">3974700</SimpleData>
+		<SimpleData name="basisOfRecord">LIVING_SPECIMEN</SimpleData>
+		<SimpleData name="institutionCode">ITAl001|ETH0013</SimpleData>
+		<SimpleData name="catalogNumber">33007</SimpleData>
+		<SimpleData name="recordNumber">JH-5-20</SimpleData>
+		<SimpleData name="license">CC_BY_NC_4_0</SimpleData>
+		<SimpleData name="recordedBy">ITAl001</SimpleData>
+		<SimpleData name="layer">Acacia_tortilis</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Acacia_tortilis.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.2,4.133333</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">6119404588</SimpleData>
+		<SimpleData name="datasetKey">f577c9f3-ae71-4278-b6bf-512ba1dfaa21</SimpleData>
+		<SimpleData name="occurrenceID">G00406988</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Zygophyllales</SimpleData>
+		<SimpleData name="family">Zygophyllaceae</SimpleData>
+		<SimpleData name="genus">Balanites</SimpleData>
+		<SimpleData name="species">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(L.) Delile</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="stateProvince">Oromia Region</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">9661d20d-86b6-4485-8948-f3c86b022fa7</SimpleData>
+		<SimpleData name="decimalLatitude">5.183333</SimpleData>
+		<SimpleData name="decimalLongitude">39.6</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">1000</SimpleData>
+		<SimpleData name="elevation">1790</SimpleData>
+		<SimpleData name="eventDate">22/2/1973</SimpleData>
+		<SimpleData name="day">22</SimpleData>
+		<SimpleData name="month">2</SimpleData>
+		<SimpleData name="year">1973</SimpleData>
+		<SimpleData name="taxonKey">5421115</SimpleData>
+		<SimpleData name="speciesKey">5421115</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="institutionCode">CJBG</SimpleData>
+		<SimpleData name="collectionCode">CJBG-G</SimpleData>
+		<SimpleData name="catalogNumber">G00406988</SimpleData>
+		<SimpleData name="recordNumber">3170</SimpleData>
+		<SimpleData name="identifiedBy">Seegeler</SimpleData>
+		<SimpleData name="dateIdentified">C. J. P.</SimpleData>
+		<SimpleData name="license">1985-01-01T00:00:00</SimpleData>
+		<SimpleData name="rightsHolder">CC_BY_NC_4_0</SimpleData>
+		<SimpleData name="typeStatus">Seegeler</SimpleData>
+		<SimpleData name="establishmentMeans">C. J. P.</SimpleData>
+		<SimpleData name="issue">2026-04-10T16:27:21.672Z</SimpleData>
+		<SimpleData name="field_52">GEODETIC_DATUM_ASSUMED_WGS84</SimpleData>
+		<SimpleData name="layer">Balanites_aegyptiaca</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Balanites_aegyptiaca.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.6,5.183333</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">6119393147</SimpleData>
+		<SimpleData name="datasetKey">f577c9f3-ae71-4278-b6bf-512ba1dfaa21</SimpleData>
+		<SimpleData name="occurrenceID">G00425661</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Zygophyllales</SimpleData>
+		<SimpleData name="family">Zygophyllaceae</SimpleData>
+		<SimpleData name="genus">Balanites</SimpleData>
+		<SimpleData name="species">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(L.) Delile</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="stateProvince">Oromia Region</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">9661d20d-86b6-4485-8948-f3c86b022fa7</SimpleData>
+		<SimpleData name="decimalLatitude">9.183333</SimpleData>
+		<SimpleData name="decimalLongitude">42.38333</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">1000</SimpleData>
+		<SimpleData name="elevation">1500</SimpleData>
+		<SimpleData name="eventDate">27/3/1975</SimpleData>
+		<SimpleData name="day">27</SimpleData>
+		<SimpleData name="month">3</SimpleData>
+		<SimpleData name="year">1975</SimpleData>
+		<SimpleData name="taxonKey">5421115</SimpleData>
+		<SimpleData name="speciesKey">5421115</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="institutionCode">CJBG</SimpleData>
+		<SimpleData name="collectionCode">CJBG-G</SimpleData>
+		<SimpleData name="catalogNumber">G00425661</SimpleData>
+		<SimpleData name="recordNumber">9934</SimpleData>
+		<SimpleData name="identifiedBy">Bos</SimpleData>
+		<SimpleData name="dateIdentified">J. J.</SimpleData>
+		<SimpleData name="license">1975-01-01T00:00:00</SimpleData>
+		<SimpleData name="rightsHolder">CC_BY_NC_4_0</SimpleData>
+		<SimpleData name="typeStatus">Bos</SimpleData>
+		<SimpleData name="establishmentMeans">J. J. &amp; P. C. M. Jansen</SimpleData>
+		<SimpleData name="issue">2026-04-10T16:27:32.106Z</SimpleData>
+		<SimpleData name="field_52">GEODETIC_DATUM_ASSUMED_WGS84</SimpleData>
+		<SimpleData name="layer">Balanites_aegyptiaca</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Balanites_aegyptiaca.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.38333,9.183333</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">6119391530</SimpleData>
+		<SimpleData name="datasetKey">f577c9f3-ae71-4278-b6bf-512ba1dfaa21</SimpleData>
+		<SimpleData name="occurrenceID">G00425694</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Zygophyllales</SimpleData>
+		<SimpleData name="family">Zygophyllaceae</SimpleData>
+		<SimpleData name="genus">Balanites</SimpleData>
+		<SimpleData name="species">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="infraspecificEpithet">aegyptiaca</SimpleData>
+		<SimpleData name="taxonRank">VARIETY</SimpleData>
+		<SimpleData name="scientificName">Balanites aegyptiaca var. aegyptiaca</SimpleData>
+		<SimpleData name="verbatimScientificName">Balanites aegyptiaca var. aegyptiaca</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(L.) Delile</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="stateProvince">South Ethiopia Regional State</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">9661d20d-86b6-4485-8948-f3c86b022fa7</SimpleData>
+		<SimpleData name="decimalLatitude">6.566667</SimpleData>
+		<SimpleData name="decimalLongitude">37.83333</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">1000</SimpleData>
+		<SimpleData name="elevation">1220</SimpleData>
+		<SimpleData name="eventDate">28/9/1975</SimpleData>
+		<SimpleData name="day">28</SimpleData>
+		<SimpleData name="month">9</SimpleData>
+		<SimpleData name="year">1975</SimpleData>
+		<SimpleData name="taxonKey">7309915</SimpleData>
+		<SimpleData name="speciesKey">5421115</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="institutionCode">CJBG</SimpleData>
+		<SimpleData name="collectionCode">CJBG-G</SimpleData>
+		<SimpleData name="catalogNumber">G00425694</SimpleData>
+		<SimpleData name="recordNumber">3743</SimpleData>
+		<SimpleData name="identifiedBy">Seegeler</SimpleData>
+		<SimpleData name="dateIdentified">C. J. P.</SimpleData>
+		<SimpleData name="license">1985-01-01T00:00:00</SimpleData>
+		<SimpleData name="rightsHolder">CC_BY_NC_4_0</SimpleData>
+		<SimpleData name="typeStatus">Jansen</SimpleData>
+		<SimpleData name="establishmentMeans">P. C. M.</SimpleData>
+		<SimpleData name="issue">2026-04-10T16:27:20.714Z</SimpleData>
+		<SimpleData name="field_52">GEODETIC_DATUM_ASSUMED_WGS84</SimpleData>
+		<SimpleData name="layer">Balanites_aegyptiaca</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Balanites_aegyptiaca.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>37.83333,6.566667</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">6119381985</SimpleData>
+		<SimpleData name="datasetKey">f577c9f3-ae71-4278-b6bf-512ba1dfaa21</SimpleData>
+		<SimpleData name="occurrenceID">G00350899</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Zygophyllales</SimpleData>
+		<SimpleData name="family">Zygophyllaceae</SimpleData>
+		<SimpleData name="genus">Balanites</SimpleData>
+		<SimpleData name="species">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(L.) Delile</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="stateProvince">Oromia Region</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">9661d20d-86b6-4485-8948-f3c86b022fa7</SimpleData>
+		<SimpleData name="decimalLatitude">8.966667</SimpleData>
+		<SimpleData name="decimalLongitude">42.51667</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">1000</SimpleData>
+		<SimpleData name="eventDate">6/4/1975</SimpleData>
+		<SimpleData name="day">6</SimpleData>
+		<SimpleData name="month">4</SimpleData>
+		<SimpleData name="year">1975</SimpleData>
+		<SimpleData name="taxonKey">5421115</SimpleData>
+		<SimpleData name="speciesKey">5421115</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="institutionCode">CJBG</SimpleData>
+		<SimpleData name="collectionCode">CJBG-G</SimpleData>
+		<SimpleData name="catalogNumber">G00350899</SimpleData>
+		<SimpleData name="recordNumber">9987</SimpleData>
+		<SimpleData name="identifiedBy">Bos</SimpleData>
+		<SimpleData name="dateIdentified">J. J.</SimpleData>
+		<SimpleData name="license">1975-01-01T00:00:00</SimpleData>
+		<SimpleData name="rightsHolder">CC_BY_NC_4_0</SimpleData>
+		<SimpleData name="typeStatus">Bos</SimpleData>
+		<SimpleData name="establishmentMeans">J. J.</SimpleData>
+		<SimpleData name="issue">2026-04-10T16:27:10.731Z</SimpleData>
+		<SimpleData name="field_52">GEODETIC_DATUM_ASSUMED_WGS84</SimpleData>
+		<SimpleData name="layer">Balanites_aegyptiaca</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Balanites_aegyptiaca.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.51667,8.966667</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">6119358562</SimpleData>
+		<SimpleData name="datasetKey">f577c9f3-ae71-4278-b6bf-512ba1dfaa21</SimpleData>
+		<SimpleData name="occurrenceID">G00351812</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Zygophyllales</SimpleData>
+		<SimpleData name="family">Zygophyllaceae</SimpleData>
+		<SimpleData name="genus">Balanites</SimpleData>
+		<SimpleData name="species">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="infraspecificEpithet">aegyptiaca</SimpleData>
+		<SimpleData name="taxonRank">VARIETY</SimpleData>
+		<SimpleData name="scientificName">Balanites aegyptiaca var. aegyptiaca</SimpleData>
+		<SimpleData name="verbatimScientificName">Balanites aegyptiaca var. aegyptiaca</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(L.) Delile</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="stateProvince">Gambela Region</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">9661d20d-86b6-4485-8948-f3c86b022fa7</SimpleData>
+		<SimpleData name="decimalLatitude">8.25</SimpleData>
+		<SimpleData name="decimalLongitude">34.58333</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">1000</SimpleData>
+		<SimpleData name="elevation">525</SimpleData>
+		<SimpleData name="eventDate">20/1/1976</SimpleData>
+		<SimpleData name="day">20</SimpleData>
+		<SimpleData name="month">1</SimpleData>
+		<SimpleData name="year">1976</SimpleData>
+		<SimpleData name="taxonKey">7309915</SimpleData>
+		<SimpleData name="speciesKey">5421115</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="institutionCode">CJBG</SimpleData>
+		<SimpleData name="collectionCode">CJBG-G</SimpleData>
+		<SimpleData name="catalogNumber">G00351812</SimpleData>
+		<SimpleData name="recordNumber">5029</SimpleData>
+		<SimpleData name="identifiedBy">Seegeler</SimpleData>
+		<SimpleData name="dateIdentified">C. J. P.</SimpleData>
+		<SimpleData name="license">1985-01-01T00:00:00</SimpleData>
+		<SimpleData name="rightsHolder">CC_BY_NC_4_0</SimpleData>
+		<SimpleData name="typeStatus">Jansen</SimpleData>
+		<SimpleData name="establishmentMeans">P. C. M.</SimpleData>
+		<SimpleData name="issue">2026-04-10T16:27:32.408Z</SimpleData>
+		<SimpleData name="field_52">GEODETIC_DATUM_ASSUMED_WGS84</SimpleData>
+		<SimpleData name="layer">Balanites_aegyptiaca</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Balanites_aegyptiaca.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>34.58333,8.25</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">607695829</SimpleData>
+		<SimpleData name="datasetKey">b5cdf794-8fa4-4a85-8b26-755d087bf531</SimpleData>
+		<SimpleData name="occurrenceID">http://coldb.mnhn.fr/catalognumber/mnhn/p/p03960885</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Zygophyllales</SimpleData>
+		<SimpleData name="family">Zygophyllaceae</SimpleData>
+		<SimpleData name="genus">Balanites</SimpleData>
+		<SimpleData name="species">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(L.) Delile</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">2cd829bb-b713-433d-99cf-64bef11e5b3e</SimpleData>
+		<SimpleData name="decimalLatitude">8.25</SimpleData>
+		<SimpleData name="decimalLongitude">34.58333</SimpleData>
+		<SimpleData name="elevation">525</SimpleData>
+		<SimpleData name="eventDate">20/1/1976</SimpleData>
+		<SimpleData name="day">20</SimpleData>
+		<SimpleData name="month">1</SimpleData>
+		<SimpleData name="year">1976</SimpleData>
+		<SimpleData name="taxonKey">5421115</SimpleData>
+		<SimpleData name="speciesKey">5421115</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="institutionCode">MNHN</SimpleData>
+		<SimpleData name="collectionCode">P</SimpleData>
+		<SimpleData name="catalogNumber">P03960885</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="recordedBy">Jansen</SimpleData>
+		<SimpleData name="typeStatus">P.C.M.</SimpleData>
+		<SimpleData name="mediaType">2025-11-25T17:23:03.014Z</SimpleData>
+		<SimpleData name="issue">StillImage</SimpleData>
+		<SimpleData name="field_51">GEODETIC_DATUM_ASSUMED_WGS84</SimpleData>
+		<SimpleData name="layer">Balanites_aegyptiaca</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Balanites_aegyptiaca.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>34.58333,8.25</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">5892884148</SimpleData>
+		<SimpleData name="datasetKey">50c9509d-22c7-4a22-a47d-8c48425ef4a7</SimpleData>
+		<SimpleData name="occurrenceID">https://www.inaturalist.org/observations/317204422</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Zygophyllales</SimpleData>
+		<SimpleData name="family">Zygophyllaceae</SimpleData>
+		<SimpleData name="genus">Balanites</SimpleData>
+		<SimpleData name="species">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificName">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="stateProvince">Oromia</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">28eb1a3f-1c15-4a95-931a-4af90ecb574d</SimpleData>
+		<SimpleData name="decimalLatitude">8.33333</SimpleData>
+		<SimpleData name="decimalLongitude">39.31666</SimpleData>
+		<SimpleData name="eventDate">3/2/2022</SimpleData>
+		<SimpleData name="day">3</SimpleData>
+		<SimpleData name="month">2</SimpleData>
+		<SimpleData name="year">2022</SimpleData>
+		<SimpleData name="taxonKey">5421115</SimpleData>
+		<SimpleData name="speciesKey">5421115</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">iNaturalist</SimpleData>
+		<SimpleData name="collectionCode">Observations</SimpleData>
+		<SimpleData name="catalogNumber">317204422</SimpleData>
+		<SimpleData name="identifiedBy">Sergey_Cher</SimpleData>
+		<SimpleData name="dateIdentified">2025-09-28T09:26:07</SimpleData>
+		<SimpleData name="license">CC_BY_NC_4_0</SimpleData>
+		<SimpleData name="rightsHolder">Sergey_Cher</SimpleData>
+		<SimpleData name="recordedBy">Sergey_Cher</SimpleData>
+		<SimpleData name="lastInterpreted">2026/04/11 09:51:11</SimpleData>
+		<SimpleData name="mediaType">StillImage</SimpleData>
+		<SimpleData name="issue">CONTINENT_DERIVED_FROM_COORDINATES</SimpleData>
+		<SimpleData name="layer">Balanites_aegyptiaca</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Balanites_aegyptiaca.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.31666,8.33333</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">5892668071</SimpleData>
+		<SimpleData name="datasetKey">50c9509d-22c7-4a22-a47d-8c48425ef4a7</SimpleData>
+		<SimpleData name="occurrenceID">https://www.inaturalist.org/observations/316334846</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Zygophyllales</SimpleData>
+		<SimpleData name="family">Zygophyllaceae</SimpleData>
+		<SimpleData name="genus">Balanites</SimpleData>
+		<SimpleData name="species">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificName">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="stateProvince">Oromia</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">28eb1a3f-1c15-4a95-931a-4af90ecb574d</SimpleData>
+		<SimpleData name="decimalLatitude">8.366667</SimpleData>
+		<SimpleData name="decimalLongitude">39.383333</SimpleData>
+		<SimpleData name="eventDate">7/2/2022</SimpleData>
+		<SimpleData name="day">7</SimpleData>
+		<SimpleData name="month">2</SimpleData>
+		<SimpleData name="year">2022</SimpleData>
+		<SimpleData name="taxonKey">5421115</SimpleData>
+		<SimpleData name="speciesKey">5421115</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">iNaturalist</SimpleData>
+		<SimpleData name="collectionCode">Observations</SimpleData>
+		<SimpleData name="catalogNumber">316334846</SimpleData>
+		<SimpleData name="identifiedBy">Sergey_Cher</SimpleData>
+		<SimpleData name="dateIdentified">2025-09-24T17:39:07</SimpleData>
+		<SimpleData name="license">CC_BY_NC_4_0</SimpleData>
+		<SimpleData name="rightsHolder">Sergey_Cher</SimpleData>
+		<SimpleData name="recordedBy">Sergey_Cher</SimpleData>
+		<SimpleData name="lastInterpreted">2026/04/11 11:11:59</SimpleData>
+		<SimpleData name="mediaType">StillImage</SimpleData>
+		<SimpleData name="issue">CONTINENT_DERIVED_FROM_COORDINATES</SimpleData>
+		<SimpleData name="layer">Balanites_aegyptiaca</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Balanites_aegyptiaca.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.383333,8.366667</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">5142822219</SimpleData>
+		<SimpleData name="datasetKey">b902bb74-8deb-49dc-bf88-a3061f71cb31</SimpleData>
+		<SimpleData name="occurrenceID">HirmiWoodlandVegetationSample:46-4</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Zygophyllales</SimpleData>
+		<SimpleData name="family">Zygophyllaceae</SimpleData>
+		<SimpleData name="genus">Balanites</SimpleData>
+		<SimpleData name="species">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">Hirmi Woodland Vegetation Sample Plot: 46</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">1d594620-2249-4532-ad9e-1b06f3a988d2</SimpleData>
+		<SimpleData name="decimalLatitude">13.96337</SimpleData>
+		<SimpleData name="decimalLongitude">38.26639</SimpleData>
+		<SimpleData name="eventDate">2018-11-20/2018-11-25</SimpleData>
+		<SimpleData name="month">11</SimpleData>
+		<SimpleData name="year">2018</SimpleData>
+		<SimpleData name="taxonKey">5421115</SimpleData>
+		<SimpleData name="speciesKey">5421115</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="identifiedBy">Mehari Girmay</SimpleData>
+		<SimpleData name="dateIdentified">2018-11-20T00:00:00</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="recordedBy">Mehari Girmay</SimpleData>
+		<SimpleData name="lastInterpreted">2025/11/25 12:45:32</SimpleData>
+		<SimpleData name="layer">Balanites_aegyptiaca</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Balanites_aegyptiaca.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.26639,13.96337</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">5142821801</SimpleData>
+		<SimpleData name="datasetKey">b902bb74-8deb-49dc-bf88-a3061f71cb31</SimpleData>
+		<SimpleData name="occurrenceID">HirmiWoodlandVegetationSample:58-8</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Zygophyllales</SimpleData>
+		<SimpleData name="family">Zygophyllaceae</SimpleData>
+		<SimpleData name="genus">Balanites</SimpleData>
+		<SimpleData name="species">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">Hirmi Woodland Vegetation Sample Plot: 58</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">1d594620-2249-4532-ad9e-1b06f3a988d2</SimpleData>
+		<SimpleData name="decimalLatitude">14.02486</SimpleData>
+		<SimpleData name="decimalLongitude">38.28966</SimpleData>
+		<SimpleData name="eventDate">2018-11-20/2018-11-25</SimpleData>
+		<SimpleData name="month">11</SimpleData>
+		<SimpleData name="year">2018</SimpleData>
+		<SimpleData name="taxonKey">5421115</SimpleData>
+		<SimpleData name="speciesKey">5421115</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="identifiedBy">Mehari Girmay</SimpleData>
+		<SimpleData name="dateIdentified">2018-11-20T00:00:00</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="recordedBy">Mehari Girmay</SimpleData>
+		<SimpleData name="lastInterpreted">2025/11/25 12:45:31</SimpleData>
+		<SimpleData name="layer">Balanites_aegyptiaca</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Balanites_aegyptiaca.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.28966,14.02486</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">5142821753</SimpleData>
+		<SimpleData name="datasetKey">b902bb74-8deb-49dc-bf88-a3061f71cb31</SimpleData>
+		<SimpleData name="occurrenceID">HirmiWoodlandVegetationSample:45-4</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Zygophyllales</SimpleData>
+		<SimpleData name="family">Zygophyllaceae</SimpleData>
+		<SimpleData name="genus">Balanites</SimpleData>
+		<SimpleData name="species">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">Hirmi Woodland Vegetation Sample Plot: 45</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">1d594620-2249-4532-ad9e-1b06f3a988d2</SimpleData>
+		<SimpleData name="decimalLatitude">13.96401</SimpleData>
+		<SimpleData name="decimalLongitude">38.26843</SimpleData>
+		<SimpleData name="eventDate">2018-11-20/2018-11-25</SimpleData>
+		<SimpleData name="month">11</SimpleData>
+		<SimpleData name="year">2018</SimpleData>
+		<SimpleData name="taxonKey">5421115</SimpleData>
+		<SimpleData name="speciesKey">5421115</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="identifiedBy">Mehari Girmay</SimpleData>
+		<SimpleData name="dateIdentified">2018-11-20T00:00:00</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="recordedBy">Mehari Girmay</SimpleData>
+		<SimpleData name="lastInterpreted">2025/11/25 12:45:31</SimpleData>
+		<SimpleData name="layer">Balanites_aegyptiaca</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Balanites_aegyptiaca.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.26843,13.96401</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">5142821549</SimpleData>
+		<SimpleData name="datasetKey">b902bb74-8deb-49dc-bf88-a3061f71cb31</SimpleData>
+		<SimpleData name="occurrenceID">HirmiWoodlandVegetationSample:65-4</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Zygophyllales</SimpleData>
+		<SimpleData name="family">Zygophyllaceae</SimpleData>
+		<SimpleData name="genus">Balanites</SimpleData>
+		<SimpleData name="species">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">Hirmi Woodland Vegetation Sample Plot: 65</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">1d594620-2249-4532-ad9e-1b06f3a988d2</SimpleData>
+		<SimpleData name="decimalLatitude">14.01953</SimpleData>
+		<SimpleData name="decimalLongitude">38.32966</SimpleData>
+		<SimpleData name="eventDate">2018-11-20/2018-11-25</SimpleData>
+		<SimpleData name="month">11</SimpleData>
+		<SimpleData name="year">2018</SimpleData>
+		<SimpleData name="taxonKey">5421115</SimpleData>
+		<SimpleData name="speciesKey">5421115</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="identifiedBy">Mehari Girmay</SimpleData>
+		<SimpleData name="dateIdentified">2018-11-20T00:00:00</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="recordedBy">Mehari Girmay</SimpleData>
+		<SimpleData name="lastInterpreted">2025/11/25 12:45:31</SimpleData>
+		<SimpleData name="layer">Balanites_aegyptiaca</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Balanites_aegyptiaca.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.32966,14.01953</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">5142821442</SimpleData>
+		<SimpleData name="datasetKey">b902bb74-8deb-49dc-bf88-a3061f71cb31</SimpleData>
+		<SimpleData name="occurrenceID">HirmiWoodlandVegetationSample:19-6</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Zygophyllales</SimpleData>
+		<SimpleData name="family">Zygophyllaceae</SimpleData>
+		<SimpleData name="genus">Balanites</SimpleData>
+		<SimpleData name="species">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">Hirmi Woodland Vegetation Sample Plot: 19</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">1d594620-2249-4532-ad9e-1b06f3a988d2</SimpleData>
+		<SimpleData name="decimalLatitude">13.95064</SimpleData>
+		<SimpleData name="decimalLongitude">38.30464</SimpleData>
+		<SimpleData name="eventDate">2018-11-20/2018-11-25</SimpleData>
+		<SimpleData name="month">11</SimpleData>
+		<SimpleData name="year">2018</SimpleData>
+		<SimpleData name="taxonKey">5421115</SimpleData>
+		<SimpleData name="speciesKey">5421115</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="identifiedBy">Mehari Girmay</SimpleData>
+		<SimpleData name="dateIdentified">2018-11-20T00:00:00</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="recordedBy">Mehari Girmay</SimpleData>
+		<SimpleData name="lastInterpreted">2025/11/25 12:45:31</SimpleData>
+		<SimpleData name="layer">Balanites_aegyptiaca</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Balanites_aegyptiaca.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.30464,13.95064</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">5110045433</SimpleData>
+		<SimpleData name="datasetKey">7a3679ef-5582-4aaa-81f0-8c2545cafc81</SimpleData>
+		<SimpleData name="occurrenceID">o-1021666416</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Zygophyllales</SimpleData>
+		<SimpleData name="family">Zygophyllaceae</SimpleData>
+		<SimpleData name="genus">Balanites</SimpleData>
+		<SimpleData name="species">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(L.) Delile</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="individualCount">true</SimpleData>
+		<SimpleData name="publishingOrgKey">da86174a-a605-43a4-a5e8-53d484152cd3</SimpleData>
+		<SimpleData name="decimalLatitude">6.032256</SimpleData>
+		<SimpleData name="decimalLongitude">37.565994</SimpleData>
+		<SimpleData name="elevation">1224.5</SimpleData>
+		<SimpleData name="elevationAccuracy">0</SimpleData>
+		<SimpleData name="eventDate">2024-04-16T14:11Z</SimpleData>
+		<SimpleData name="day">16</SimpleData>
+		<SimpleData name="month">4</SimpleData>
+		<SimpleData name="year">2024</SimpleData>
+		<SimpleData name="taxonKey">5421115</SimpleData>
+		<SimpleData name="speciesKey">5421115</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="lastInterpreted">2025/11/25 15:37:55</SimpleData>
+		<SimpleData name="mediaType">StillImage</SimpleData>
+		<SimpleData name="issue">COORDINATE_ROUNDED</SimpleData>
+		<SimpleData name="layer">Balanites_aegyptiaca</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Balanites_aegyptiaca.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>37.565994,6.032256</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">5054852880</SimpleData>
+		<SimpleData name="datasetKey">c1a13bf0-0c71-11dd-84d4-b8a03c50a862</SimpleData>
+		<SimpleData name="occurrenceID">UPS:BOT:V-808602</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Zygophyllales</SimpleData>
+		<SimpleData name="family">Zygophyllaceae</SimpleData>
+		<SimpleData name="genus">Balanites</SimpleData>
+		<SimpleData name="species">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificName">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">Bale: 13 km from Ghinir on road to Robi via Sof Omar</SimpleData>
+		<SimpleData name="stateProvince">Oromiya</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">8879085f-09ed-4780-bc1b-b69a8acaa8b9</SimpleData>
+		<SimpleData name="decimalLatitude">7.08333</SimpleData>
+		<SimpleData name="decimalLongitude">40.8</SimpleData>
+		<SimpleData name="eventDate">29/5/1983</SimpleData>
+		<SimpleData name="day">29</SimpleData>
+		<SimpleData name="month">5</SimpleData>
+		<SimpleData name="year">1983</SimpleData>
+		<SimpleData name="taxonKey">5421115</SimpleData>
+		<SimpleData name="speciesKey">5421115</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="institutionCode">UPS</SimpleData>
+		<SimpleData name="collectionCode">BOT</SimpleData>
+		<SimpleData name="catalogNumber">V-808602</SimpleData>
+		<SimpleData name="license">CC0_1_0</SimpleData>
+		<SimpleData name="recordedBy">M.G. Gilbert</SimpleData>
+		<SimpleData name="typeStatus">Ensermu K.</SimpleData>
+		<SimpleData name="establishmentMeans">&amp; K. Vollesen</SimpleData>
+		<SimpleData name="issue">2025-11-07T12:11:05.231Z</SimpleData>
+		<SimpleData name="field_52">GEODETIC_DATUM_ASSUMED_WGS84</SimpleData>
+		<SimpleData name="layer">Balanites_aegyptiaca</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Balanites_aegyptiaca.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.8,7.08333</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">4988880757</SimpleData>
+		<SimpleData name="datasetKey">cd6e21c8-9e8a-493a-8a76-fbf7862069e5</SimpleData>
+		<SimpleData name="occurrenceID">http://specimens.kew.org/herbarium/K004508591</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Zygophyllales</SimpleData>
+		<SimpleData name="family">Zygophyllaceae</SimpleData>
+		<SimpleData name="genus">Balanites</SimpleData>
+		<SimpleData name="species">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificName">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(L.) Delile</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">'Flora of Ethiopia and Eritrea' region and locality: TU - 20 km N of Mehoni along the road to Adi Gudum</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">061b4f20-f241-11da-a328-b8a03c50a862</SimpleData>
+		<SimpleData name="decimalLatitude">12.866667</SimpleData>
+		<SimpleData name="decimalLongitude">39.713333</SimpleData>
+		<SimpleData name="elevation">1750</SimpleData>
+		<SimpleData name="eventDate">2005-10-03T00:00</SimpleData>
+		<SimpleData name="day">3</SimpleData>
+		<SimpleData name="month">10</SimpleData>
+		<SimpleData name="year">2005</SimpleData>
+		<SimpleData name="taxonKey">5421115</SimpleData>
+		<SimpleData name="speciesKey">5421115</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="institutionCode">K</SimpleData>
+		<SimpleData name="collectionCode">Herbarium</SimpleData>
+		<SimpleData name="catalogNumber">K004508591</SimpleData>
+		<SimpleData name="recordNumber">12129</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="recordedBy">Friis</SimpleData>
+		<SimpleData name="typeStatus">I.</SimpleData>
+		<SimpleData name="layer">Balanites_aegyptiaca</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Balanites_aegyptiaca.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.713333,12.866667</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">4988859828</SimpleData>
+		<SimpleData name="datasetKey">cd6e21c8-9e8a-493a-8a76-fbf7862069e5</SimpleData>
+		<SimpleData name="occurrenceID">http://specimens.kew.org/herbarium/K000710776</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Zygophyllales</SimpleData>
+		<SimpleData name="family">Zygophyllaceae</SimpleData>
+		<SimpleData name="genus">Balanites</SimpleData>
+		<SimpleData name="species">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="infraspecificEpithet">aegyptiaca</SimpleData>
+		<SimpleData name="taxonRank">VARIETY</SimpleData>
+		<SimpleData name="scientificName">Balanites aegyptiaca var. aegyptiaca</SimpleData>
+		<SimpleData name="verbatimScientificName">Balanites aegyptiaca var. aegyptiaca</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">Sidamo Region: c. 36 km south of Negelle on road to Melca Guba</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">061b4f20-f241-11da-a328-b8a03c50a862</SimpleData>
+		<SimpleData name="decimalLatitude">5.1</SimpleData>
+		<SimpleData name="decimalLongitude">39.6</SimpleData>
+		<SimpleData name="elevation">1450</SimpleData>
+		<SimpleData name="eventDate">2000-02-12T00:00</SimpleData>
+		<SimpleData name="day">12</SimpleData>
+		<SimpleData name="month">2</SimpleData>
+		<SimpleData name="year">2000</SimpleData>
+		<SimpleData name="taxonKey">7309915</SimpleData>
+		<SimpleData name="speciesKey">5421115</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="institutionCode">K</SimpleData>
+		<SimpleData name="collectionCode">Herbarium</SimpleData>
+		<SimpleData name="catalogNumber">K000710776</SimpleData>
+		<SimpleData name="recordNumber">9904</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="recordedBy">Friis</SimpleData>
+		<SimpleData name="typeStatus">I.</SimpleData>
+		<SimpleData name="layer">Balanites_aegyptiaca</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Balanites_aegyptiaca.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.6,5.1</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">4988856215</SimpleData>
+		<SimpleData name="datasetKey">cd6e21c8-9e8a-493a-8a76-fbf7862069e5</SimpleData>
+		<SimpleData name="occurrenceID">http://specimens.kew.org/herbarium/K000710768</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Zygophyllales</SimpleData>
+		<SimpleData name="family">Zygophyllaceae</SimpleData>
+		<SimpleData name="genus">Balanites</SimpleData>
+		<SimpleData name="species">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificName">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(L.) Delile</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">South West Ethiopia</SimpleData>
+		<SimpleData name="layer">Balanites_aegyptiaca</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Balanites_aegyptiaca.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>0,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">4988851397</SimpleData>
+		<SimpleData name="datasetKey">cd6e21c8-9e8a-493a-8a76-fbf7862069e5</SimpleData>
+		<SimpleData name="occurrenceID">http://specimens.kew.org/herbarium/K000710787</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Zygophyllales</SimpleData>
+		<SimpleData name="family">Zygophyllaceae</SimpleData>
+		<SimpleData name="genus">Balanites</SimpleData>
+		<SimpleData name="species">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="infraspecificEpithet">aegyptiaca</SimpleData>
+		<SimpleData name="taxonRank">VARIETY</SimpleData>
+		<SimpleData name="scientificName">Balanites aegyptiaca var. aegyptiaca</SimpleData>
+		<SimpleData name="verbatimScientificName">Balanites aegyptiaca var. aegyptiaca</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">Harar Prov.</SimpleData>
+		<SimpleData name="layer">Balanites_aegyptiaca</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Balanites_aegyptiaca.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>0,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">4988846806</SimpleData>
+		<SimpleData name="datasetKey">cd6e21c8-9e8a-493a-8a76-fbf7862069e5</SimpleData>
+		<SimpleData name="occurrenceID">http://specimens.kew.org/herbarium/K000710774</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Zygophyllales</SimpleData>
+		<SimpleData name="family">Zygophyllaceae</SimpleData>
+		<SimpleData name="genus">Balanites</SimpleData>
+		<SimpleData name="species">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificName">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(L.) Delile</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">Sidamo Region: c. 5 km west of Filtu along the road to Negelle</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">061b4f20-f241-11da-a328-b8a03c50a862</SimpleData>
+		<SimpleData name="decimalLatitude">5.116667</SimpleData>
+		<SimpleData name="decimalLongitude">40.583333</SimpleData>
+		<SimpleData name="elevation">1200</SimpleData>
+		<SimpleData name="eventDate">2000-02-14T00:00</SimpleData>
+		<SimpleData name="day">14</SimpleData>
+		<SimpleData name="month">2</SimpleData>
+		<SimpleData name="year">2000</SimpleData>
+		<SimpleData name="taxonKey">5421115</SimpleData>
+		<SimpleData name="speciesKey">5421115</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="institutionCode">K</SimpleData>
+		<SimpleData name="collectionCode">Herbarium</SimpleData>
+		<SimpleData name="catalogNumber">K000710774</SimpleData>
+		<SimpleData name="recordNumber">9945</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="recordedBy">Friis</SimpleData>
+		<SimpleData name="typeStatus">I.</SimpleData>
+		<SimpleData name="layer">Balanites_aegyptiaca</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Balanites_aegyptiaca.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.583333,5.116667</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">4988844187</SimpleData>
+		<SimpleData name="datasetKey">cd6e21c8-9e8a-493a-8a76-fbf7862069e5</SimpleData>
+		<SimpleData name="occurrenceID">http://specimens.kew.org/herbarium/K004508597</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Zygophyllales</SimpleData>
+		<SimpleData name="family">Zygophyllaceae</SimpleData>
+		<SimpleData name="genus">Balanites</SimpleData>
+		<SimpleData name="species">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="infraspecificEpithet">aegyptiaca</SimpleData>
+		<SimpleData name="taxonRank">VARIETY</SimpleData>
+		<SimpleData name="scientificName">Balanites aegyptiaca var. aegyptiaca</SimpleData>
+		<SimpleData name="verbatimScientificName">Balanites aegyptiaca var. aegyptiaca</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">Harar Prov</SimpleData>
+		<SimpleData name="layer">Balanites_aegyptiaca</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Balanites_aegyptiaca.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>0,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">4597308571</SimpleData>
+		<SimpleData name="datasetKey">50c9509d-22c7-4a22-a47d-8c48425ef4a7</SimpleData>
+		<SimpleData name="occurrenceID">https://www.inaturalist.org/observations/194215473</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Zygophyllales</SimpleData>
+		<SimpleData name="family">Zygophyllaceae</SimpleData>
+		<SimpleData name="genus">Balanites</SimpleData>
+		<SimpleData name="species">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificName">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="stateProvince">Oromia</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">28eb1a3f-1c15-4a95-931a-4af90ecb574d</SimpleData>
+		<SimpleData name="decimalLatitude">7.797567</SimpleData>
+		<SimpleData name="decimalLongitude">38.665722</SimpleData>
+		<SimpleData name="coordinateUncertaintyInMeters">100</SimpleData>
+		<SimpleData name="eventDate">2011-02-07T09:23</SimpleData>
+		<SimpleData name="day">7</SimpleData>
+		<SimpleData name="month">2</SimpleData>
+		<SimpleData name="year">2011</SimpleData>
+		<SimpleData name="taxonKey">5421115</SimpleData>
+		<SimpleData name="speciesKey">5421115</SimpleData>
+		<SimpleData name="basisOfRecord">HUMAN_OBSERVATION</SimpleData>
+		<SimpleData name="institutionCode">iNaturalist</SimpleData>
+		<SimpleData name="collectionCode">Observations</SimpleData>
+		<SimpleData name="catalogNumber">194215473</SimpleData>
+		<SimpleData name="identifiedBy">Christian Gilli</SimpleData>
+		<SimpleData name="dateIdentified">2023-12-17T19:27:08</SimpleData>
+		<SimpleData name="license">CC_BY_NC_4_0</SimpleData>
+		<SimpleData name="rightsHolder">Christian Gilli</SimpleData>
+		<SimpleData name="recordedBy">Christian Gilli</SimpleData>
+		<SimpleData name="lastInterpreted">2026/04/11 07:00:22</SimpleData>
+		<SimpleData name="mediaType">StillImage</SimpleData>
+		<SimpleData name="issue">COORDINATE_ROUNDED</SimpleData>
+		<SimpleData name="layer">Balanites_aegyptiaca</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Balanites_aegyptiaca.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.665722,7.797567</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">4539353376</SimpleData>
+		<SimpleData name="datasetKey">7bd65a7a-f762-11e1-a439-00145eb45e9a</SimpleData>
+		<SimpleData name="occurrenceID">urn:catalog:MO:Tropicos:103503032</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Zygophyllales</SimpleData>
+		<SimpleData name="family">Zygophyllaceae</SimpleData>
+		<SimpleData name="genus">Balanites</SimpleData>
+		<SimpleData name="species">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(L.) Delile</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">26 km S of Neghelle on road to Mega.</SimpleData>
+		<SimpleData name="stateProvince">Sidamo</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="individualCount">true</SimpleData>
+		<SimpleData name="publishingOrgKey">90fd6680-349f-11d8-aa2d-b8a03c50a862</SimpleData>
+		<SimpleData name="decimalLatitude">5.183333</SimpleData>
+		<SimpleData name="decimalLongitude">39.6</SimpleData>
+		<SimpleData name="elevation">1790</SimpleData>
+		<SimpleData name="eventDate">22/2/1973</SimpleData>
+		<SimpleData name="day">22</SimpleData>
+		<SimpleData name="month">2</SimpleData>
+		<SimpleData name="year">1973</SimpleData>
+		<SimpleData name="taxonKey">5421115</SimpleData>
+		<SimpleData name="speciesKey">5421115</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="institutionCode">MO</SimpleData>
+		<SimpleData name="collectionCode">Tropicos</SimpleData>
+		<SimpleData name="catalogNumber">103503032</SimpleData>
+		<SimpleData name="recordNumber">3170</SimpleData>
+		<SimpleData name="dateIdentified">1985-01-01T00:00:00</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="rightsHolder">Missouri Botanical Garden</SimpleData>
+		<SimpleData name="recordedBy">Cornelis J. P. Seegeler</SimpleData>
+		<SimpleData name="lastInterpreted">2026/04/16 11:33:32</SimpleData>
+		<SimpleData name="mediaType">StillImage</SimpleData>
+		<SimpleData name="issue">COORDINATE_ROUNDED</SimpleData>
+		<SimpleData name="layer">Balanites_aegyptiaca</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Balanites_aegyptiaca.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.6,5.183333</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">4539351370</SimpleData>
+		<SimpleData name="datasetKey">7bd65a7a-f762-11e1-a439-00145eb45e9a</SimpleData>
+		<SimpleData name="occurrenceID">urn:catalog:MO:Tropicos:103502913</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Zygophyllales</SimpleData>
+		<SimpleData name="family">Zygophyllaceae</SimpleData>
+		<SimpleData name="genus">Balanites</SimpleData>
+		<SimpleData name="species">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(L.) Delile</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">17 km south of Arba Minch.</SimpleData>
+		<SimpleData name="stateProvince">Gamo Gofa</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="individualCount">true</SimpleData>
+		<SimpleData name="publishingOrgKey">90fd6680-349f-11d8-aa2d-b8a03c50a862</SimpleData>
+		<SimpleData name="decimalLatitude">5.9</SimpleData>
+		<SimpleData name="decimalLongitude">37.533333</SimpleData>
+		<SimpleData name="elevation">1200</SimpleData>
+		<SimpleData name="eventDate">30/8/1975</SimpleData>
+		<SimpleData name="day">30</SimpleData>
+		<SimpleData name="month">8</SimpleData>
+		<SimpleData name="year">1975</SimpleData>
+		<SimpleData name="taxonKey">5421115</SimpleData>
+		<SimpleData name="speciesKey">5421115</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="institutionCode">MO</SimpleData>
+		<SimpleData name="collectionCode">Tropicos</SimpleData>
+		<SimpleData name="catalogNumber">103502913</SimpleData>
+		<SimpleData name="recordNumber">340</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="rightsHolder">Missouri Botanical Garden</SimpleData>
+		<SimpleData name="recordedBy">Michael G. Gilbert</SimpleData>
+		<SimpleData name="layer">Balanites_aegyptiaca</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Balanites_aegyptiaca.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>37.533333,5.9</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">4539339375</SimpleData>
+		<SimpleData name="datasetKey">7bd65a7a-f762-11e1-a439-00145eb45e9a</SimpleData>
+		<SimpleData name="occurrenceID">urn:catalog:MO:Tropicos:103502979</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Zygophyllales</SimpleData>
+		<SimpleData name="family">Zygophyllaceae</SimpleData>
+		<SimpleData name="genus">Balanites</SimpleData>
+		<SimpleData name="species">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(L.) Delile</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">About 1km N of the northern shore of Lake Chamo.</SimpleData>
+		<SimpleData name="stateProvince">Gamo Gofa</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="individualCount">true</SimpleData>
+		<SimpleData name="publishingOrgKey">90fd6680-349f-11d8-aa2d-b8a03c50a862</SimpleData>
+		<SimpleData name="decimalLatitude">5.95</SimpleData>
+		<SimpleData name="decimalLongitude">37.6</SimpleData>
+		<SimpleData name="elevation">1250</SimpleData>
+		<SimpleData name="eventDate">28/8/1969</SimpleData>
+		<SimpleData name="day">28</SimpleData>
+		<SimpleData name="month">8</SimpleData>
+		<SimpleData name="year">1969</SimpleData>
+		<SimpleData name="taxonKey">5421115</SimpleData>
+		<SimpleData name="speciesKey">5421115</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="institutionCode">MO</SimpleData>
+		<SimpleData name="collectionCode">Tropicos</SimpleData>
+		<SimpleData name="catalogNumber">103502979</SimpleData>
+		<SimpleData name="recordNumber">5652</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="rightsHolder">Missouri Botanical Garden</SimpleData>
+		<SimpleData name="recordedBy">Jan J.F.E. de Wilde</SimpleData>
+		<SimpleData name="lastInterpreted">2026/04/16 11:32:35</SimpleData>
+		<SimpleData name="mediaType">StillImage</SimpleData>
+		<SimpleData name="issue">GEODETIC_DATUM_ASSUMED_WGS84</SimpleData>
+		<SimpleData name="layer">Balanites_aegyptiaca</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Balanites_aegyptiaca.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>37.6,5.95</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">438552969</SimpleData>
+		<SimpleData name="datasetKey">b5cdf794-8fa4-4a85-8b26-755d087bf531</SimpleData>
+		<SimpleData name="occurrenceID">http://coldb.mnhn.fr/catalognumber/mnhn/p/p02909140</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Zygophyllales</SimpleData>
+		<SimpleData name="family">Zygophyllaceae</SimpleData>
+		<SimpleData name="genus">Balanites</SimpleData>
+		<SimpleData name="species">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(L.) Delile</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">2cd829bb-b713-433d-99cf-64bef11e5b3e</SimpleData>
+		<SimpleData name="decimalLatitude">5.58333</SimpleData>
+		<SimpleData name="decimalLongitude">38.06667</SimpleData>
+		<SimpleData name="elevation">1410</SimpleData>
+		<SimpleData name="elevationAccuracy">90</SimpleData>
+		<SimpleData name="eventDate">1/2/1953</SimpleData>
+		<SimpleData name="day">1</SimpleData>
+		<SimpleData name="month">2</SimpleData>
+		<SimpleData name="year">1953</SimpleData>
+		<SimpleData name="taxonKey">5421115</SimpleData>
+		<SimpleData name="speciesKey">5421115</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="institutionCode">MNHN</SimpleData>
+		<SimpleData name="collectionCode">P</SimpleData>
+		<SimpleData name="catalogNumber">P02909140</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="recordedBy">Gillett</SimpleData>
+		<SimpleData name="typeStatus">J.B.</SimpleData>
+		<SimpleData name="mediaType">2025-11-25T17:22:40.110Z</SimpleData>
+		<SimpleData name="issue">StillImage</SimpleData>
+		<SimpleData name="field_51">GEODETIC_DATUM_ASSUMED_WGS84</SimpleData>
+		<SimpleData name="layer">Balanites_aegyptiaca</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Balanites_aegyptiaca.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.06667,5.58333</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">3046065234</SimpleData>
+		<SimpleData name="datasetKey">966426ce-f762-11e1-a439-00145eb45e9a</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Zygophyllales</SimpleData>
+		<SimpleData name="family">Zygophyllaceae</SimpleData>
+		<SimpleData name="genus">Balanites</SimpleData>
+		<SimpleData name="species">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">26 km S of Neghelle on road to Mega.</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">c76cf030-2a95-11da-9cc1-b8a03c50a862</SimpleData>
+		<SimpleData name="decimalLatitude">5.183333</SimpleData>
+		<SimpleData name="decimalLongitude">39.6</SimpleData>
+		<SimpleData name="eventDate">22/2/1973</SimpleData>
+		<SimpleData name="day">22</SimpleData>
+		<SimpleData name="month">2</SimpleData>
+		<SimpleData name="year">1973</SimpleData>
+		<SimpleData name="taxonKey">5421115</SimpleData>
+		<SimpleData name="speciesKey">5421115</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="institutionCode">SMF</SimpleData>
+		<SimpleData name="collectionCode">FR</SimpleData>
+		<SimpleData name="catalogNumber">FR-0104888</SimpleData>
+		<SimpleData name="license">CC_BY_4_0</SimpleData>
+		<SimpleData name="lastInterpreted">2025/12/01 14:57:53</SimpleData>
+		<SimpleData name="issue">COORDINATE_ROUNDED</SimpleData>
+		<SimpleData name="layer">Balanites_aegyptiaca</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Balanites_aegyptiaca.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.6,5.183333</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">2517904722</SimpleData>
+		<SimpleData name="datasetKey">15f819bd-6612-4447-854b-14d12ee1022d</SimpleData>
+		<SimpleData name="occurrenceID">https://data.biodiversitydata.nl/naturalis/specimen/WAG.1867271</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Zygophyllales</SimpleData>
+		<SimpleData name="family">Zygophyllaceae</SimpleData>
+		<SimpleData name="genus">Balanites</SimpleData>
+		<SimpleData name="species">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(L.) Delile</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">26 km S of Neghelle on road to Mega.</SimpleData>
+		<SimpleData name="stateProvince">Sidamo</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">396d5f30-dea9-11db-8ab4-b8a03c50a862</SimpleData>
+		<SimpleData name="decimalLatitude">5.18333</SimpleData>
+		<SimpleData name="decimalLongitude">39.6</SimpleData>
+		<SimpleData name="eventDate">22/2/1973</SimpleData>
+		<SimpleData name="day">22</SimpleData>
+		<SimpleData name="month">2</SimpleData>
+		<SimpleData name="year">1973</SimpleData>
+		<SimpleData name="taxonKey">5421115</SimpleData>
+		<SimpleData name="speciesKey">5421115</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="collectionCode">Botany</SimpleData>
+		<SimpleData name="catalogNumber">WAG.1867271</SimpleData>
+		<SimpleData name="recordNumber">Seegeler</SimpleData>
+		<SimpleData name="identifiedBy">CJP 3170</SimpleData>
+		<SimpleData name="rightsHolder">CC0_1_0</SimpleData>
+		<SimpleData name="recordedBy">Naturalis Biodiversity Center</SimpleData>
+		<SimpleData name="typeStatus">Seegeler CJP</SimpleData>
+		<SimpleData name="mediaType">2026-04-07T14:22:33.425Z</SimpleData>
+		<SimpleData name="layer">Balanites_aegyptiaca</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Balanites_aegyptiaca.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.6,5.18333</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">2517903686</SimpleData>
+		<SimpleData name="datasetKey">15f819bd-6612-4447-854b-14d12ee1022d</SimpleData>
+		<SimpleData name="occurrenceID">https://data.biodiversitydata.nl/naturalis/specimen/WAG.1867272</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Zygophyllales</SimpleData>
+		<SimpleData name="family">Zygophyllaceae</SimpleData>
+		<SimpleData name="genus">Balanites</SimpleData>
+		<SimpleData name="species">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(L.) Delile</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">26 km S of Neghelle on road to Mega.</SimpleData>
+		<SimpleData name="stateProvince">Sidamo</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">396d5f30-dea9-11db-8ab4-b8a03c50a862</SimpleData>
+		<SimpleData name="decimalLatitude">5.18333</SimpleData>
+		<SimpleData name="decimalLongitude">39.6</SimpleData>
+		<SimpleData name="eventDate">22/2/1973</SimpleData>
+		<SimpleData name="day">22</SimpleData>
+		<SimpleData name="month">2</SimpleData>
+		<SimpleData name="year">1973</SimpleData>
+		<SimpleData name="taxonKey">5421115</SimpleData>
+		<SimpleData name="speciesKey">5421115</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="collectionCode">Botany</SimpleData>
+		<SimpleData name="catalogNumber">WAG.1867272</SimpleData>
+		<SimpleData name="recordNumber">Seegeler</SimpleData>
+		<SimpleData name="identifiedBy">CJP 3170</SimpleData>
+		<SimpleData name="rightsHolder">CC0_1_0</SimpleData>
+		<SimpleData name="recordedBy">Naturalis Biodiversity Center</SimpleData>
+		<SimpleData name="typeStatus">Seegeler CJP</SimpleData>
+		<SimpleData name="mediaType">2026-04-07T14:22:54.321Z</SimpleData>
+		<SimpleData name="layer">Balanites_aegyptiaca</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Balanites_aegyptiaca.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.6,5.18333</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">2517872635</SimpleData>
+		<SimpleData name="datasetKey">15f819bd-6612-4447-854b-14d12ee1022d</SimpleData>
+		<SimpleData name="occurrenceID">https://data.biodiversitydata.nl/naturalis/specimen/WAG.1867273</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Zygophyllales</SimpleData>
+		<SimpleData name="family">Zygophyllaceae</SimpleData>
+		<SimpleData name="genus">Balanites</SimpleData>
+		<SimpleData name="species">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(L.) Delile</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">Gamu-Gofa Region: 17 km S. of Arba Minch.</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">396d5f30-dea9-11db-8ab4-b8a03c50a862</SimpleData>
+		<SimpleData name="decimalLatitude">5.9</SimpleData>
+		<SimpleData name="decimalLongitude">37.53333</SimpleData>
+		<SimpleData name="eventDate">30/8/1975</SimpleData>
+		<SimpleData name="day">30</SimpleData>
+		<SimpleData name="month">8</SimpleData>
+		<SimpleData name="year">1975</SimpleData>
+		<SimpleData name="taxonKey">5421115</SimpleData>
+		<SimpleData name="speciesKey">5421115</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="collectionCode">Botany</SimpleData>
+		<SimpleData name="catalogNumber">WAG.1867273</SimpleData>
+		<SimpleData name="recordNumber">Gilbert</SimpleData>
+		<SimpleData name="identifiedBy">MG</SimpleData>
+		<SimpleData name="layer">Balanites_aegyptiaca</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Balanites_aegyptiaca.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>37.53333,5.9</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">2517723784</SimpleData>
+		<SimpleData name="datasetKey">15f819bd-6612-4447-854b-14d12ee1022d</SimpleData>
+		<SimpleData name="occurrenceID">https://data.biodiversitydata.nl/naturalis/specimen/WAG.1867168</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Zygophyllales</SimpleData>
+		<SimpleData name="family">Zygophyllaceae</SimpleData>
+		<SimpleData name="genus">Balanites</SimpleData>
+		<SimpleData name="species">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="infraspecificEpithet">aegyptiaca</SimpleData>
+		<SimpleData name="taxonRank">VARIETY</SimpleData>
+		<SimpleData name="scientificName">Balanites aegyptiaca var. aegyptiaca</SimpleData>
+		<SimpleData name="verbatimScientificName">Balanites aegyptiaca (L.) Delile var. aegyptiaca</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">c. 5 km west of Filtu along the road to Negelle.</SimpleData>
+		<SimpleData name="stateProvince">Sidamo</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">396d5f30-dea9-11db-8ab4-b8a03c50a862</SimpleData>
+		<SimpleData name="decimalLatitude">5.11667</SimpleData>
+		<SimpleData name="decimalLongitude">40.58333</SimpleData>
+		<SimpleData name="eventDate">14/2/2000</SimpleData>
+		<SimpleData name="day">14</SimpleData>
+		<SimpleData name="month">2</SimpleData>
+		<SimpleData name="year">2000</SimpleData>
+		<SimpleData name="taxonKey">7309915</SimpleData>
+		<SimpleData name="speciesKey">5421115</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="collectionCode">Botany</SimpleData>
+		<SimpleData name="catalogNumber">WAG.1867168</SimpleData>
+		<SimpleData name="recordNumber">Friis</SimpleData>
+		<SimpleData name="identifiedBy">I</SimpleData>
+		<SimpleData name="layer">Balanites_aegyptiaca</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Balanites_aegyptiaca.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.58333,5.11667</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">2516192216</SimpleData>
+		<SimpleData name="datasetKey">15f819bd-6612-4447-854b-14d12ee1022d</SimpleData>
+		<SimpleData name="occurrenceID">https://data.biodiversitydata.nl/naturalis/specimen/WAG.1867274</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Zygophyllales</SimpleData>
+		<SimpleData name="family">Zygophyllaceae</SimpleData>
+		<SimpleData name="genus">Balanites</SimpleData>
+		<SimpleData name="species">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(L.) Delile</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">Gamu-Gofa Region: 17 km S. of Arba Minch.</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">396d5f30-dea9-11db-8ab4-b8a03c50a862</SimpleData>
+		<SimpleData name="decimalLatitude">5.9</SimpleData>
+		<SimpleData name="decimalLongitude">37.53333</SimpleData>
+		<SimpleData name="eventDate">30/8/1975</SimpleData>
+		<SimpleData name="day">30</SimpleData>
+		<SimpleData name="month">8</SimpleData>
+		<SimpleData name="year">1975</SimpleData>
+		<SimpleData name="taxonKey">5421115</SimpleData>
+		<SimpleData name="speciesKey">5421115</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="collectionCode">Botany</SimpleData>
+		<SimpleData name="catalogNumber">WAG.1867274</SimpleData>
+		<SimpleData name="recordNumber">Gilbert</SimpleData>
+		<SimpleData name="identifiedBy">MG</SimpleData>
+		<SimpleData name="layer">Balanites_aegyptiaca</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Balanites_aegyptiaca.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>37.53333,5.9</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">2516173872</SimpleData>
+		<SimpleData name="datasetKey">15f819bd-6612-4447-854b-14d12ee1022d</SimpleData>
+		<SimpleData name="occurrenceID">https://data.biodiversitydata.nl/naturalis/specimen/WAG.1867276</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Zygophyllales</SimpleData>
+		<SimpleData name="family">Zygophyllaceae</SimpleData>
+		<SimpleData name="genus">Balanites</SimpleData>
+		<SimpleData name="species">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(L.) Delile</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">&quot;Rock Valley&quot;, c. 37 km E.S.E. of Harrar, on the road to Jijiga (Djigdjigga).</SimpleData>
+		<SimpleData name="stateProvince">Harerge</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">396d5f30-dea9-11db-8ab4-b8a03c50a862</SimpleData>
+		<SimpleData name="decimalLatitude">9.18333</SimpleData>
+		<SimpleData name="decimalLongitude">42.36667</SimpleData>
+		<SimpleData name="eventDate">16/12/1968</SimpleData>
+		<SimpleData name="day">16</SimpleData>
+		<SimpleData name="month">12</SimpleData>
+		<SimpleData name="year">1968</SimpleData>
+		<SimpleData name="taxonKey">5421115</SimpleData>
+		<SimpleData name="speciesKey">5421115</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="collectionCode">Botany</SimpleData>
+		<SimpleData name="catalogNumber">WAG.1867276</SimpleData>
+		<SimpleData name="recordNumber">Wilde</SimpleData>
+		<SimpleData name="identifiedBy">JJFE de 4229</SimpleData>
+		<SimpleData name="rightsHolder">CC0_1_0</SimpleData>
+		<SimpleData name="recordedBy">Naturalis Biodiversity Center</SimpleData>
+		<SimpleData name="typeStatus">Wilde JJFE de</SimpleData>
+		<SimpleData name="mediaType">2026-04-07T14:21:55.024Z</SimpleData>
+		<SimpleData name="layer">Balanites_aegyptiaca</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Balanites_aegyptiaca.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.36667,9.18333</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">2516013858</SimpleData>
+		<SimpleData name="datasetKey">15f819bd-6612-4447-854b-14d12ee1022d</SimpleData>
+		<SimpleData name="occurrenceID">https://data.biodiversitydata.nl/naturalis/specimen/WAG.1867275</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Zygophyllales</SimpleData>
+		<SimpleData name="family">Zygophyllaceae</SimpleData>
+		<SimpleData name="genus">Balanites</SimpleData>
+		<SimpleData name="species">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(L.) Delile</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">&quot;Rock Valley&quot;, c. 37 km E.S.E. of Harrar, on the road to Jijiga (Djigdjigga).</SimpleData>
+		<SimpleData name="stateProvince">Harerge</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">396d5f30-dea9-11db-8ab4-b8a03c50a862</SimpleData>
+		<SimpleData name="decimalLatitude">9.18333</SimpleData>
+		<SimpleData name="decimalLongitude">42.36667</SimpleData>
+		<SimpleData name="eventDate">16/12/1968</SimpleData>
+		<SimpleData name="day">16</SimpleData>
+		<SimpleData name="month">12</SimpleData>
+		<SimpleData name="year">1968</SimpleData>
+		<SimpleData name="taxonKey">5421115</SimpleData>
+		<SimpleData name="speciesKey">5421115</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="collectionCode">Botany</SimpleData>
+		<SimpleData name="catalogNumber">WAG.1867275</SimpleData>
+		<SimpleData name="recordNumber">Wilde</SimpleData>
+		<SimpleData name="identifiedBy">JJFE de 4229</SimpleData>
+		<SimpleData name="rightsHolder">CC0_1_0</SimpleData>
+		<SimpleData name="recordedBy">Naturalis Biodiversity Center</SimpleData>
+		<SimpleData name="typeStatus">Wilde JJFE de</SimpleData>
+		<SimpleData name="mediaType">2026-04-07T14:21:56.473Z</SimpleData>
+		<SimpleData name="layer">Balanites_aegyptiaca</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Balanites_aegyptiaca.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.36667,9.18333</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">2515942628</SimpleData>
+		<SimpleData name="datasetKey">15f819bd-6612-4447-854b-14d12ee1022d</SimpleData>
+		<SimpleData name="occurrenceID">https://data.biodiversitydata.nl/naturalis/specimen/WAG.1867170</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Zygophyllales</SimpleData>
+		<SimpleData name="family">Zygophyllaceae</SimpleData>
+		<SimpleData name="genus">Balanites</SimpleData>
+		<SimpleData name="species">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="infraspecificEpithet">aegyptiaca</SimpleData>
+		<SimpleData name="taxonRank">VARIETY</SimpleData>
+		<SimpleData name="scientificName">Balanites aegyptiaca var. aegyptiaca</SimpleData>
+		<SimpleData name="verbatimScientificName">Balanites aegyptiaca (L.) Delile var. aegyptiaca</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">c. 36 km south of Negelle on road to Melca Guba.</SimpleData>
+		<SimpleData name="stateProvince">Sidamo</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="publishingOrgKey">396d5f30-dea9-11db-8ab4-b8a03c50a862</SimpleData>
+		<SimpleData name="decimalLatitude">5.1</SimpleData>
+		<SimpleData name="decimalLongitude">39.6</SimpleData>
+		<SimpleData name="eventDate">12/2/2000</SimpleData>
+		<SimpleData name="day">12</SimpleData>
+		<SimpleData name="month">2</SimpleData>
+		<SimpleData name="year">2000</SimpleData>
+		<SimpleData name="taxonKey">7309915</SimpleData>
+		<SimpleData name="speciesKey">5421115</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="collectionCode">Botany</SimpleData>
+		<SimpleData name="catalogNumber">WAG.1867170</SimpleData>
+		<SimpleData name="recordNumber">Friis</SimpleData>
+		<SimpleData name="identifiedBy">I</SimpleData>
+		<SimpleData name="layer">Balanites_aegyptiaca</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Balanites_aegyptiaca.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.6,5.1</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#combinado">
+		<SimpleData name="gbifID">2284373461</SimpleData>
+		<SimpleData name="datasetKey">821cc27a-e3bb-4bc5-ac34-89ada245069d</SimpleData>
+		<SimpleData name="occurrenceID">http://n2t.net/ark:/65665/39c904c26-9c5f-48bd-9364-6d8e1f6647d7</SimpleData>
+		<SimpleData name="kingdom">Plantae</SimpleData>
+		<SimpleData name="phylum">Tracheophyta</SimpleData>
+		<SimpleData name="class">Magnoliopsida</SimpleData>
+		<SimpleData name="order">Zygophyllales</SimpleData>
+		<SimpleData name="family">Zygophyllaceae</SimpleData>
+		<SimpleData name="genus">Balanites</SimpleData>
+		<SimpleData name="species">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="taxonRank">SPECIES</SimpleData>
+		<SimpleData name="scientificName">Balanites aegyptiaca (L.) Delile</SimpleData>
+		<SimpleData name="verbatimScientificName">Balanites aegyptiaca</SimpleData>
+		<SimpleData name="verbatimScientificNameAuthorship">(L.) Delile</SimpleData>
+		<SimpleData name="countryCode">ET</SimpleData>
+		<SimpleData name="locality">Harar Prov. East of the El Bah river.</SimpleData>
+		<SimpleData name="occurrenceStatus">PRESENT</SimpleData>
+		<SimpleData name="individualCount">true</SimpleData>
+		<SimpleData name="publishingOrgKey">bc092ff0-02e4-11dc-991f-b8a03c50a862</SimpleData>
+		<SimpleData name="decimalLatitude">9.73</SimpleData>
+		<SimpleData name="decimalLongitude">41.87</SimpleData>
+		<SimpleData name="elevation">1067</SimpleData>
+		<SimpleData name="eventDate">25/4/1964</SimpleData>
+		<SimpleData name="day">25</SimpleData>
+		<SimpleData name="month">4</SimpleData>
+		<SimpleData name="year">1964</SimpleData>
+		<SimpleData name="taxonKey">5421115</SimpleData>
+		<SimpleData name="speciesKey">5421115</SimpleData>
+		<SimpleData name="basisOfRecord">PRESERVED_SPECIMEN</SimpleData>
+		<SimpleData name="institutionCode">US</SimpleData>
+		<SimpleData name="collectionCode">US</SimpleData>
+		<SimpleData name="catalogNumber">US 2481180</SimpleData>
+		<SimpleData name="recordNumber">3473</SimpleData>
+		<SimpleData name="license">CC0_1_0</SimpleData>
+		<SimpleData name="recordedBy">W. Burger</SimpleData>
+		<SimpleData name="lastInterpreted">2026/04/02 11:41:05</SimpleData>
+		<SimpleData name="mediaType">StillImage</SimpleData>
+		<SimpleData name="issue">GEODETIC_DATUM_ASSUMED_WGS84</SimpleData>
+		<SimpleData name="layer">Balanites_aegyptiaca</SimpleData>
+		<SimpleData name="path">file:///C:/Users/a_fer/Documents/SoilWatch/CARE/prosopis_mapping/Balanites_aegyptiaca.csv?type=csv&amp;delimiter=,;&amp;maxFields=10000&amp;detectTypes=yes&amp;xField=decimalLongitude&amp;yField=decimalLatitude&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.87,9.73</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>
