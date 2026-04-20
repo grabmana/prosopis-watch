@@ -8,6 +8,9 @@
 # Models (run in Google Earth Engine):
 - version_1_17-04-26: uses prosopis_juliflora_ethiopia and acacia-tortilis_balanites-aegyptiaca.
 
+# Python version (can be run in VS Code, Jupyter, or Google Colab):
+- version_1_17-04-26: prosopis_mapping.py — direct port of version_1, modular function-based pipeline
+- entry point: run_pipeline(CONFIG)
 
 # Future changes to make to model:
 - use a bigger dataset (world or africa) instead only Ethiopia
