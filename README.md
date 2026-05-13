@@ -4,7 +4,17 @@
 - prosopis juliflora (world registers download from https://www.gbif.org/)  - presence
 - prosopis_juliflora_ethiopia (only Ethiopia registers download from https://www.gbif.org/)  - presence
 - acacia-tortilis_balanites-aegyptiaca (Acacia tortilis and Balanites aegyptiaca only Ethiopia registers download from https://www.gbif.org/)  - used for abscense of prosopis
-- prosopis_juliflora_combined_from2016_africa-occAsia: is the prosopis_juliflora dataset from GBIF combined with Biendata.org dataset. Also, GBIF data was filtered by 1. valid coordinates, 2. human observations or occurrence, 3. equal or more than 4 individuals, 4. removed points in the ocean, 5. keep only 2016 to 2026 points. Biendata.org dataset was filtered by: 1. no GBIF data, for not repeating, 2. observation type= checklist, occurrence and trait occurence. Keeped all Africa and occidental Asia points.
+
+- prosopis_juliflora_combined_from2016_africa-occAsia: is the prosopis_juliflora dataset from GBIF combined with Biendata.org dataset. Keeped all Africa and occidental Asia points. 
+In this version of dataset GBIF data was filtered by:
+1. valid coordinates, 
+2. human observations or occurrence, 
+3. equal or more than 4 individuals, 
+4. removed points in the ocean, 
+5. keep only 2016 to 2026 points. 
+Biendata.org dataset was filtered by: 
+1. no GBIF data, for not repeating, 
+2. observation type= checklist, occurrence and trait occurence. 
   
 # Models (run in Google Earth Engine):
 - version_1_17-04-26: uses prosopis_juliflora_ethiopia and acacia-tortilis_balanites-aegyptiaca.
