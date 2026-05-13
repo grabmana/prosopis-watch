@@ -27,6 +27,7 @@ Biendata.org dataset was filtered by:
 - entry point: run_pipeline(CONFIG)
 
 # Future changes to make to v6 model:
+- adjust variables of model when no land cover mask is used to improve accuracy
 - use our own ground truth data!
 - try using different land cover layer (dynamic world instead of worl cover for example)
 - try Sentinel1 (radar)
