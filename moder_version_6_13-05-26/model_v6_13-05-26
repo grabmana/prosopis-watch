@@ -1,0 +1,625 @@
+// ============================================================
+// Prosopis Mapping - Afar Region, Ethiopia
+// Workflow: Ground data + Vegetation Indices + Environmental
+//           criteria -> Supervised Classification -> Accuracy
+// v5: EMIT hyperspectral, NDVI dry threshold, EMIT NDWI,
+//     Sentinel NDWI, cloud mask, 20m buffers, climate/soil
+// ============================================================
+
+var geometry = 
+    /* color: #d63000 */
+    /* shown: false */
+    /* displayProperties: [
+      {
+        "type": "rectangle"
+      }
+    ] */
+    ee.Geometry.Polygon(
+        [[[-24.12491601194506, 38.757895160831545],
+          [-24.12491601194506, -36.12505342597562],
+          [62.22762305055493, -36.12505342597562],
+          [62.22762305055493, 38.757895160831545]]], null, false);
+
+// ------------------------------------------------------------
+// 1. STUDY AREA
+// ------------------------------------------------------------
+var Afar = ee.FeatureCollection('FAO/GAUL/2015/level1')
+  .filter(ee.Filter.eq('ADM0_NAME', 'Ethiopia'))
+  .filter(ee.Filter.eq('ADM1_NAME', 'Afar'));
+
+Map.centerObject(Afar, 7);
+Map.addLayer(Afar.style({
+  color: 'orange',
+  fillColor: '00000000',
+  width: 2
+}), {}, 'Afar Boundary', true);
+
+var studyArea = geometry;
+Map.addLayer(studyArea, {color: 'white'}, 'Study Area', 0);
+
+// ------------------------------------------------------------
+// 2. CLOUD MASK FUNCTION for Sentinel-2 SR
+// ------------------------------------------------------------
+function maskS2clouds(image) {
+  var scl = image.select('SCL');
+  var mask = scl.neq(3).and(scl.neq(8)).and(scl.neq(9)).and(scl.neq(10));
+  return image.updateMask(mask);
+}
+
+// ------------------------------------------------------------
+// 3. SENTINEL-2 — DRY + WET SEASON
+// ------------------------------------------------------------
+// Define year range explicitly
+var startYear = 2024;
+var endYear   = 2026;
+
+// DRY SEASON (Nov–Feb) — filtered to specific years
+var s2_dry = ee.ImageCollection('COPERNICUS/S2_SR_HARMONIZED')
+  .filterBounds(studyArea)
+  .filterDate(startYear + '-11-01', (endYear + 1) + '-03-01')  // ← date range
+    .filter(ee.Filter.calendarRange(11, 2, 'month')) // ← then month filter
+  .filter(ee.Filter.lt('CLOUDY_PIXEL_PERCENTAGE', 20))
+  .select(['B2', 'B4', 'B5', 'B8', 'B8A', 'B11', 'SCL'])
+  .map(maskS2clouds)
+  .median();
+
+// NDVI dry
+var ndvi_dry = s2_dry.normalizedDifference(['B8', 'B4']).rename('NDVI_dry');
+
+// EVI dry
+var evi_dry = s2_dry.expression(
+  '2.5 * ((NIR - RED) / (NIR + 6 * RED - 7.5 * BLUE + 1))', {
+    'NIR':  s2_dry.select('B8'),
+    'RED':  s2_dry.select('B4'),
+    'BLUE': s2_dry.select('B2')
+  }).rename('EVI_dry');
+
+// NDRE dry
+var ndre_dry = s2_dry.normalizedDifference(['B8A', 'B5']).rename('NDRE_dry');
+
+// NDWI dry — vegetation water content (Gao 1996)
+// NDWI = (NIR - SWIR) / (NIR + SWIR)
+// B8=842nm (NIR), B11=1610nm (SWIR)
+// High = high leaf water content → Prosopis stays high in dry season
+var ndwi_dry = s2_dry.normalizedDifference(['B8', 'B11']).rename('NDWI_dry');
+
+// WET SEASON (Jun–Sep)
+var s2_wet = ee.ImageCollection('COPERNICUS/S2_SR_HARMONIZED')
+  .filterBounds(studyArea)
+  .filterDate(startYear + '-11-01', (endYear + 1) + '-03-01')  // ← date range
+  .filter(ee.Filter.calendarRange(6, 9, 'month')) // ← then month filter
+  .filter(ee.Filter.lt('CLOUDY_PIXEL_PERCENTAGE', 20))
+  .select(['B4', 'B8', 'SCL'])
+  .map(maskS2clouds)
+  .median();
+
+var ndvi_wet = s2_wet.normalizedDifference(['B8', 'B4']).rename('NDVI_wet');
+
+// NDVI Amplitude (low = Prosopis, stays green in dry season)
+var ndvi_amplitude = ndvi_wet.subtract(ndvi_dry).rename('NDVI_amplitude');
+
+Map.addLayer(ndvi_dry,       {min:-0.1, max:0.6, palette:['brown','white','darkgreen']}, 'NDVI dry (S2)', 0);
+Map.addLayer(ndwi_dry,       {min:-0.5, max:0.5, palette:['red','white','blue']},        'NDWI dry (S2)', 0);
+Map.addLayer(ndvi_wet,       {min:-0.1, max:0.6, palette:['brown','white','darkgreen']}, 'NDVI wet (S2)', 0);
+Map.addLayer(ndvi_amplitude, {min:0,    max:0.5, palette:['darkgreen','white','brown']}, 'NDVI Amplitude', 0);
+
+// ------------------------------------------------------------
+// 3b. EMIT HYPERSPECTRAL
+// ------------------------------------------------------------
+var useEMIT = true; // ← set to false if no coverage found
+
+function selectEMITbands(image) {
+  return image.select([
+    'reflectance_23',   // Green    551 nm
+    'reflectance_37',   // Red      656 nm
+    'reflectance_44',   // RedEdge1 708 nm
+    'reflectance_46',   // RedEdge2 723 nm
+    'reflectance_50',   // NIR      753 nm
+    'reflectance_61',   // NIR2     860 nm  ← NDWI denominator
+    'reflectance_69',   // NIR3     902 nm
+    'reflectance_84',   // NIR4    1007 nm
+    'reflectance_116',  // SWIR    1245 nm  ← NDWI numerator
+    'reflectance_171',  // SWIR1   1652 nm
+    'reflectance_231',  // SWIR2   2100 nm
+    'reflectance_244',  // Clay    2197 nm
+    'reflectance_265',  // Cellul  2352 nm
+    'cloud_flag',
+    'cirrus_flag',
+    'spacecraft_flag',
+    'dilated_cloud_flag',
+    'aggregate_flag'
+  ]);
+}
+
+function maskEMIT(image) {
+  var cloud        = image.select('cloud_flag').eq(0);
+  var cirrus       = image.select('cirrus_flag').eq(0);
+  var spacecraft   = image.select('spacecraft_flag').eq(0);
+  var dilatedCloud = image.select('dilated_cloud_flag').eq(0);
+  var aggregate    = image.select('aggregate_flag').eq(0);
+
+  return image
+    .updateMask(cloud.and(cirrus).and(spacecraft).and(dilatedCloud).and(aggregate))
+    .select([
+      'reflectance_23',
+      'reflectance_37',
+      'reflectance_44',
+      'reflectance_46',
+      'reflectance_50',
+      'reflectance_61',
+      'reflectance_69',
+      'reflectance_84',
+      'reflectance_116',
+      'reflectance_171',
+      'reflectance_231',
+      'reflectance_244',
+      'reflectance_265'
+    ]);
+}
+
+/// EMIT COLLECTION IS FILTERED BY DRY SEASON FOR ALL INDICES (NOV-FEB)
+var emitCollection = ee.ImageCollection('NASA/EMIT/L2A/RFL')
+  .filterBounds(studyArea)
+  .filter(ee.Filter.date('2024-01-01', '2026-01-01'))
+  .filter(ee.Filter.calendarRange(11, 2, 'month')) // ← then month filter
+  .map(selectEMITbands)
+  .map(maskEMIT);
+
+//print('EMIT scenes over study area:', emitCollection.size());
+
+var emitMosaic    = emitCollection.mosaic().clip(studyArea);
+var emitResampled = emitMosaic.resample('bilinear');
+
+// ── Named bands ──────────────────────────────────────────────
+var emit_green     = emitResampled.select('reflectance_23').rename('emit_green');
+var emit_red       = emitResampled.select('reflectance_37').rename('emit_red');
+var emit_re1       = emitResampled.select('reflectance_44').rename('emit_re1');      // 708 nm
+var emit_re2       = emitResampled.select('reflectance_46').rename('emit_re2');      // 723 nm
+var emit_nir       = emitResampled.select('reflectance_50').rename('emit_nir');      // 753 nm
+var emit_nir_862   = emitResampled.select('reflectance_61').rename('emit_nir_862');  // 860 nm
+var emit_nir2      = emitResampled.select('reflectance_69').rename('emit_nir2');     // 902 nm
+var emit_nir3      = emitResampled.select('reflectance_84').rename('emit_nir3');     // 1007 nm
+var emit_swir_1245 = emitResampled.select('reflectance_116').rename('emit_swir_1245'); // 1245 nm
+var emit_swir1     = emitResampled.select('reflectance_171').rename('emit_swir1');   // 1652 nm
+var emit_swir2     = emitResampled.select('reflectance_231').rename('emit_swir2');   // 2100 nm
+var emit_clay      = emitResampled.select('reflectance_244').rename('emit_clay');    // 2197 nm
+var emit_cell      = emitResampled.select('reflectance_265').rename('emit_cellulose'); // 2352 nm
+
+// ── EMIT indices ─────────────────────────────────────────────
+
+// NDVI
+var emit_ndvi_dry = emit_nir.rename('N').addBands(emit_red.rename('R'))
+  .normalizedDifference(['N', 'R']).rename('emit_ndvi_dry');
+
+// NDWI vegetation water content (Gao 1996 equivalent)
+// (R862 - R1242) / (R862 + R1242)
+// Prosopis: high water content → stays positive in dry season
+var emit_ndwi = emit_nir_862.rename('N').addBands(emit_swir_1245.rename('S'))
+  .normalizedDifference(['N', 'S']).rename('emit_ndwi');
+
+// Red Edge NDVI — steeper slope in evergreen species
+var emit_rendvi = emit_re2.rename('N').addBands(emit_re1.rename('R'))
+  .normalizedDifference(['N', 'R']).rename('emit_rendvi');
+
+// Red Edge Chlorophyll Index
+var emit_cire = emit_nir.divide(emit_re1.add(1e-6)).subtract(1)
+  .rename('emit_cire');
+
+// Cellulose Absorption Index — woody vs herbaceous
+var emit_cai = emit_nir.add(emit_swir2).multiply(0.5)
+  .subtract(emit_swir1).rename('emit_cai');
+
+// Clay Mineral Ratio
+var emit_cmr = emit_clay.divide(emit_swir1.add(1e-6)).rename('emit_cmr');
+
+/*
+// NDVI dry — same phenological window as Sentinel dry composite
+var emitCollection_dry = emitCollection
+  .filter(ee.Filter.calendarRange(11, 2, 'month')) // ← then month filter
+
+var emitMosaic_dry    = emitCollection_dry.mosaic().clip(studyArea);
+var emitResampled_dry = emitMosaic_dry.resample('bilinear');
+
+var emit_red_dry       = emitResampled_dry.select('reflectance_37').rename('emit_red');
+var emit_nir_dry       = emitResampled_dry.select('reflectance_50').rename('emit_nir');      // 753 nm
+
+var emit_ndvi_dry = emit_nir_dry.rename('N').addBands(emit_red_dry.rename('R'))
+  .normalizedDifference(['N', 'R']).rename('emit_ndvi_dry');
+*/
+
+
+Map.addLayer(emitMosaic,    {min:0, max:0.1, bands:['reflectance_50','reflectance_37','reflectance_23']}, 'EMIT false colour', 0);
+Map.addLayer(emit_ndvi_dry, {min:-0.1, max:0.6, palette:['brown','white','darkgreen']}, 'EMIT NDVI dry', 0);
+Map.addLayer(emit_ndwi,     {min:-0.5, max:0.5, palette:['red','white','blue']},        'EMIT NDWI',     0);
+Map.addLayer(emit_cai,      {min:-0.05, max:0.1, palette:['blue','white','red']},       'EMIT CAI',      0);
+Map.addLayer(emit_cmr,      {min:0, max:3, palette:['white','orange','brown']},          'EMIT CMR',      0);
+
+// ------------------------------------------------------------
+// 4. ENVIRONMENTAL LAYERS
+// ------------------------------------------------------------
+
+// Elevation
+var dem = ee.Image('USGS/SRTMGL1_003').rename('elevation');
+
+// Distance to rivers
+var water = ee.Image('JRC/GSW1_4/GlobalSurfaceWater')
+  .select('occurrence')
+  .gt(30); /// very important to get good accuracy
+
+//Map.addLayer(water.selfMask(),{palette: ['0055AA']}, 'Water', 1);
+  
+var distToRiver = water.fastDistanceTransform(256)
+  .sqrt()
+  .multiply(ee.Image.pixelArea().sqrt())
+  .rename('dist_river');
+
+// Distance to roads — GRIP4
+var gripAfrica = ee.FeatureCollection('projects/sat-io/open-datasets/GRIP4/Africa');
+var gripAsia   = ee.FeatureCollection('projects/sat-io/open-datasets/GRIP4/Middle-East-Central-Asia');
+var grip       = gripAsia.merge(gripAfrica);
+
+Map.addLayer(grip, {color: '413B3A'}, 'Roads GRIP4', 0);
+
+var roadsRasterized = grip
+  .map(function(f) { return f.set('road', 1); })
+  .reduceToImage({
+    properties: ['road'],
+    reducer: ee.Reducer.first()
+  })
+  .unmask(0)
+  .clip(studyArea);
+
+var distRoads = roadsRasterized.not()
+  .fastDistanceTransform(512)
+  .sqrt()
+  .multiply(ee.Image.pixelArea().sqrt())
+  .rename('dist_road')
+  .clip(studyArea);
+
+Map.addLayer(distRoads, {min:0, max:5000, palette:['red','yellow','green']}, 'Distance to Roads', 0);
+
+// Rainfall — CHIRPS
+var rainfall = ee.ImageCollection('UCSB-CHG/CHIRPS/PENTAD')
+  .filter(ee.Filter.calendarRange(2016, 2026, 'year'))
+  .sum()
+  .rename('rainfall');
+
+// Soil clay — SoilGrids
+var clay = ee.Image('projects/soilgrids-isric/clay_mean')
+  .select('clay_0-5cm_mean')
+  .rename('clay');
+
+// Soil organic carbon — SoilGrids
+var soc = ee.Image('projects/soilgrids-isric/soc_mean')
+  .select('soc_0-5cm_mean')
+  .rename('soc');
+
+// ------------------------------------------------------------
+// 5. FEATURE STACK
+// ------------------------------------------------------------
+
+// Base: Sentinel + environmental (always used)
+var featuresBase = ndvi_dry
+  .addBands(ndwi_dry)      // ← Sentinel NDWI added to base
+  .addBands(dem)
+  .addBands(distToRiver)
+  .addBands(rainfall)
+  .addBands(soc);
+
+var inputBandsBase = [
+  'NDVI_dry',
+  'NDWI_dry',              // ← Sentinel NDWI added to base
+  'elevation',
+  'dist_river',
+  'rainfall',
+  'soc'
+];
+
+// With EMIT
+var featuresWithEMIT = featuresBase
+  .addBands(emit_ndvi_dry)
+  .addBands(emit_ndwi)
+  .addBands(emit_rendvi)
+  .addBands(emit_cire)
+ // .addBands(emit_cai)
+  .addBands(emit_cmr)
+  //.addBands(emit_nir)
+  .addBands(emit_nir2)
+  //.addBands(emit_re1);
+
+var inputBandsEMIT = inputBandsBase.concat([
+  'emit_ndvi_dry',
+  'emit_ndwi',
+  'emit_rendvi',
+  'emit_cire',
+  //'emit_cai',
+  'emit_cmr',
+  //'emit_nir',
+  'emit_nir2',
+  //'emit_re1'
+]);
+
+// Switch
+var features   = useEMIT ? featuresWithEMIT : featuresBase;
+var inputBands = useEMIT ? inputBandsEMIT   : inputBandsBase;
+
+print('Feature stack bands:', features.bandNames());
+print('Input bands for classifier:', inputBands);
+
+// ------------------------------------------------------------
+// 6. WORLDCOVER MASK — exclude water, urban, wetlands
+// ------------------------------------------------------------
+var old_landcover_classes = [10, 20, 30, 40, 50, 60, 70, 80, 90, 95, 100];
+var new_landcover_classes = [ 3,  4,  5,  2,  1,  8,  9,  6,  7,  7,   5];
+
+var land_cover = ee.Image('ESA/WorldCover/v200/2021')
+  .remap(old_landcover_classes, new_landcover_classes)
+  .rename('constant');
+
+var wcPalette = ['#c4281b','#e49634','#397e48','#DFC35A','#88af52','#429ae4','#7c85c9','#a6a6a6'];
+Map.addLayer(land_cover.clip(Afar), {palette: wcPalette, min:1, max:8}, 'WorldCover 2021', 0);
+
+var excludeClasses = [1, 6, 7, 8];
+var wcMask = land_cover.remap(
+  excludeClasses,
+  ee.List.repeat(0, excludeClasses.length),
+  1
+).rename('mask');
+
+var featuresMasked = features.updateMask(wcMask);
+
+// ------------------------------------------------------------
+// 8. GROUND TRUTH + 20m buffers
+// ------------------------------------------------------------
+var prosopisRaw = ee.FeatureCollection('projects/ee-ferraina/assets/prosopis_juliflora_combined_from2016_africa-occAsia')
+  .map(function(f) { return f.set('label', 1); });
+
+var absenceRaw = ee.FeatureCollection('projects/ee-ferraina/assets/acacia-balanites')
+  .filterBounds(studyArea)
+  .map(function(f) { return f.set('label', 0); });
+
+print('Prosopis raw:', prosopisRaw.size());
+print('Absence raw:', absenceRaw.size());
+
+// Pseudo-absences from shrub/grass/cropland/forest WorldCover classes
+var pseudoAbsence = land_cover
+  .updateMask(
+    land_cover.eq(2).or(land_cover.eq(3))
+              .or(land_cover.eq(4)).or(land_cover.eq(5))
+  )
+  .sample({
+    region: studyArea,
+    scale: 30,
+    numPixels: 200,
+    seed: 42,
+    geometries: true
+  })
+  .map(function(f) { return f.set('label', 0); });
+
+print('Pseudo-absence count:', pseudoAbsence.size());
+
+var groundTruth = prosopisRaw.merge(absenceRaw).merge(pseudoAbsence);
+
+// 20m buffer
+var groundTruthBuffered = groundTruth.map(function(f) {
+  return f.buffer(20);
+});
+print('Ground truth buffered count:', groundTruthBuffered.size());
+
+// Sample all feature bands within each buffer
+var training = featuresMasked.reduceRegions({
+  collection: groundTruthBuffered,
+  reducer: ee.Reducer.mean(),
+  scale: 30,
+  tileScale: 16
+});
+
+// Remove nulls
+print('Training BEFORE null filter:', training.size());
+training = training.filter(ee.Filter.notNull(inputBands));
+print('Training AFTER null filter:', training.size());
+
+// Balance classes
+var class0        = training.filter(ee.Filter.eq('label', 0));
+var class1        = training.filter(ee.Filter.eq('label', 1));
+var nMin          = class0.size();
+var class1balanced = class1.randomColumn('rand', 42).sort('rand').limit(nMin);
+training = class0.merge(class1balanced);
+
+print('Balanced Class 0:', class0.size());
+print('Balanced Class 1:', class1balanced.size());
+
+// ------------------------------------------------------------
+// 9. TRAIN CLASSIFIER
+// ------------------------------------------------------------
+var classifier = ee.Classifier.smileRandomForest({
+  numberOfTrees: 100,
+  minLeafPopulation: 2,
+  seed: 42
+}).train({
+  features: training,
+  classProperty: 'label',
+  inputProperties: inputBands
+});
+
+print('Feature importance:', classifier.explain().get('importance'));
+
+// ------------------------------------------------------------
+// 10. DYNAMIC NDVI THRESHOLD — from S2 NDVI dry presence points
+// ------------------------------------------------------------
+/*var ndviMeanPresence = ndvi_dry.reduceRegions({
+  collection: training.filter(ee.Filter.eq('label', 1)),
+  reducer: ee.Reducer.mean(),
+  scale: 10   // EMIT native resolution
+}).aggregate_mean('NDVI_dry');
+
+print('Mean NDVI_dry of Prosopis presence (threshold):', ndviMeanPresence);
+*/
+var ndviThreshold = 0.2//ee.Number(ndviMeanPresence);
+
+var ndviMask      = ndvi_dry.gt(ndviThreshold);
+
+// ------------------------------------------------------------
+// 11. CLASSIFY
+// ------------------------------------------------------------
+var classified = featuresMasked
+  .classify(classifier)
+  //.updateMask(ndviMask)
+  .clip(Afar);
+
+//ndviThreshold.evaluate(function(val) {
+  Map.addLayer(
+    classified,
+    {min:0, max:1, palette:['lightgrey','darkgreen']},"Prosopis Map")
+    //'Prosopis Map (NDVI thresh=' + val.toFixed(3) + ')'
+  //);
+//});
+
+Map.addLayer(prosopisRaw, {color:'lime'}, 'Prosopis presence');
+Map.addLayer(absenceRaw,  {color:'red'},  'Absence points');
+
+// ------------------------------------------------------------
+// 12. ACCURACY ASSESSMENT — 70/30 split, full test set
+// ------------------------------------------------------------
+var withRandom = training.randomColumn('random', 42);
+var trainSet   = withRandom.filter(ee.Filter.lt('random',  0.7));
+var testSet    = withRandom.filter(ee.Filter.gte('random', 0.7));
+
+var classifierVal = ee.Classifier.smileRandomForest({
+  numberOfTrees: 100,
+  minLeafPopulation: 2,
+  seed: 42
+}).train({
+  features: trainSet,
+  classProperty: 'label',
+  inputProperties: inputBands
+});
+
+var validated  = testSet.classify(classifierVal);
+var confMatrix = validated.errorMatrix('label', 'classification');
+
+print('--- ACCURACY RESULTS (full test set, no NDVI filter) ---');
+print('Confusion Matrix:',   confMatrix);
+print('Overall Accuracy:',   confMatrix.accuracy());
+print('Kappa:',              confMatrix.kappa());
+print('Producers Accuracy:', confMatrix.producersAccuracy());
+print('Consumers Accuracy:', confMatrix.consumersAccuracy());
+
+
+// ------------------------------------------------------------
+// 13. EXPORT
+// ------------------------------------------------------------
+Export.image.toDrive({
+  image: classified,
+  description: 'Prosopis_Afar_Map_v5',
+  folder: 'GEE_Exports',
+  fileNamePrefix: 'prosopis_afar_v5',
+  region: studyArea,
+  scale: 30,
+  maxPixels: 1e9,
+  crs: 'EPSG:4326'
+});
+
+// ------------------------------------------------------------
+// 14. PROSOPIS AREA ESTIMATION
+// ------------------------------------------------------------
+var prosopis_binary = classified.eq(1).unmask(0);
+
+var prosopisArea = prosopis_binary
+  .multiply(ee.Image.pixelArea())
+  .reduceRegion({
+    reducer: ee.Reducer.sum(),
+    geometry: Afar.geometry(),
+    scale: 150,
+    maxPixels: 1e13,
+    tileScale: 16
+  });
+
+var area_m2  = ee.Number(prosopisArea.get('classification'));
+var area_ha  = area_m2.divide(10000);
+var area_km2 = area_m2.divide(1e6);
+
+print('═══ Prosopis Area Estimates ═══');
+print('Area (ha):',  area_ha);
+//print('Area (km²):', area_km2);
+
+var afarArea_ha  = Afar.geometry().area(100).divide(10000);
+var pct_infested = area_ha.divide(afarArea_ha).multiply(100);
+print('Afar total area (ha):', afarArea_ha);
+print('Prosopis infestation (%):', pct_infested);
+
+// ── Area by Woreda ────────────────────────────────────────────
+var woredas = ee.FeatureCollection('FAO/GAUL/2015/level2')
+  .filter(ee.Filter.eq('ADM0_NAME', 'Ethiopia'))
+  .filter(ee.Filter.eq('ADM1_NAME', 'Afar'));
+
+var areaByWoreda = prosopis_binary
+  .multiply(ee.Image.pixelArea())
+  .reduceRegions({
+    collection: woredas,
+    reducer: ee.Reducer.sum(),
+    scale: 150,
+    tileScale: 16
+  })
+  .map(function(f) {
+    var ha  = ee.Number(f.get('sum')).divide(10000);
+    var km2 = ee.Number(f.get('sum')).divide(1e6);
+    return f.set({
+      'prosopis_ha':  ha,
+      'prosopis_km2': km2,
+      'woreda': f.get('ADM2_NAME')
+    });
+  })
+  .filter(ee.Filter.gt('prosopis_ha', 0))
+  .select(['woreda', 'prosopis_ha', 'prosopis_km2']);
+
+print('Prosopis area by Woreda:', areaByWoreda);
+
+print(
+  ui.Chart.feature.byFeature(areaByWoreda, 'woreda', ['prosopis_ha'])
+    .setChartType('ColumnChart')
+    .setOptions({
+      title: 'Prosopis juliflora area by Woreda — Afar (ha)',
+      hAxis: { title: 'Woreda', slantedText: true, slantedTextAngle: 45 },
+      vAxis: { title: 'Area (ha)' },
+      colors: ['#1a6b1a'],
+      legend: { position: 'none' },
+      bar: { groupWidth: '70%' }
+    })
+);
+
+// ── Density map ───────────────────────────────────────────────
+var densityKm2 = prosopis_binary
+  .reduceNeighborhood({
+    reducer: ee.Reducer.mean(),
+    kernel: ee.Kernel.square({radius: 500, units: 'meters'})
+  })
+  .multiply(100)
+  .rename('prosopis_density_pct')
+  .clip(Afar);
+
+Map.addLayer(densityKm2,
+  {min:0, max:60, palette:['white','#d4f0a0','#7dbf4e','#2d7a1f','#0d3b00']},
+  'Prosopis density (% per km²)');
+
+// ── Exports ───────────────────────────────────────────────────
+Export.table.toDrive({
+  collection: areaByWoreda,
+  description: 'Prosopis_area_by_Woreda_Afar_v5',
+  folder: 'GEE_Exports',
+  fileNamePrefix: 'prosopis_area_woreda_afar_v5',
+  fileFormat: 'CSV'
+});
+
+Export.image.toDrive({
+  image: densityKm2,
+  description: 'Prosopis_density_1km_Afar_v5',
+  folder: 'GEE_Exports',
+  fileNamePrefix: 'prosopis_density_1km_afar_v5',
+  region: Afar.geometry(),
+  scale: 100,
+  maxPixels: 1e9,
+  crs: 'EPSG:4326'
+});
+
+print('Done. Run exports from Tasks tab.');
