@@ -20,7 +20,16 @@ Biendata.org dataset was filtered by:
   
 # Models (run in Google Earth Engine):
 - version_1_17-04-26: uses prosopis_juliflora_ethiopia and acacia-tortilis_balanites-aegyptiaca.
-- version_6_13-05-26: uses prosopis_juliflora_combined_from2016_africa-occAsia and acacia-tortilis_balanites-aegyptiaca (filtered dataset). In this version a big dataset was used, a buffer of 20m radius was used to sample locations and uses mean values of circular polygon for all bands; climate (rainfall), soil data (soc) and distance to roads were included; S2 cloudmask were added; S2 NDWI was added; EMIT bands and indices for dry season were added; areas calculations were added.
+- version_6_13-05-26: uses prosopis_juliflora_combined_from2016_africa-occAsia and acacia-tortilis_balanites-aegyptiaca (filtered dataset).
+
+  In this version:
+  - a bigger dataset was used,
+  - a buffer of 20m radius was used to sample locations and uses mean values of circular polygon for all bands;
+  - climate (rainfall), soil data (soc) and distance to roads were included;
+  - S2 cloudmask were added;
+  - S2 NDWI was added;
+  - EMIT bands and indices for dry season were added;
+  - areas calculations were added.
 
 # Python version (can be run in VS Code, Jupyter, or Google Colab):
 - version_1_17-04-26: prosopis_mapping.py — direct port of version_1, modular function-based pipeline
