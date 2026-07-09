@@ -1,7 +1,7 @@
 # Updates
 
 # OUR OWN FIELD DATASET
-- Find prosopis/non-prosopis polygons and centroids of polygons in different formats (.csv, .xlsx, .geojson) in the "Ground_truth_data" folder. 
+- Find prosopis/non-prosopis polygons and centroids of polygons in different formats (.csv, .xlsx, .geojson) in the *"Ground_truth_data"* folder. 
 - The date of the file download can be found in its name (year_month_day)
 
 # Datasets for ground truth: 
