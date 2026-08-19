@@ -1,0 +1,346 @@
+// ============================================================
+// Prosopis Mapping - Ethiopia + Kenya (COMBINED, IMPROVED 13 VARS)
+// Per-country seasons (Ethiopia: Nov-Feb dry/Jun-Sep wet;
+// Kenya: Jan-Feb dry/Mar-May wet).
+// Calibrate on ONLINE data (filtered to studyArea) + pseudo-absence;
+// VALIDATE on own field data (true holdout, never used in training).
+// Variables: DFI, NDVI, NDVI_amplitude, TCARI, VIRE (curated
+// spectral indices) + clay, dist_built, dist_river, dist_road,
+// elevation, rainfall, soc, temperature.
+// dist_road overfitting bias already fixed (reproject-before-
+// distance-transform correction verified earlier).
+// ============================================================
+
+function round2(x) { return ee.Number(x).multiply(100).round().divide(100); }
+function round2Array(arr) { return ee.Array(arr).multiply(100).round().divide(100); }
+
+function maskS2clouds(image) {
+  var scl = image.select('SCL');
+  return image.updateMask(scl.neq(3).and(scl.neq(8)).and(scl.neq(9)).and(scl.neq(10)));
+}
+
+// ------------------------------------------------------------
+// 1. STUDY AREA — Ethiopia + Kenya
+// ------------------------------------------------------------
+var Ethiopia = ee.FeatureCollection('FAO/GAUL/2015/level1').filter(ee.Filter.eq('ADM0_NAME', 'Ethiopia'));
+var Kenya = ee.FeatureCollection('FAO/GAUL/2015/level1').filter(ee.Filter.eq('ADM0_NAME', 'Kenya'));
+var countries = Ethiopia.merge(Kenya);
+var studyArea = countries.geometry().simplify({maxError: 1000}); // simplified to avoid GEE geometry-complexity timeouts
+
+Map.centerObject(studyArea, 6);
+Map.addLayer(countries.style({color:'orange', fillColor:'00000000', width:2}), {}, 'Ethiopia + Kenya Boundary');
+
+// ------------------------------------------------------------
+// 2. PER-COUNTRY DRY-SEASON COMPOSITE (for spectral indices)
+// ------------------------------------------------------------
+function buildDryComposite(geom, monthStart, monthEnd) {
+  return ee.ImageCollection('COPERNICUS/S2_SR_HARMONIZED')
+    .filterBounds(geom)
+    .filter(ee.Filter.calendarRange(2016, 2026, 'year'))
+    .filter(ee.Filter.calendarRange(monthStart, monthEnd, 'month'))
+    .filter(ee.Filter.lt('CLOUDY_PIXEL_PERCENTAGE', 20))
+    .select(['B2','B3','B4','B5','B6','B7','B8','B8A','B11','B12','SCL'])
+    .map(maskS2clouds)
+    .median()
+    .clip(geom);
+}
+
+var s2_dry_ET = buildDryComposite(Ethiopia.geometry(), 11, 2);
+var s2_dry_KE = buildDryComposite(Kenya.geometry(), 1, 2);
+var s2_dry = ee.ImageCollection([s2_dry_ET, s2_dry_KE]).mosaic();
+
+var B2=s2_dry.select('B2'), B3=s2_dry.select('B3'), B4=s2_dry.select('B4'),
+    B5=s2_dry.select('B5'), B7=s2_dry.select('B7'),
+    B8=s2_dry.select('B8'), B11=s2_dry.select('B11'), B12=s2_dry.select('B12');
+
+var NDVI  = B8.subtract(B4).divide(B8.add(B4)).rename('NDVI');
+var VIRE  = B8.subtract(B7).divide(B8.add(B7)).rename('VIRE');
+var TCARI = B5.subtract(B4).multiply(3)
+  .subtract(B5.subtract(B3).multiply(0.6).multiply(B5.divide(B4))).rename('TCARI');
+var DFI   = ee.Image(100).multiply(ee.Image(1).subtract(B12.divide(B8)))
+  .multiply(B4.divide(B11)).rename('DFI');
+
+// ------------------------------------------------------------
+// 3. PER-COUNTRY WET-SEASON COMPOSITE (for NDVI_amplitude)
+// ------------------------------------------------------------
+function buildWetComposite(geom, monthStart, monthEnd) {
+  return ee.ImageCollection('COPERNICUS/S2_SR_HARMONIZED')
+    .filterBounds(geom)
+    .filter(ee.Filter.calendarRange(2016, 2026, 'year'))
+    .filter(ee.Filter.calendarRange(monthStart, monthEnd, 'month'))
+    .filter(ee.Filter.lt('CLOUDY_PIXEL_PERCENTAGE', 20))
+    .select(['B4','B8','SCL'])
+    .map(maskS2clouds)
+    .median()
+    .clip(geom);
+}
+
+var s2_wet_ET = buildWetComposite(Ethiopia.geometry(), 6, 9);
+var s2_wet_KE = buildWetComposite(Kenya.geometry(), 3, 5);
+var s2_wet = ee.ImageCollection([s2_wet_ET, s2_wet_KE]).mosaic();
+
+var NDVI_wet = s2_wet.normalizedDifference(['B8','B4']).rename('NDVI_wet');
+var NDVI_amplitude = NDVI_wet.subtract(NDVI).rename('NDVI_amplitude');
+
+// ------------------------------------------------------------
+// 4. ENVIRONMENTAL VARIABLES
+// ------------------------------------------------------------
+var dem = ee.Image('USGS/SRTMGL1_003').rename('elevation');
+
+var merit = ee.Image('MERIT/Hydro/v1_0_1');
+var streamRaster = merit.select('upa').gte(5);
+var distToRiver = streamRaster.fastDistanceTransform(256).sqrt()
+  .multiply(ee.Image.pixelArea().sqrt()).rename('dist_river');
+
+// dist_road
+var gripAfrica = ee.FeatureCollection('projects/sat-io/open-datasets/GRIP4/Africa');
+var gripAsia = ee.FeatureCollection('projects/sat-io/open-datasets/GRIP4/Middle-East-Central-Asia');
+var grip = gripAsia.merge(gripAfrica);
+var roadsRasterized = grip.map(function(f){return f.set('road',1);})
+  .reduceToImage({properties:['road'], reducer: ee.Reducer.first()}).unmask(0).clip(studyArea);
+var distRoads = roadsRasterized.fastDistanceTransform(256).sqrt()
+  .multiply(ee.Image.pixelArea().sqrt()).rename('dist_road').clip(studyArea);
+
+// dist_buil
+var old_lc = [10,20,30,40,50,60,70,80,90,95,100];
+var new_lc = [3,4,5,2,1,8,9,6,7,7,5];
+var land_cover = ee.Image('ESA/WorldCover/v200/2021').remap(old_lc, new_lc).rename('constant');
+var built= land_cover.eq(1).clip(studyArea)
+var distBuilt = built.fastDistanceTransform(256).sqrt()
+  .multiply(ee.Image.pixelArea().sqrt()).rename('dist_built').clip(studyArea);
+//Map.addLayer(built, {min:0, max:1, palette:['white','black']}, 'built mask (should trace real urban/built areas)', true);
+
+var rainfall = ee.ImageCollection('UCSB-CHG/CHIRPS/PENTAD')
+  .filter(ee.Filter.calendarRange(2016, 2026, 'year')).sum().rename('rainfall');
+var rainfallMean = rainfall.reduceRegion({reducer: ee.Reducer.mean(), geometry: studyArea,
+  scale: 5000, maxPixels: 1e13, bestEffort: true}).get('rainfall');
+rainfall = rainfall.unmask(ee.Image.constant(rainfallMean));
+
+var clay = ee.Image('projects/soilgrids-isric/clay_mean').select('clay_0-5cm_mean').rename('clay');
+var soc  = ee.Image('projects/soilgrids-isric/soc_mean').select('soc_0-5cm_mean').rename('soc');
+
+var temperature = ee.ImageCollection('MODIS/061/MOD11A2')
+  .filter(ee.Filter.calendarRange(2016, 2026, 'year')).select('LST_Day_1km')
+  .mean().multiply(0.02).subtract(273.15).rename('temperature');
+var temperatureMean = temperature.reduceRegion({reducer: ee.Reducer.mean(), geometry: studyArea,
+  scale: 1000, maxPixels: 1e13, bestEffort: true}).get('temperature');
+temperature = temperature.unmask(ee.Image.constant(temperatureMean));
+
+// ------------------------------------------------------------
+// 5. FEATURE STACK — 13 curated variables
+// ------------------------------------------------------------
+var features = NDVI.addBands(VIRE).addBands(TCARI).addBands(DFI)
+  .addBands(NDVI_amplitude)
+  //.addBands(dem)
+  .addBands(distToRiver).addBands(distRoads)
+  .addBands(distBuilt)
+  .addBands(rainfall)//.addBands(clay).addBands(soc)
+  .addBands(temperature);
+
+var inputBands = ['NDVI','VIRE','TCARI','DFI','NDVI_amplitude',
+  //'elevation',
+  'dist_river','dist_road',
+  'dist_built','rainfall',//'clay','soc',
+  'temperature'];
+
+//print('Feature stack (13 curated variables):', features.bandNames());
+
+print(ee.ImageCollection('COPERNICUS/S2_SR_HARMONIZED').filterBounds(Ethiopia.geometry()).filter(ee.Filter.calendarRange(11,2,'month')).size())
+
+// ------------------------------------------------------------
+// 6. WORLDCOVER MASK (for pseudo-absence sampling, same as before)
+// ------------------------------------------------------------
+var excludeClasses = [1,6,7,8];
+var wcMask = land_cover.remap(excludeClasses, ee.List.repeat(0, excludeClasses.length), 1).rename('mask');
+var featuresMasked = features.updateMask(wcMask);
+
+// Corresponding color palette for the mapped land cover/crop classes
+var palette = [
+  '#c4281b', // 1.urban
+  '#e49634', // 2.croplands
+  '#397e48', // 3. forest
+  '#DFC35A', // 4. shrub & scrub
+  '#88af52', // 5. grass
+  '#429ae4', // 6. water
+  '#7c85c9', // 7. wetlands
+  '#a6a6a6' // 8. bare surface
+  //'#B39FE1' // 9. ice and snow
+  ];
+  
+Map.addLayer(land_cover,
+             {palette: palette, min: 1, max: 8},
+             'WorldCover Land Cover 2021',0);
+// ------------------------------------------------------------
+// 7. GROUND TRUTH — calibrate on online+pseudo, validate on own data
+// ------------------------------------------------------------
+var onlineProsopis = ee.FeatureCollection('projects/ee-ferraina/assets/prosopis_juliflora_combined_from2016_africa-occAsia')
+  .filterBounds(studyArea).map(function(f){return f.set('label',1).set('source','online').buffer(20);});
+var onlineAbsence = ee.FeatureCollection('projects/ee-ferraina/assets/acacia-balanites')
+  .filterBounds(studyArea).map(function(f){return f.set('label',0).set('source','online').buffer(20);});
+var pseudoAbsence = land_cover
+  .updateMask(land_cover.eq(2).or(land_cover.eq(3)).or(land_cover.eq(4)).or(land_cover.eq(5)))
+  .sample({region: studyArea, scale: 30, numPixels: 200, seed: 42, geometries: true})
+  .map(function(f){return f.set('label',0).set('source','pseudo');});
+
+// ------------------------------------------------------------
+// PSEUDO-ABSENCE — bias-corrected by restricting sampling to
+// within 14km of a road (matching online presence data's own
+// ~14km mean distance-to-road), preventing dist_road from acting
+// as a survey-effort proxy rather than genuine ecological signal.
+// ------------------------------------------------------------
+var accessibleZone = distRoads.lte(14000);
+//Map.addLayer(accessibleZone,{},"accessibleZone")
+
+var pseudoAbsenceBiasCorrected = land_cover
+  .updateMask(land_cover.eq(2).or(land_cover.eq(3)).or(land_cover.eq(4)).or(land_cover.eq(5)))
+  .updateMask(accessibleZone)
+  .sample({region: studyArea, scale: 30, numPixels: 200, seed: 42, geometries: true, tileScale: 16, dropNulls: true})
+  .map(function(f){return f.set('label',0).set('source','pseudo');});
+//Map.addLayer(pseudoAbsence, {color:'lime'}, 'pseudoAbsence');
+//Map.addLayer(pseudoAbsenceBiasCorrected, {color:'blue'}, 'pseudoAbsenceBiasCorrected');
+
+//print('Bias-corrected pseudo-absence dist_road mean (should be well under 20km now):',
+  //featuresMasked.reduceRegions({collection: pseudoAbsenceBiasCorrected, reducer: ee.Reducer.mean(), scale:30, tileScale:16})
+  //.aggregate_mean('dist_road'));
+
+var pseudoAbsence = pseudoAbsenceBiasCorrected
+
+var calibrationGT = onlineProsopis.merge(onlineAbsence).merge(pseudoAbsence);
+
+var ownGroundTruth = ee.FeatureCollection('projects/ee-ferraina/assets/prosopis_merged_2026_07_29');
+var ownProsopis = ownGroundTruth.filter(ee.Filter.eq('class','prosopis'))
+  .map(function(f){return f.set('label',1).set('source','own_field');});
+var ownAbsence = ownGroundTruth.filter(ee.Filter.eq('class','non_prosopis'))
+  .map(function(f){return f.set('label',0).set('source','own_field');});
+var validationGT = ownProsopis.merge(ownAbsence);
+
+var calibrationTraining = featuresMasked.reduceRegions({
+  collection: calibrationGT, reducer: ee.Reducer.mean(), scale: 30, tileScale: 16
+}).filter(ee.Filter.notNull(inputBands));
+
+var validationSet = featuresMasked.reduceRegions({
+  collection: validationGT, reducer: ee.Reducer.mean(), scale: 30, tileScale: 16
+}).filter(ee.Filter.notNull(inputBands));
+
+
+// ------------------------------------------------------------
+// STAGE 1 (run once): export the sampled tables as ASSETS.
+// These are small — a few hundred rows — so loading them back
+// is instant, unlike re-deriving them from the full image stack.
+// ------------------------------------------------------------
+Export.table.toAsset({
+  collection: calibrationTraining,
+  description: 'calibrationTraining_export',
+  assetId: 'projects/ee-ferraina/assets/calibrationTraining_v17'
+});
+
+Export.table.toAsset({
+  collection: validationSet,
+  description: 'validationSet_export',
+  assetId: 'projects/ee-ferraina/assets/validationSet_v17'
+});
+
+//var calibrationTraining=ee.FeatureCollection("projects/mrvplatformproject/assets/calibrationTraining_v17")
+//var validationSet=ee.FeatureCollection("projects/mrvplatformproject/assets/validationSet_v17")
+
+
+
+/*
+print('--- POOL STATS (single request) ---', ee.Dictionary({
+  'online_prosopis': onlineProsopis.size(), 'online_absence': onlineAbsence.size(),
+  'pseudo_absence': pseudoAbsence.size(),
+  'calibration_after_null_filter': calibrationTraining.size(),
+  'calibration_class0': calibrationTraining.filter(ee.Filter.eq('label',0)).size(),
+  'calibration_class1': calibrationTraining.filter(ee.Filter.eq('label',1)).size(),
+  'validation_own_prosopis': ownProsopis.size(), 'validation_own_absence': ownAbsence.size(),
+  'validation_after_null_filter': validationSet.size()
+}));
+*/
+// ------------------------------------------------------------
+// OVERSAMPLING (calibration only)
+// ------------------------------------------------------------
+function balanceByOversampling(fc) {
+  var c0 = fc.filter(ee.Filter.eq('label',0));
+  var c1 = fc.filter(ee.Filter.eq('label',1));
+  var n0 = c0.size(), n1 = c1.size(), nMax = n0.max(n1);
+  var c0List = c0.toList(n0);
+  var c0Over = ee.FeatureCollection(ee.List.sequence(0, nMax.subtract(1))
+    .map(function(i){return ee.Feature(c0List.get(ee.Number(i).mod(n0)));}));
+  var c1List = c1.toList(n1);
+  var c1Over = ee.FeatureCollection(ee.List.sequence(0, nMax.subtract(1))
+    .map(function(i){return ee.Feature(c1List.get(ee.Number(i).mod(n1)));}));
+  return c0Over.merge(c1Over);
+}
+var calibrationBalanced = balanceByOversampling(calibrationTraining);
+
+/*
+print('--- BALANCE STATS (single request) ---', ee.Dictionary({
+  //'balanced_total': calibrationBalanced.size(),
+  'balanced_class0': calibrationBalanced.filter(ee.Filter.eq('label',0)).size(),
+  'balanced_class1': calibrationBalanced.filter(ee.Filter.eq('label',1)).size()
+}));
+*/
+// ------------------------------------------------------------
+// 8. TRAIN
+// ------------------------------------------------------------
+var classifier = ee.Classifier.smileRandomForest({
+  numberOfTrees: 100, minLeafPopulation: 2, seed: 42
+}).train({features: calibrationBalanced, classProperty:'label', inputProperties: inputBands});
+
+var importanceRounded = ee.Dictionary(classifier.explain().get('importance')).map(function(k,v){return round2(v);});
+//print('--- FEATURE IMPORTANCE (13 curated variables) ---', importanceRounded);
+
+// ------------------------------------------------------------
+// 9. VALIDATE on own field data (true holdout, never trained on)
+// ------------------------------------------------------------
+var validated = validationSet.classify(classifier);
+var cm = validated.errorMatrix('label','classification');
+
+
+print('--- VALIDATION RESULTS (true holdout, single request, rounded) ---', ee.Dictionary({
+  'confusionMatrix': round2Array(cm.array()),
+  'accuracy': round2(cm.accuracy()),
+  'kappa': round2(cm.kappa()),
+  'producersAccuracy': round2Array(cm.producersAccuracy()),
+  'consumersAccuracy': round2Array(cm.consumersAccuracy())
+}));
+
+
+// ------------------------------------------------------------
+// 10. CLASSIFY FULL LANDSCAPE
+// ------------------------------------------------------------
+var classified = featuresMasked.classify(classifier).clip(studyArea);
+//Map.addLayer(classified.updateMask(classified.eq(1)).clip(Kenya), {min:1, max:1, palette:['red']},
+  //'Prosopis Map (13 curated vars, online-calibrated, own-validated)');
+  
+Map.addLayer(ownProsopis, {color:'lime'}, 'Prosopis presence (own field data)');
+Map.addLayer(ownAbsence, {color:'blue'}, 'Non-Prosopis presence (own field data)');
+
+
+// ------------------------------------------------------------
+// 11. HIGH-CONFIDENCE CLASSIFICATION
+// Built as a SEPARATE classifier with MULTIPROBABILITY set
+// BEFORE training (setting output mode after training on an
+// already-fitted classifier silently fails, producing a scalar
+// band instead of a real probability array — see conversation
+// history for the diagnosis of this exact bug).
+// ------------------------------------------------------------
+var classifierProb = ee.Classifier.smileRandomForest({
+  numberOfTrees: 100, minLeafPopulation: 2, seed: 42
+}).setOutputMode('MULTIPROBABILITY').train({
+  features: calibrationBalanced, classProperty: 'label', inputProperties: inputBands
+});
+
+var probImage = featuresMasked.classify(classifierProb).clip(studyArea);
+var prosopisConfidence = probImage.arrayGet([1]).rename('prosopis_confidence');
+var confidenceThreshold = 0.75;
+
+var highConfidenceProsopis = classified
+  .updateMask(classified.eq(1))
+  .updateMask(prosopisConfidence.gte(confidenceThreshold));
+
+//Map.addLayer(highConfidenceProsopis, {min:1, max:1, palette:['darkred']},
+  //'Prosopis Map (high confidence >= ' + confidenceThreshold + ')');
+//Map.addLayer(prosopisConfidence, {min:0, max:1, palette:['white','yellow','orange','red']},
+  //'Prosopis confidence surface', 0);
+  
