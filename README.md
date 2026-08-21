@@ -35,7 +35,7 @@ Biendata.org dataset was filtered by:
   - EMIT bands and indices for dry season were added;
   - areas calculations were added.
 
-- version_19_13-05-26: uses prosopis_juliflora_combined_from2016_africa-occAsia and acacia-tortilis_balanites-aegyptiaca (filtered dataset).
+- version_19_19-08-26: uses prosopis_juliflora_combined_from2016_africa-occAsia and acacia-tortilis_balanites-aegyptiaca (filtered dataset).
 
   In this version:
   - study area: whole Ethiopia and Kenya countries
