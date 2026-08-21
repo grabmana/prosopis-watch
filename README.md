@@ -35,14 +35,19 @@ Biendata.org dataset was filtered by:
   - EMIT bands and indices for dry season were added;
   - areas calculations were added.
 
+- version_19_13-05-26: uses prosopis_juliflora_combined_from2016_africa-occAsia and acacia-tortilis_balanites-aegyptiaca (filtered dataset).
+
+  In this version:
+  - study area: whole Ethiopia and Kenya countries
+  - EMIT was removed as it hasnt got complete cover in our new study area
+  - pseudo-abscense data is taken at similar distance to roads as our own data (to limit the dist_road overfitting)
+  - uses ONLINE data to calibrate and OWN GROUND TRUTH data to validate.
+  - Dry and wet season by country: Ethiopia: Nov-Feb dry/Jun-Sep wet; Kenya: Jan-Feb dry/Mar-May wet
+  - New spectral indexes and variables were added (as VIRE, TCARI, dist_built, etc.)
+ 
+    
 # Python version (can be run in VS Code, Jupyter, or Google Colab):
 - version_1_17-04-26: prosopis_mapping.py — direct port of version_1, modular function-based pipeline
 - entry point: run_pipeline(CONFIG)
 
-# Future changes to make to v6 model:
-- adjust variables of model when no land cover mask is used to improve accuracy
-- use our own ground truth data!
-- try using different land cover layer (dynamic world instead of worl cover for example)
-- try Sentinel1 (radar)
-- try GEDI
   
