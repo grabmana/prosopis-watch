@@ -22,10 +22,25 @@ Biendata.org dataset was filtered by:
 1. no GBIF data, for not repeating, 
 2. observation type= checklist, occurrence and trait occurence. 
   
-# Models (run in Google Earth Engine):
-- version_1_17-04-26: uses prosopis_juliflora_ethiopia and acacia-tortilis_balanites-aegyptiaca.
-- version_6_13-05-26: uses prosopis_juliflora_combined_from2016_africa-occAsia and acacia-tortilis_balanites-aegyptiaca (filtered dataset).
+# Models (run in Google Earth Engine) - ordered from new to old:
+- version_20b_01-09-26: uses prosopis_juliflora_combined_from2016_africa-occAsia and acacia-tortilis_balanites-aegyptiaca (filtered dataset).
+  In this version:
+  - using new field data --> 13 hard negatives added in calibration and the rest added to validation
+  - changed the land covers from where pseudoabscenses are generated
+  - changed the use of FeatureMasked
+  - added S1 and dynamic world variables
+  - rainfall variable was fixed
 
+- version_19_19-08-26: uses prosopis_juliflora_combined_from2016_africa-occAsia and acacia-tortilis_balanites-aegyptiaca (filtered dataset).
+  In this version:
+  - study area: whole Ethiopia and Kenya countries
+  - EMIT was removed as it hasnt got complete cover in our new study area
+  - pseudo-abscense data is taken at similar distance to roads as our own data (to limit the dist_road overfitting)
+  - uses ONLINE data to calibrate and OWN GROUND TRUTH data to validate.
+  - Dry and wet season by country: Ethiopia: Nov-Feb dry/Jun-Sep wet; Kenya: Jan-Feb dry/Mar-May wet
+  - New spectral indexes and variables were added (as VIRE, TCARI, dist_built, etc.)
+
+- version_6_13-05-26: uses prosopis_juliflora_combined_from2016_africa-occAsia and acacia-tortilis_balanites-aegyptiaca (filtered dataset).
   In this version:
   - a bigger dataset was used,
   - a buffer of 20m radius was used to sample locations and uses mean values of circular polygon for all bands;
@@ -34,17 +49,9 @@ Biendata.org dataset was filtered by:
   - S2 NDWI was added;
   - EMIT bands and indices for dry season were added;
   - areas calculations were added.
+    
+ - version_1_17-04-26: uses prosopis_juliflora_ethiopia and acacia-tortilis_balanites-aegyptiaca.
 
-- version_19_19-08-26: uses prosopis_juliflora_combined_from2016_africa-occAsia and acacia-tortilis_balanites-aegyptiaca (filtered dataset).
-
-  In this version:
-  - study area: whole Ethiopia and Kenya countries
-  - EMIT was removed as it hasnt got complete cover in our new study area
-  - pseudo-abscense data is taken at similar distance to roads as our own data (to limit the dist_road overfitting)
-  - uses ONLINE data to calibrate and OWN GROUND TRUTH data to validate.
-  - Dry and wet season by country: Ethiopia: Nov-Feb dry/Jun-Sep wet; Kenya: Jan-Feb dry/Mar-May wet
-  - New spectral indexes and variables were added (as VIRE, TCARI, dist_built, etc.)
- 
     
 # Python version (can be run in VS Code, Jupyter, or Google Colab):
 - version_1_17-04-26: prosopis_mapping.py — direct port of version_1, modular function-based pipeline
