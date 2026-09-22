@@ -1,69 +1,69 @@
-Trip;point_id;source;point_lon;point_lat;label;field_obse;decision_c;manual-mod
-Magadi;0;model_v19;36.31633269;-1.855674176;1;non prosopis;0;
-Magadi;1;model_v19;36.33261501;-1.804331849;1;non prosopis;0;
-Magadi;2;model_v19;36.37636469;-1.708372143;1;spot had dense prosopis but also a bunch of people so I didn't stop to take photos;1;
-Magadi;3;model_v19;36.37200669;-1.677144611;1;prosopis dominant (also felled and dried) 3;1;
-Magadi;4;model_v19;36.3762099;-1.664520846;1;plenty of prosopis around but exact spot seems to be a taller tree;1;
-Magadi;5;model_v19;36.38135702;-1.633699912;1;estimated exact spot which is not prosopis but couldn't get close due to thicket. massive prosopis infestation all around point 5 though perhaps not on the exact spot (hard to judge);1;
-Magadi;6;model_v19;36.40272856;-1.599165548;1;prosopis not visible but could not reach point due to other type of thicket. Opposite the road from the point prosopis predominant. also to the north and south.;NA;
-Magadi;7;model_v19;36.4024536;-1.593040606;1;mixed prosopis and others;1;
-Magadi;8;model_v19;36.40548814;-1.58078181;1;non prosopis;0;
-Magadi;9;model_v19;36.40499461;-1.580572678;1;non prosopis;0;
-Magadi;10;model_v19;36.41541287;-1.567522817;1;non prosopis;0;
-Magadi;11;model_v19;36.42370282;-1.566439641;1;non prosopis;0;
-Magadi;12;model_v19;36.45628567;-1.565957836;1;non prosopis;0;
-Magadi;13;model_v19;36.46264081;-1.565710964;1;non prosopis - I think Vachellia Tortilis;0;
-Magadi;14;model_v19;36.50569027;-1.554632185;1;non prosopis;0;
-Magadi;15;model_v19;36.51538715;-1.547755449;1;non prosopis;0;
-Magadi;16;model_v19;36.52502165;-1.552217012;1;non prosopis;0;
-Magadi;17;model_v19;36.55470297;-1.542232107;1;non prosopis;0;
-Magadi;18;model_v19;36.54690902;-1.546457332;1;non prosopis;0;
-Magadi;19;model_v19;36.59599774;-1.535360782;1;non prosopis;0;
-Magadi;20;model_v19;36.61253736;-1.516565032;1;non prosopis;0;
-Magadi;21;model_v19;36.62263254;-1.494430999;1;non prosopis;0;
-Magadi;22;model_v19;36.62303487;-1.494355923;1;non prosopis;0;
-Magadi;23;model_v19;36.64095666;-1.452258024;1;non prosopis;0;
-Magadi;24;model_v19;36.68558438;-1.435262768;1;non prosopis;0;
-Magadi;25;model_v19;36.72456846;-1.399936732;1;non prosopis;0;
-Magadi;26;model_v19;36.72097698;-1.401706461;1;non prosopis;0;
-Magadi;27;model_v19;36.30537036;-1.896020693;1;NA;NA;
-Magadi;28;model_v19;36.30592092;-1.883555365;1;non prosopis;0;
-Magadi;29;model_v19;36.31179793;-1.870361449;1;no prosopis on the spot but can be seen around;0;
-Magadi;30;model_v19;36.33551629;-1.797224649;1;non prosopis;0;
-Magadi;31;model_v19;36.34294373;-1.779117025;1;no prosopis but this prosopis-like tree 1 (maybe vachellia farnesiana);0;
-Magadi;32;model_v19;36.35238601;-1.752782374;1;non prosopis;0;
-Magadi;33;model_v19;36.29120391;-1.893015966;1;NA;NA;
-Magadi;34;model_v19;36.25628878;-1.874442392;1;NA;NA;
-Magadi;35;Eero;36.305206;-1.896083;;Emerging prosopis thicket (west of road);NA;null-instead-of-1
-Magadi;36;Eero;36.305586;-1.8852;;Prosopis starts to emerge again in moderate number (was not on common road due north);1;moved_to_right
-Magadi;37;Eero;36.367113;-1.727113;;The settlement until the KPIC there is some more prosopis - anomaly compared to road due north and south;1;
-Magadi;38;Eero;36.374861;-1.710809;;Prosopis reduces drastically due South as a climb begins - local thinks few prosopis due to limited water and soil qualities;NA;null-instead-of-1
-Magadi;39;Eero;36.374703;-1.710923;;Full acacia thicket from above coordinates;0;
-Magadi;40;Eero;36.378724;-1.638648;;Prosopis turns from dark to light;1;moved_to_left
-Magadi;41;Eero;36.404938;-1.581807;;First larger prosopis coordinates;1;
-Magadi;42;Eero;36.426639;-1.565944;;First prosopis (1005m)- approx coordinates;0;0-instead-of-1
-Marsabit;43;model_v20b;37.59687902;0.41047044;1;bir trees acacia reficiens- but around there are prosopis...30%?;0;
-Marsabit;44;model_v20b;37.59793544;0.417029654;1;a fraction of point 2 is prosopis- but big tree seems to be another specie?;NA;
-Marsabit;45;model_v20b;37.60142892;0.427765741;1;balanite;0;
-Marsabit;46;model_v20b;37.60612815;0.442249252;1;only very small shurbs;0;
-Marsabit;47;model_v20b;37.6087405;0.451327295;1;;0;
-Marsabit;48;model_v20b;37.61339822;0.46071944;1;majority acacia seil;0;
-Marsabit;49;model_v20b;37.61927763;0.466759577;1;majority acacia seil- a bit of balanites;0;
-Marsabit;50;model_v20b;37.63044022;0.481555204;1;;0;
-Marsabit;51;model_v20b;37.63100885;0.481292357;1;some acacia malifera;0;
-Marsabit;52;model_v20b;37.65214466;0.518584371;1;but before there was (in the area of the town);0;
-Marsabit;54;model_v20b;37.67141763;0.550862884;1;another kind of acacia;0;
-Marsabit;55;model_v20b;37.67462833;0.584779711;1;acacia tortolis;0;
-Marsabit;56;model_v20b;37.67253697;0.615015014;1;tine little stems but predominantly no prosopis;0;
-Marsabit;57;model_v20b;37.67350845;0.625880372;1;50% prosopis- 50% acacia- a bit of grass;1;
-Marsabit;59;model_v20b;37.67376282;0.632470312;1;90% prosopis;1;
-Marsabit;60;model_v20b;37.6482408;0.657263042;1;small stems but majority acacia;0;
-Marsabit;61;model_v20b;37.63517783;0.682546446;1;acacia species;0;
-Marsabit;62;model_v20b;37.61902068;0.698941761;1;acacias;0;
-Marsabit;72;model_v20b;37.59895645;1.131758089;1;very heavy prosopis and some acacia tortolis. same other hand of the road- all the way to the river-bridge;1;
-Marsabit;73;model_v20b;37.58951461;1.188090764;1;acacia reficiens from both sides;0;
-Marsabit;74;model_v20b;37.61218944;1.195047435;1;too dry. Gumiflora- acacia reficiens;0;
-Marsabit;75;model_v20b;37.67666784;1.25983465;1;too dry. Gumiflora- acacia reficiens;0;
-Marsabit;108;model_v20b;37.67258148;0.634810705;1;;1;
-Marsabit;109;model_v20b;37.673979;0.630478685;1;;1;
-Marsabit;110;model_v20b;37.59871691;1.13173403;1;;1;
+Trip;Date;point_id;source;point_lon;point_lat;label;field_obse;decision_c;manual-mod
+Magadi;23/8/2026;0;model_v19;36.31633269;-1.855674176;1;non prosopis;0;
+Magadi;23/8/2026;1;model_v19;36.33261501;-1.804331849;1;non prosopis;0;
+Magadi;23/8/2026;2;model_v19;36.37636469;-1.708372143;1;spot had dense prosopis but also a bunch of people so I didn't stop to take photos;1;
+Magadi;23/8/2026;3;model_v19;36.37200669;-1.677144611;1;prosopis dominant (also felled and dried) 3;1;
+Magadi;23/8/2026;4;model_v19;36.3762099;-1.664520846;1;plenty of prosopis around but exact spot seems to be a taller tree;1;
+Magadi;23/8/2026;5;model_v19;36.38135702;-1.633699912;1;estimated exact spot which is not prosopis but couldn't get close due to thicket. massive prosopis infestation all around point 5 though perhaps not on the exact spot (hard to judge);1;
+Magadi;23/8/2026;6;model_v19;36.40272856;-1.599165548;1;prosopis not visible but could not reach point due to other type of thicket. Opposite the road from the point prosopis predominant. also to the north and south.;NA;
+Magadi;23/8/2026;7;model_v19;36.4024536;-1.593040606;1;mixed prosopis and others;1;
+Magadi;23/8/2026;8;model_v19;36.40548814;-1.58078181;1;non prosopis;0;
+Magadi;23/8/2026;9;model_v19;36.40499461;-1.580572678;1;non prosopis;0;
+Magadi;23/8/2026;10;model_v19;36.41541287;-1.567522817;1;non prosopis;0;
+Magadi;23/8/2026;11;model_v19;36.42370282;-1.566439641;1;non prosopis;0;
+Magadi;23/8/2026;12;model_v19;36.45628567;-1.565957836;1;non prosopis;0;
+Magadi;23/8/2026;13;model_v19;36.46264081;-1.565710964;1;non prosopis - I think Vachellia Tortilis;0;
+Magadi;23/8/2026;14;model_v19;36.50569027;-1.554632185;1;non prosopis;0;
+Magadi;23/8/2026;15;model_v19;36.51538715;-1.547755449;1;non prosopis;0;
+Magadi;23/8/2026;16;model_v19;36.52502165;-1.552217012;1;non prosopis;0;
+Magadi;23/8/2026;17;model_v19;36.55470297;-1.542232107;1;non prosopis;0;
+Magadi;23/8/2026;18;model_v19;36.54690902;-1.546457332;1;non prosopis;0;
+Magadi;23/8/2026;19;model_v19;36.59599774;-1.535360782;1;non prosopis;0;
+Magadi;23/8/2026;20;model_v19;36.61253736;-1.516565032;1;non prosopis;0;
+Magadi;23/8/2026;21;model_v19;36.62263254;-1.494430999;1;non prosopis;0;
+Magadi;23/8/2026;22;model_v19;36.62303487;-1.494355923;1;non prosopis;0;
+Magadi;23/8/2026;23;model_v19;36.64095666;-1.452258024;1;non prosopis;0;
+Magadi;23/8/2026;24;model_v19;36.68558438;-1.435262768;1;non prosopis;0;
+Magadi;23/8/2026;25;model_v19;36.72456846;-1.399936732;1;non prosopis;0;
+Magadi;23/8/2026;26;model_v19;36.72097698;-1.401706461;1;non prosopis;0;
+Magadi;23/8/2026;27;model_v19;36.30537036;-1.896020693;1;NA;NA;
+Magadi;23/8/2026;28;model_v19;36.30592092;-1.883555365;1;non prosopis;0;
+Magadi;23/8/2026;29;model_v19;36.31179793;-1.870361449;1;no prosopis on the spot but can be seen around;0;
+Magadi;23/8/2026;30;model_v19;36.33551629;-1.797224649;1;non prosopis;0;
+Magadi;23/8/2026;31;model_v19;36.34294373;-1.779117025;1;no prosopis but this prosopis-like tree 1 (maybe vachellia farnesiana);0;
+Magadi;23/8/2026;32;model_v19;36.35238601;-1.752782374;1;non prosopis;0;
+Magadi;23/8/2026;33;model_v19;36.29120391;-1.893015966;1;NA;NA;
+Magadi;23/8/2026;34;model_v19;36.25628878;-1.874442392;1;NA;NA;
+Magadi;23/8/2026;35;Eero;36.305206;-1.896083;;Emerging prosopis thicket (west of road);NA;null-instead-of-1
+Magadi;23/8/2026;36;Eero;36.305586;-1.8852;;Prosopis starts to emerge again in moderate number (was not on common road due north);1;moved_to_right
+Magadi;23/8/2026;37;Eero;36.367113;-1.727113;;The settlement until the KPIC there is some more prosopis - anomaly compared to road due north and south;1;
+Magadi;23/8/2026;38;Eero;36.374861;-1.710809;;Prosopis reduces drastically due South as a climb begins - local thinks few prosopis due to limited water and soil qualities;NA;null-instead-of-1
+Magadi;23/8/2026;39;Eero;36.374703;-1.710923;;Full acacia thicket from above coordinates;0;
+Magadi;23/8/2026;40;Eero;36.378724;-1.638648;;Prosopis turns from dark to light;1;moved_to_left
+Magadi;23/8/2026;41;Eero;36.404938;-1.581807;;First larger prosopis coordinates;1;
+Magadi;23/8/2026;42;Eero;36.426639;-1.565944;;First prosopis (1005m)- approx coordinates;0;0-instead-of-1
+Marsabit;10/9/2026;43;model_v20b;37.59687902;0.41047044;1;bir trees acacia reficiens- but around there are prosopis...30%?;0;
+Marsabit;10/9/2026;44;model_v20b;37.59793544;0.417029654;1;a fraction of point 2 is prosopis- but big tree seems to be another specie?;NA;
+Marsabit;10/9/2026;45;model_v20b;37.60142892;0.427765741;1;balanite;0;
+Marsabit;10/9/2026;46;model_v20b;37.60612815;0.442249252;1;only very small shurbs;0;
+Marsabit;10/9/2026;47;model_v20b;37.6087405;0.451327295;1;;0;
+Marsabit;10/9/2026;48;model_v20b;37.61339822;0.46071944;1;majority acacia seil;0;
+Marsabit;10/9/2026;49;model_v20b;37.61927763;0.466759577;1;majority acacia seil- a bit of balanites;0;
+Marsabit;10/9/2026;50;model_v20b;37.63044022;0.481555204;1;;0;
+Marsabit;10/9/2026;51;model_v20b;37.63100885;0.481292357;1;some acacia malifera;0;
+Marsabit;10/9/2026;52;model_v20b;37.65214466;0.518584371;1;but before there was (in the area of the town);0;
+Marsabit;10/9/2026;54;model_v20b;37.67141763;0.550862884;1;another kind of acacia;0;
+Marsabit;10/9/2026;55;model_v20b;37.67462833;0.584779711;1;acacia tortolis;0;
+Marsabit;10/9/2026;56;model_v20b;37.67253697;0.615015014;1;tine little stems but predominantly no prosopis;0;
+Marsabit;10/9/2026;57;model_v20b;37.67350845;0.625880372;1;50% prosopis- 50% acacia- a bit of grass;1;
+Marsabit;10/9/2026;59;model_v20b;37.67376282;0.632470312;1;90% prosopis;1;
+Marsabit;10/9/2026;60;model_v20b;37.6482408;0.657263042;1;small stems but majority acacia;0;
+Marsabit;10/9/2026;61;model_v20b;37.63517783;0.682546446;1;acacia species;0;
+Marsabit;10/9/2026;62;model_v20b;37.61902068;0.698941761;1;acacias;0;
+Marsabit;10/9/2026;72;model_v20b;37.59895645;1.131758089;1;very heavy prosopis and some acacia tortolis. same other hand of the road- all the way to the river-bridge;1;
+Marsabit;10/9/2026;73;model_v20b;37.58951461;1.188090764;1;acacia reficiens from both sides;0;
+Marsabit;10/9/2026;74;model_v20b;37.61218944;1.195047435;1;too dry. Gumiflora- acacia reficiens;0;
+Marsabit;10/9/2026;75;model_v20b;37.67666784;1.25983465;1;too dry. Gumiflora- acacia reficiens;0;
+Marsabit;10/9/2026;108;model_v20b;37.67258148;0.634810705;1;;1;
+Marsabit;10/9/2026;109;model_v20b;37.673979;0.630478685;1;;1;
+Marsabit;10/9/2026;110;model_v20b;37.59871691;1.13173403;1;;1;
