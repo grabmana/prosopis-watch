@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Prosopis Watch · Satellite screening &amp; decision support</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous">
+<style>
+:root{--bg:#f6f3ee;--surface:#fffdf9;--ink:#292726;--muted:#6b625f;--line:#ded6ce;--accent:#b11f4b;--soft:#f6e6ea;--shadow:0 3px 16px #29272612;--radius:.625rem}
+@media(prefers-color-scheme:dark){:root{--bg:#211f20;--surface:#2b2829;--ink:#f3eeea;--muted:#c2b8b3;--line:#51484a;--accent:#fd8ea1;--soft:#492d35;--shadow:0 3px 16px #0004}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 "Segoe UI",Aptos,Calibri,-apple-system,sans-serif}button,input,select,textarea{font:inherit}button,input,select,textarea,a{touch-action:manipulation}button{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);color:var(--ink);padding:.55rem .8rem;cursor:pointer}button.primary{background:var(--accent);color:var(--bg);border-color:var(--accent);font-weight:650}button:hover:not(:disabled){filter:brightness(.94)}button:disabled{opacity:.5;cursor:not-allowed}a{color:var(--accent)}:focus-visible{outline:3px solid var(--accent);outline-offset:3px}h1{font-size:1.65rem;margin:0;letter-spacing:-.04em}h2{font-size:1.2rem;margin:0 0 .5rem}h3{font-size:1rem;margin:1rem 0 .4rem}p{margin:.45rem 0 .8rem}.eyebrow{color:var(--accent);font-size:.72rem;text-transform:uppercase;letter-spacing:.13em;font-weight:700}.muted,small{color:var(--muted)}small{display:block;font-size:.8rem}.app{display:grid;grid-template-columns:400px 1fr;height:100dvh;min-height:550px}aside{display:flex;flex-direction:column;min-width:0;border-right:1px solid var(--line);z-index:5;background:var(--bg)}header{padding:1.15rem 1.2rem .7rem}.caveat{padding:.65rem .8rem;background:var(--soft);border-left:3px solid var(--accent);border-radius:0 var(--radius) var(--radius) 0;font-size:.83rem}.tabs{display:flex;flex-wrap:wrap;gap:.3rem;padding:.5rem 1rem;border-bottom:1px solid var(--line)}.tabs button{font-size:.78rem;padding:.4rem .6rem}.tabs [aria-selected=true]{border-color:var(--accent);color:var(--accent);background:var(--soft)}.panels{overflow:auto;flex:1;padding:1rem 1.2rem}section[hidden]{display:none}label{display:block;font-weight:600;font-size:.83rem;margin:.6rem 0 .2rem}input:not([type=checkbox]):not([type=range]),select,textarea{width:100%;padding:.48rem .55rem;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);color:var(--ink)}input[type=range]{width:100%;accent-color:var(--accent)}input[type=checkbox]{accent-color:var(--accent)}.row{display:flex;gap:.6rem;align-items:end}.row>*{flex:1;min-width:0}.actions{display:flex;flex-wrap:wrap;gap:.45rem;margin:.7rem 0}.step{border:1px solid var(--line);background:var(--surface);border-radius:var(--radius);padding:.8rem;margin:.75rem 0;box-shadow:var(--shadow)}.step h3{margin:0 0 .4rem}.number{color:var(--accent);font-weight:800;margin-right:.4rem}.scene-list{max-height:235px;overflow:auto;margin:.6rem 0}.scene{display:block;width:100%;text-align:left;margin:.35rem 0;padding:.5rem;font-size:.83rem;overflow-wrap:anywhere}.scene.selected{border:2px solid var(--accent);background:var(--soft)}.scene small{font-size:.7rem}.badge{display:inline-block;background:var(--soft);color:var(--accent);border-radius:4px;padding:0 .3rem}.results{font-size:.84rem;white-space:pre-line;margin:.6rem 0}.table-wrap{overflow:auto;max-height:340px}table{border-collapse:collapse;width:100%;font-size:.75rem}th,td{text-align:left;padding:.45rem;border-bottom:1px solid var(--line);vertical-align:top}th{position:sticky;top:0;background:var(--surface)}textarea{min-height:130px;resize:vertical;font-family:monospace;font-size:.8rem}details{margin:.8rem 0;font-size:.82rem}summary{cursor:pointer;color:var(--accent);font-weight:600}footer{padding:.65rem 1rem;border-top:1px solid var(--line);background:var(--surface);font-size:.8rem}#status{overflow-wrap:anywhere}progress{width:100%;height:6px;accent-color:var(--accent)}#cancel{padding:.2rem .5rem;font-size:.75rem}main{position:relative;overflow:hidden;min-width:0;isolation:isolate}#mapA,#mapB{position:absolute;inset:0;width:100%;height:100%}#mapA{z-index:0}#mapB{z-index:1;clip-path:inset(0 0 0 100%)}.map-top{position:absolute;z-index:450;top:14px;left:55px;right:14px;display:flex;justify-content:space-between;gap:.5rem;pointer-events:none}.map-label,.legend{background:var(--surface);color:var(--ink);padding:.5rem .7rem;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);font-size:.8rem}.map-label{max-width:48%;overflow-wrap:anywhere}.legend{position:absolute;bottom:30px;left:12px;z-index:450;max-width:calc(100% - 24px);pointer-events:none}.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin:0 .2rem 0 .6rem}.new{background:#d33232}.stable{background:#d89b26}.loss{background:#3978ba}#divider{position:absolute;top:0;bottom:0;width:3px;background:#fff;z-index:500;box-shadow:0 0 3px #0009;pointer-events:none}#handle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:46px;height:46px;border-radius:50%;background:var(--surface);color:var(--accent);border:2px solid var(--accent);font-size:22px;display:grid;place-items:center;cursor:ew-resize;pointer-events:auto;touch-action:none}#map-message{position:absolute;inset:auto 12px 80px;z-index:450;background:var(--surface);padding:1rem;border-radius:var(--radius)}.leaflet-popup-content{font-family:"Segoe UI",Aptos,Calibri,-apple-system,sans-serif}.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:var(--surface);color:var(--ink)}.leaflet-container{background:#595750}.weights{display:grid;grid-template-columns:1fr 70px;gap:.25rem .7rem;align-items:center}.weights label{margin:0}.weights input{padding:.3rem!important}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+@media(max-width:760px){.app{grid-template-columns:1fr;height:auto;min-height:100dvh}aside{height:58dvh;border-right:0;order:2}header{padding:.55rem 1rem}header .caveat{display:none}h1{font-size:1.25rem}.tabs{padding:.4rem .8rem}.panels{padding:.7rem 1rem}main{height:42dvh;min-height:260px;order:1}.map-label{font-size:.7rem}.legend{font-size:.68rem}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside>
+<header><div class="eyebrow">Dryland intelligence · research screening</div><h1>Prosopis Watch</h1><p class="caveat"><strong>Spectral indicator, not a trained classifier.</strong> Other dense, moist woody species look similar. Every finding needs field validation.</p></header>
+<nav class="tabs" role="tablist" aria-label="Capabilities">
+<button id="tab-map" role="tab" aria-selected="true" aria-controls="panel-map" data-tab="map">1 · Map &amp; change</button>
+<button id="tab-season" role="tab" aria-selected="false" aria-controls="panel-season" data-tab="season" tabindex="-1">2 · Regrowth</button>
+<button id="tab-risk" role="tab" aria-selected="false" aria-controls="panel-risk" data-tab="risk" tabindex="-1">3 · Risk</button>
+<button id="tab-target" role="tab" aria-selected="false" aria-controls="panel-target" data-tab="target" tabindex="-1">4 · Targeting</button>
+<button id="tab-mrv" role="tab" aria-selected="false" aria-controls="panel-mrv" data-tab="mrv" tabindex="-1">5 · MRV quality</button>
+</nav>
+<div class="panels">
+<section id="panel-map" role="tabpanel" aria-labelledby="tab-map">
+<p class="muted">Compare seasonal windows, not species labels. Start at Afar, Ethiopia (11.78° N, 40.96° E).</p>
+<div class="step"><h3><span class="number">1</span>Find a place</h3><form id="place-form"><label for="place">Place name</label><div class="row"><input id="place" value="Afar, Ethiopia" maxlength="200" autocomplete="off"><button type="submit" data-action>Search</button></div></form><div id="places"></div><small id="geocode-note">Search on submit only; requests are queued at least 1.1 seconds apart. Place queries are sent to OpenStreetMap Nominatim.</small><button id="afar" data-action>Reset to Afar example</button></div>
+<div class="step"><h3><span class="number">2</span>Period A · baseline window</h3><div class="row"><div><label for="a-start">From</label><input id="a-start" type="date" value="2024-08-15"></div><div><label for="a-end">To</label><input id="a-end" type="date" value="2024-09-30"></div></div><button id="search-a" class="primary" data-action>Find baseline scenes</button></div>
+<div class="step"><h3><span class="number">3</span>Choose a real observation</h3><div id="a-notice" class="results">Cloud cover is scene-wide, not local to your plot.</div><div id="a-scenes" class="scene-list"></div></div>
+<div class="step"><h3><span class="number">4</span>Screen the baseline</h3><div class="row"><div><label for="ndvi">NDVI minimum</label><input id="ndvi" type="number" min="-1" max="1" step=".01" value=".35"></div><div><label for="ndmi">NDMI minimum</label><input id="ndmi" type="number" min="-1" max="1" step=".01" value=".05"></div></div><button id="screen-a" class="primary" data-action>Screen Period A viewport</button><div id="a-result" class="results"></div><small>At most 16 tiles, every 8th pixel; zoom is reduced to cover the whole viewport. Nearby hits (~0.0035°) are grouped into candidate locations, not measured stand boundaries. Confidence is heuristic indicator strength, not species probability.</small></div>
+<div class="step"><h3><span class="number">5</span>Period B · comparison</h3><div class="row"><div><label for="b-start">From</label><input id="b-start" type="date" value="2026-08-15"></div><div><label for="b-end">To</label><input id="b-end" type="date" value="2026-09-24"></div></div><button id="search-b" data-action>Find comparison scenes</button><div id="b-notice" class="results"></div><div id="b-scenes" class="scene-list"></div></div>
+<div class="step"><h3><span class="number">6</span>Screen, compare &amp; swipe</h3><label for="change">Minimum NDVI change</label><input id="change" type="number" min=".01" max="2" step=".01" value=".10"><button id="screen-b" class="primary" data-action>Screen B + detect change</button><div id="b-result" class="results"></div><label><input type="checkbox" id="swipe"> Enable independent A / B swipe maps</label><label for="swipe-range">Divider position (also draggable on map)</label><input id="swipe-range" type="range" min="0" max="100" value="50"><small>Comparison uses the baseline sampling extent and identical thresholds. New: newly meets criteria and NDVI rises ≥ threshold. Loss: baseline candidate and NDVI falls ≥ threshold. Stable: remaining candidates in both. Other transitions stay unresolved; absence of a pin is not proof of absence.</small></div>
+<details><summary>Science, sources &amp; limitations</summary><p>This app does not use the repository's Earth Engine models. NDVI = (B08−B04)/(B08+B04); NDMI = (B08−B11)/(B08+B11); NDWI = (B03−B08)/(B03+B08). Dry-season greenness and moisture can help flag evergreen woody cover in Afar and Baringo, but irrigated crops, native trees and other species confound it.</p><p>Sentinel-2 L2A bands are used as delivered by the tile service; processing-baseline offsets and cross-date radiometric differences can affect these indices. No bespoke reflectance harmonization is applied. PNG values have ~0.0078 index quantization. B11 is natively 20 m; sampling is coarser still. SCL excludes cloud, shadow, snow, invalid and unclassified pixels, but residual cloud and mixed pixels remain. Scene-wide cloud percentage is not plot quality.</p><p>Choose comparable seasonal windows. Indicators do not establish causation, invasion area, species identity, clearing success, carbon benefits or legal compliance. No field labels, trained classifier or accuracy assessment is included.</p><p>Internet required. <a href="https://planetarycomputer.microsoft.com/" target="_blank" rel="noopener">Microsoft Planetary Computer</a> provides anonymous, rate-limited research/non-commercial access; data providers' terms still apply. Copernicus Sentinel-2 / DEM, NASA MODIS MCD64A1; Esri World Imagery; © OpenStreetMap contributors (Nominatim); Leaflet 1.9.4. Searches and coordinates go to these services. Nothing is uploaded elsewhere or stored persistently.</p></details>
+</section>
+<section id="panel-season" role="tabpanel" aria-labelledby="tab-season" hidden>
+<h2>Regrowth or recovery?</h2><p>Evergreen woody cover can retain a high NDVI floor with low seasonal amplitude. Grassland recovery is more seasonal. These are phenology indicators, <strong>not species identification</strong>.</p>
+<label for="season-start">First month of a full 12-month series</label><input id="season-start" type="month" value="2024-01">
+<button id="run-season" class="primary" data-action>Measure 12 monthly observations</button>
+<p class="caveat">One separate STAC search per month; the least-cloudy scene intersecting the center is used. At least 5 clear months <strong>per sampled location</strong> spanning at least 240 days are required. Missing months are never filled with invented values.</p>
+<div id="season-result" class="results">Uses the baseline sampling extent if available, otherwise the current viewport. No clearing history is inferred: compare with a documented treatment date in the field.</div><div id="season-table" class="table-wrap"></div>
+<details open><summary>Rules &amp; limitations</summary><p>Woody: minimum NDVI ≥ 0.28 and amplitude ≤ 0.28. Grass: minimum &lt; 0.22 and amplitude &gt; 0.25. Otherwise inconclusive. A single observation per month may miss seasonal extremes; missing months can bias the minimum and amplitude. Low amplitude is not uniquely Prosopis. These fixed thresholds require local validation.</p></details>
+</section>
+<section id="panel-risk" role="tabpanel" aria-labelledby="tab-risk" hidden>
+<h2>Re-invasion risk</h2><p class="caveat">A weighted composite of measured proxies, <strong>not a calibrated probability or time-to-invasion forecast</strong>.</p><label for="risk-cells">Number of grid cells</label><select id="risk-cells"><option>16</option><option selected>24</option><option>32</option></select>
+<h3>Relative weights</h3><div class="weights"><label for="risk-seed">Seed-source distance</label><input id="risk-seed" type="number" min="0" max="100" value="45"><label for="risk-moisture">NDMI moisture</label><input id="risk-moisture" type="number" min="0" max="100" value="25"><label for="risk-terrain">Flat terrain</label><input id="risk-terrain" type="number" min="0" max="100" value="20"><label for="risk-fire">Fire in last 24 months</label><input id="risk-fire" type="number" min="0" max="100" value="10"></div>
+<button id="run-risk" class="primary" data-action>Measure &amp; score grid</button><div id="risk-result" class="results">First screen the current extent to map candidate seed sources.</div>
+<details open><summary>What contributes?</summary><p>Distance to nearest mapped candidate: exp(−distance/1500 m). Moisture: NDMI scaled from −0.2 to 0.5. Terrain: flatness, 1 − slope/20°, clipped to 0–1. Fire: any valid MODIS burn date during the last 24 completed calendar months, scored 1, otherwise 0. These transforms and weights are assumptions, not fitted relationships. Fire effects are context-dependent; set its weight to zero if inappropriate.</p><p>The grid uses the screened viewport, not a newly panned area: re-screen A to change the analysis extent. DEM slopes use neighbouring elevations ~300 m apart and adaptive PNG rescaling; elevation quantization is reported after analysis. Flatness below that precision is unresolved. MODIS is ~500 m, not stand scale. Fire is sampled at cell centers, not complete cell burn fractions. No burn observation is not evidence of no fire. Sources outside the mapped extent are unknown. Missing required moisture or terrain leaves a cell unscored. No MODIS scenes means the fire term is zero everywhere, explicitly reported.</p><p><strong>Land use and climate are omitted:</strong> no reliable free browser source is integrated at this resolution. ESA WorldCover on Planetary Computer is a legitimate future land-use addition, not used here.</p></details>
+</section>
+<section id="panel-target" role="tabpanel" aria-labelledby="tab-target" hidden>
+<h2>Targeting for impact</h2><p>Rank candidate stands using nearby seasonal grass signals, surface water, terrain and relative indicator density.</p><div class="weights"><label for="target-grazing">Grazing gain proxy</label><input id="target-grazing" type="number" min="0" max="100" value="35"><label for="target-water">Water access proxy</label><input id="target-water" type="number" min="0" max="100" value="30"><label for="target-erosion">Erosion / slope proxy</label><input id="target-erosion" type="number" min="0" max="100" value="15"><label for="target-density">Stand density proxy</label><input id="target-density" type="number" min="0" max="100" value="20"></div>
+<button id="run-target" class="primary" data-action>Rank mapped stands</button><button id="export-target" disabled>Export ranking CSV</button><div id="target-result" class="results">Requires screening and the full seasonal analysis for the same extent. Uses Period A, or Period B when screened.</div><div id="target-table" class="table-wrap"></div>
+<details open><summary>Interpretation, not a benefit estimate</summary><p>Scores are <strong>relative within the current extent, not absolute</strong>. Grazing is the share of sampled land within 1 km classified as seasonal grass (minimum 3 seasonally usable samples), not predicted yield. Water access is exp(−distance/1000 m) to a sampled NDWI ≥ 0.1 location; no detected water scores zero, not proof of no access. Slope/20° is an erosion-concern proxy, not measured erosion. Clearing steep terrain can worsen erosion without restoration. Density is candidate sample count normalized to the largest cluster, not canopy cover. No costs, tenure, livestock data or biodiversity effects are modeled.</p></details>
+</section>
+<section id="panel-mrv" role="tabpanel" aria-labelledby="tab-mrv" hidden>
+<h2>Automated MRV quality control</h2><p>Screen claimed clearing with before/after NDVI at the exact supplied coordinate. No random demonstration records are treated as real claims.</p><label for="records">CSV: lat, lon, YYYY-MM-DD, activity</label><textarea id="records" placeholder="lat,lon,date,activity&#10;11.78,40.96,2024-09-01,clearing" spellcheck="false"></textarea><small>Header optional; quoted CSV fields supported. Up to 30 records per run. Only clearing/removal claims are assessed; other activities are inconclusive.</small>
+<div class="row"><div><label for="mrv-window">Window each side (days)</label><input id="mrv-window" type="number" min="1" max="365" value="60"></div><div><label for="mrv-drop">Minimum NDVI drop</label><input id="mrv-drop" type="number" min=".01" max="2" step=".01" value=".10"></div></div><button id="run-mrv" class="primary" data-action>Check field records</button><button id="export-mrv" disabled>Export audit CSV</button><div id="mrv-result" class="results"></div><div id="mrv-table" class="table-wrap"></div>
+<p class="caveat"><strong>“Not verified” means the satellite record does not support the claim — it is not proof the work was not done.</strong> Cloud, scene gaps and small plots cause false negatives. This is a screening flag for follow-up.</p><p class="muted">“Verified” only means a spectral drop supports the claim, not that clearing is proven. Drought, seasonality, fire and agricultural changes also lower NDVI. The least-cloudy scene before and after the date is used; local SCL quality is checked. No usable pair → inconclusive. Data, scene IDs, dates, cloud percentages, thresholds and reasons are included in the audit.</p>
+</section>
+</div>
+<footer><div id="status" role="status" aria-live="polite">Ready · internet connection required.</div><progress id="progress" value="0" max="1" aria-label="Operation progress" hidden></progress><button id="cancel" hidden>Cancel operation</button></footer>
+</aside>
+<main id="map-wrap" aria-label="Satellite comparison maps">
+<div id="mapA" aria-label="Period A map"></div><div id="mapB" aria-label="Period B map" inert></div>
+<div class="map-top"><span class="map-label" id="label-a">A · Esri context basemap (not dated analysis imagery)</span><span class="map-label" id="label-b" hidden>B · choose a scene</span></div>
+<div id="divider" hidden><button id="handle" type="button" aria-label="Drag comparison divider; use arrow keys to adjust">↔</button></div>
+<div id="legend" class="legend">Rose pins · spectral candidates, not confirmed Prosopis</div>
+<div id="map-message" hidden></div>
+</main>
+</div>
+<noscript>This application requires JavaScript and internet access to the listed public data services.</noscript>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous"></script>
+<script>
+'use strict';
+const $ = id => document.getElementById(id);
+const STAC = 'https://planetarycomputer.microsoft.com/api/stac/v1/search';
+const TILE = 'https://planetarycomputer.microsoft.com/api/data/v1/item/tiles/WebMercatorQuad/';
+const EXPRESSIONS = {ndvi:'(B08-B04)/(B08+B04)',ndmi:'(B08-B11)/(B08+B11)',ndwi:'(B03-B08)/(B03+B08)'};
+const DAY = 86400000, COLORS = {candidate:'#b11f4b',new:'#d33232',stable:'#d89b26',loss:'#3978ba',woody:'#b11f4b',grass:'#77913c',inconclusive:'#88817c'};
+const state = {selected:{a:null,b:null},snapshots:{a:null,b:null},season:null,controller:null,busy:false,tab:'map',target:[],mrv:[]};
+let mapA, mapB, syncing = false, imagery = {}, groups = {}, auxiliary = {}, swipePosition = 50;
+const tileCache = new Map(), searchCache = new Map();
+function text(id, value){ $(id).textContent = value; }
+function clamp(v,a=0,b=1){ return Math.max(a,Math.min(b,v)); }
+function iso(date){ return new Date(date).toISOString().slice(0,10); }
+function today(){ return iso(Date.now()); }
+function num(id,min,max){ const v = Number($(id).value); if(!$(id).value.trim() || !Number.isFinite(v) || v<min || v>max) throw new Error(`${$(id).labels?.[0]?.textContent || id}: enter a value from ${min} to ${max}.`); return v; }
+function status(message,done,total){ text('status',message); if(total){ $('progress').max=total; $('progress').value=done; } }
+function aborted(){ if(state.controller?.signal.aborted) throw new DOMException('Cancelled','AbortError'); }
+function sleep(ms){ return new Promise(resolve=>setTimeout(resolve,ms)); }
+async function request(url){
+  for(let attempt=0;attempt<3;attempt++){
+    aborted();
+    const controller = new AbortController(), outer = state.controller?.signal;
+    const abort = ()=>controller.abort();
+    outer?.addEventListener('abort',abort,{once:true});
+    const timer = setTimeout(abort,45000);
+    let response;
+    try { response = await fetch(url,{method:'GET',signal:controller.signal}); }
+    catch(error){ if(outer?.aborted) throw new DOMException('Cancelled','AbortError'); throw new Error(`Data request failed or timed out. Check connectivity, CORS, or service availability (${new URL(url).hostname}).`); }
+    finally { clearTimeout(timer); outer?.removeEventListener('abort',abort); }
+    if((response.status===429 || response.status===503) && attempt<2){
+      const delay = clamp(Number(response.headers.get('Retry-After')) || 3*(attempt+1),1,30)*1000;
+      status(`Service busy (${response.status}); waiting ${delay/1000}s before retry…`); await sleep(delay); continue;
+    }
+    return response;
+  }
+}
+async function run(label,fn){
+  if(state.busy) return;
+  state.busy=true; state.controller=new AbortController();
+  document.querySelectorAll('[data-action], .scene').forEach(el=>el.disabled=true);
+  $('progress').hidden=false; $('progress').value=0; $('progress').max=1; $('cancel').hidden=false; status(label);
+  try { await fn(); aborted(); status(`${label} — complete.`); }
+  catch(error){ status(error.name==='AbortError'?'Operation cancelled; incomplete results were not published.':error.message); }
+  finally { state.busy=false; state.controller=null; document.querySelectorAll('[data-action], .scene').forEach(el=>el.disabled=false); $('progress').hidden=true; $('cancel').hidden=true; }
+}
+function boundsArray(bounds){ return [bounds.getWest(),bounds.getSouth(),bounds.getEast(),bounds.getNorth()]; }
+function currentBounds(){
+  const b=boundsArray(mapA.getBounds());
+  if(b[0]<-180 || b[2]>180 || b[2]-b[0]>8 || b[3]-b[1]>8 || Math.abs(b[1])>80 || Math.abs(b[3])>80) throw new Error('Zoom in to a local extent (under 8° wide and high, within ±80° latitude, without crossing the date line).');
+  return b;
+}
+function inside(p,b){ return p.lon>=b[0] && p.lon<=b[2] && p.lat>=b[1] && p.lat<=b[3]; }
+function ringContains(ring,lon,lat){
+  let hit=false;
+  for(let i=0,j=ring.length-1;i<ring.length;j=i++){
+    const [xi,yi]=ring[i],[xj,yj]=ring[j];
+    if((yi>lat)!==(yj>lat) && lon<(xj-xi)*(lat-yi)/(yj-yi)+xi) hit=!hit;
+  }
+  return hit;
+}
+function covers(scene,lon,lat){
+  const g=scene.geometry;
+  if(!g) return inside({lon,lat},scene.bbox || [-180,-90,180,90]);
+  const polys=g.type==='Polygon'?[g.coordinates]:g.type==='MultiPolygon'?g.coordinates:[];
+  return polys.some(r=>ringContains(r[0],lon,lat) && !r.slice(1).some(h=>ringContains(h,lon,lat)));
+}
+function cloud(scene){ const c=scene.properties?.['eo:cloud_cover']; return typeof c==='number' && Number.isFinite(c)?c:null; }
+function sceneDate(scene){ return scene.properties.datetime || scene.properties.start_datetime; }
+function cloudLabel(scene){ return cloud(scene)===null?'unknown':`${cloud(scene).toFixed(2)}%`; }
+async function search(collection,bbox,start,end){
+  const params=new URLSearchParams({collections:collection,bbox:bbox.join(','),limit:'100'});
+  if(start && end) params.set('datetime',`${start}T00:00:00Z/${end}T23:59:59Z`);
+  const first=`${STAC}?${params}`, cached=searchCache.get(first);
+  if(cached) return cached;
+  let url=first, items=[], pages=0;
+  while(url){
+    if(++pages>20) throw new Error('Search exceeded 2,000 scenes; narrow the dates or extent. No incomplete scene ranking was used.');
+    const response=await request(url);
+    if(!response.ok) throw new Error(`Scene search refused (${response.status}). Try a smaller extent or retry later.`);
+    const data=await response.json();
+    items.push(...(data.features || []));
+    const next=data.links?.find(l=>l.rel==='next');
+    if(next && next.method && next.method!=='GET') throw new Error('The catalog requested unsupported POST pagination. Narrow the search; incomplete results were not used.');
+    url=next?.href ? new URL(next.href,STAC).href : null;
+    if(url && new URL(url).origin!==new URL(STAC).origin) throw new Error('Unexpected catalog pagination host.');
+  }
+  items=[...new Map(items.map(s=>[s.id,s])).values()];
+  searchCache.set(first,items); if(searchCache.size>100) searchCache.delete(searchCache.keys().next().value);
+  return items;
+}
+function leastCloudy(items){ return [...items].filter(s=>cloud(s)!==null).sort((a,b)=>cloud(a)-cloud(b) || sceneDate(a).localeCompare(sceneDate(b))); }
+function windowDates(prefix){
+  const start=$(prefix+'-start').value,end=$(prefix+'-end').value;
+  if(!start || !end || start>end || end>today()) throw new Error('Choose an ordered date window ending no later than today.');
+  return {start,end};
+}
+function dateAdd(date,days){ return iso(Date.parse(date)+days*DAY); }
+function pointOf(b){ return {lon:(b[0]+b[2])/2,lat:(b[1]+b[3])/2}; }
+function el(tag,value){ const e=document.createElement(tag); if(value!==undefined) e.textContent=value; return e; }
+async function findScenes(side){
+  const {start,end}=windowDates(side), bbox=side==='b' && state.snapshots.a?state.snapshots.a.grid.bbox:currentBounds();
+  let items=await search('sentinel-2-l2a',bbox,start,end);
+  const sorted=leastCloudy(items);
+  let note=`${items.length} scenes in period. Cloud percentages are reported catalog values.`, recommendations=[];
+  if(!sorted.length || cloud(sorted[0])>=5){
+    const expanded=await search('sentinel-2-l2a',bbox,dateAdd(start,-45),[dateAdd(end,45),today()].sort()[0]);
+    const midpoint=(Date.parse(start)+Date.parse(end))/2;
+    recommendations=expanded.filter(s=>cloud(s)!==null && cloud(s)<5 && (iso(sceneDate(s))<start || iso(sceneDate(s))>end))
+      .sort((a,b)=>Math.abs(Date.parse(sceneDate(a))-midpoint)-Math.abs(Date.parse(sceneDate(b))-midpoint)).slice(0,3);
+    note+= recommendations.length?` No in-period scene below 5% cloud. Recommended ${recommendations.length} clear alternatives nearest the requested dates (outside period, ±45 days).`:' No scenes below 5% cloud found in the ±45-day expansion.';
+  }
+  const recommended=new Set(recommendations.map(s=>s.id));
+  items=[...items.sort((a,b)=>sceneDate(b).localeCompare(sceneDate(a))),...recommendations];
+  const list=$(side+'-scenes'); list.replaceChildren();
+  items.forEach(scene=>{
+    const button=el('button'); button.className='scene'; button.disabled=state.busy; button.dataset.scene=scene.id;
+    button.append(el('strong',`${iso(sceneDate(scene))} · cloud ${cloudLabel(scene)}`),el('small',scene.id));
+    if(recommended.has(scene.id)){ const badge=el('span','outside period · recommended'); badge.className='badge'; button.append(badge); }
+    button.onclick=()=>selectScene(side,scene,bbox);
+    list.append(button);
+  });
+  text(side+'-notice',note);
+  const center=pointOf(bbox);
+  const best=leastCloudy(recommendations.length?recommendations:items).find(s=>covers(s,center.lon,center.lat)) || leastCloudy(items)[0];
+  if(best) selectScene(side,best);
+  else{
+    state.selected[side]=null;state.snapshots[side]=null;groups[side].clearLayers();
+    if(imagery[side]) (side==='a'?mapA:mapB).removeLayer(imagery[side]);
+    text('label-'+side,`${side.toUpperCase()} · no scene selected (Esri context only)`);
+    text(side+'-result','No usable scene selected. Choose another date window.');
+    if(side==='a'){state.snapshots.b=null;groups.b.clearLayers();}
+    clearDerived();
+  }
+}
+function clearDerived(){
+  state.target=[]; $('export-target').disabled=true; $('target-table').replaceChildren();
+  ['risk','target'].forEach(k=>auxiliary[k]?.clearLayers());
+  text('risk-result','Screening changed. Re-run risk for this extent.');
+  text('target-result','Screening changed. Re-run targeting with matching seasonal evidence.');
+}
+function selectScene(side,scene){
+  state.selected[side]=scene;
+  state.snapshots[side]=null; groups[side].clearLayers(); text(side+'-result','Scene selected; screen it to create findings.');
+  if(side==='a'){ state.snapshots.b=null; groups.b.clearLayers(); text('b-result','Baseline changed; re-screen A, then B.'); state.season=null; auxiliary.season.clearLayers(); $('season-table').replaceChildren(); text('season-result','Baseline scene changed; run the 12-month series for the new sampling extent.'); }
+  clearDerived();
+  document.querySelectorAll(`#${side}-scenes .scene`).forEach(b=>b.classList.toggle('selected',b.dataset.scene===scene.id));
+  if(imagery[side]) (side==='a'?mapA:mapB).removeLayer(imagery[side]);
+  const params=new URLSearchParams({collection:scene.collection,item:scene.id,assets:'visual',format:'png'});
+  imagery[side]=L.tileLayer(`${TILE}{z}/{x}/{y}@1x?${params}`,{maxZoom:19,crossOrigin:'anonymous',opacity:1,attribution:'Copernicus Sentinel-2 · Microsoft Planetary Computer'}).addTo(side==='a'?mapA:mapB);
+  text('label-'+side,`${side.toUpperCase()} · ${iso(sceneDate(scene))} · Sentinel-2 (Esri visible outside footprint)`);
+}
+function worldPixel(lon,lat,z){
+  const n=256*2**z, s=Math.sin(clamp(lat,-85.0511,85.0511)*Math.PI/180);
+  return {x:(lon+180)/360*n,y:(.5-Math.log((1+s)/(1-s))/(4*Math.PI))*n};
+}
+function coordinate(x,y,z){
+  const n=256*2**z;
+  return {lon:x/n*360-180,lat:Math.atan(Math.sinh(Math.PI*(1-2*y/n)))*180/Math.PI};
+}
+function makeGrid(bbox=currentBounds()){
+  let z=Math.min(14,Math.round(mapA.getZoom())),tiles;
+  do{
+    const nw=worldPixel(bbox[0],bbox[3],z),se=worldPixel(bbox[2],bbox[1],z); tiles=[];
+    for(let x=Math.floor(nw.x/256);x<=Math.floor(se.x/256);x++) for(let y=Math.floor(nw.y/256);y<=Math.floor(se.y/256);y++) tiles.push({x,y,z});
+    if(tiles.length<=16) break; z--;
+  }while(z>=0);
+  const points=[];
+  tiles.forEach(t=>{
+    for(let y=4;y<256;y+=8) for(let x=4;x<256;x+=8){
+      const p=coordinate(t.x*256+x+.5,t.y*256+y+.5,z);
+      if(inside(p,bbox)) points.push({...p,tile:t,x,y,key:`${t.x}:${t.y}:${x}:${y}`});
+    }
+  });
+  return {bbox:[...bbox],z,tiles,points,id:[...bbox,z].join(',')};
+}
+function tileURL(scene,t,kind){
+  const params=new URLSearchParams({collection:scene.collection,item:scene.id,format:'png',asset_as_band:'True'});
+  if(EXPRESSIONS[kind]){ params.set('expression',EXPRESSIONS[kind]); params.set('rescale','-1,1'); }
+  else if(kind==='scl'){ params.set('assets','SCL'); params.set('rescale','0,11'); params.set('resampling','nearest'); }
+  else if(kind==='dem'){ params.set('assets','data'); params.set('rescale',t.demRange || '-500,9000'); }
+  else if(kind==='fire'){ params.set('expression','where((Burn_Date>0)&(Burn_Date<=366),1,0)'); params.set('rescale','0,1'); }
+  return `${TILE}${t.z}/${t.x}/${t.y}@1x?${params}`;
+}
+async function pixels(scene,t,kind){
+  const url=tileURL(scene,t,kind);
+  if(tileCache.has(url)) return tileCache.get(url);
+  const pending=(async()=>{
+    const response=await request(url);
+    if(response.status===404) return null;
+    if(!response.ok) throw new Error(`${kind.toUpperCase()} tile request failed (${response.status}); no substitute values were used.`);
+    const blob=await response.blob(), objectURL=URL.createObjectURL(blob);
+    try{
+      const image=new Image(); image.crossOrigin='anonymous';
+      await new Promise((resolve,reject)=>{ image.onload=resolve; image.onerror=()=>reject(new Error('Unable to decode a data tile.')); image.src=objectURL; });
+      const canvas=document.createElement('canvas'); canvas.width=image.width; canvas.height=image.height;
+      const context=canvas.getContext('2d',{willReadFrequently:true}); context.drawImage(image,0,0);
+      return {data:context.getImageData(0,0,image.width,image.height).data,width:image.width,height:image.height};
+    }finally{ URL.revokeObjectURL(objectURL); }
+  })();
+  tileCache.set(url,pending); if(tileCache.size>96) tileCache.delete(tileCache.keys().next().value);
+  try{return await pending;}catch(error){tileCache.delete(url);throw error;}
+}
+function channel(image,x,y){
+  if(!image || x<0 || y<0 || x>=image.width || y>=image.height) return null;
+  const i=(y*image.width+x)*4;
+  if(image.data[i+3]<200) return null;
+  if(image.data[i]!==image.data[i+1] || image.data[i]!==image.data[i+2]) throw new Error('Unexpected colored data tile: grayscale decoding is unsafe. Analysis stopped rather than interpreting palette colors as measurements.');
+  return image.data[i];
+}
+function indexAt(image,x,y){ const v=channel(image,x,y); return v===null?null:v/255*2-1; }
+function clearAt(image,x,y){ const v=channel(image,x,y); return v!==null && [4,5,6].includes(Math.round(v/255*11)); }
+async function sampleScene(scene,grid,kinds=['ndvi','ndmi'],label='Screening'){
+  const samples=[];
+  for(let i=0;i<grid.tiles.length;i++){
+    aborted(); const t=grid.tiles[i], data={};
+    for(const kind of [...kinds,'scl']){ status(`${label} · tile ${i+1}/${grid.tiles.length} · ${kind}`,i,grid.tiles.length); data[kind]=await pixels(scene,t,kind); }
+    for(const p of grid.points.filter(p=>p.tile.x===t.x && p.tile.y===t.y)){
+      if(!clearAt(data.scl,p.x,p.y)) continue;
+      const values=Object.fromEntries(kinds.map(kind=>[kind,indexAt(data[kind],p.x,p.y)]));
+      if(Object.values(values).some(v=>v===null)) continue;
+      samples.push({...p,...values});
+    }
+    status(`${label} · tile ${i+1}/${grid.tiles.length} · ${samples.length.toLocaleString()} usable samples`,i+1,grid.tiles.length);
+  }
+  return samples;
+}
+function distance(a,b){ return L.latLng(a.lat,a.lon).distanceTo(L.latLng(b.lat,b.lon)); }
+function candidate(p,thresholds){ return p.ndvi>=thresholds.ndvi && p.ndmi>=thresholds.ndmi; }
+function strength(p,thresholds){ return Math.round(100*(.5+.25*clamp((p.ndvi-thresholds.ndvi)/.4)+.25*clamp((p.ndmi-thresholds.ndmi)/.4))); }
+function cluster(samples,thresholds){
+  const radius=.0035,buckets=new Map(),clusters=[];
+  for(const p of samples){
+    const bx=Math.floor(p.lon/radius),by=Math.floor(p.lat/radius); let best=null,near=radius;
+    for(let dx=-1;dx<=1;dx++) for(let dy=-1;dy<=1;dy++){
+      for(const c of buckets.get(`${bx+dx}:${by+dy}:${p.type || 'candidate'}`) || []){
+        const d=Math.hypot(c.anchorLon-p.lon,c.anchorLat-p.lat);
+        if(d<=near){near=d;best=c;}
+      }
+    }
+    if(!best){
+      best={anchorLon:p.lon,anchorLat:p.lat,lat:0,lon:0,count:0,score:0,type:p.type || 'candidate'}; clusters.push(best);
+      const key=`${bx}:${by}:${best.type}`; if(!buckets.has(key)) buckets.set(key,[]); buckets.get(key).push(best);
+    }
+    best.lat+=p.lat; best.lon+=p.lon; best.count++; best.score+=strength(p,thresholds);
+  }
+  return clusters.map((c,i)=>({...c,id:i+1,lat:c.lat/c.count,lon:c.lon/c.count,score:Math.round(c.score/c.count)}));
+}
+function popup(lines){ const node=el('div'); lines.forEach(line=>node.append(el('div',line))); return node; }
+function drawStands(group,stands){
+  group.clearLayers(); stands.forEach(c=>L.circleMarker([c.lat,c.lon],{radius:clamp(3+Math.sqrt(c.count),4,18),color:COLORS[c.type],fillColor:COLORS[c.type],fillOpacity:.65,weight:1.5})
+    .bindPopup(popup([`Candidate ${c.id} · ${c.type}`,`${c.lat.toFixed(5)}, ${c.lon.toFixed(5)}`,`${c.count} sampled hits · confidence ${c.score}/100`,`Heuristic indicator strength, not species probability.`,`Field validation required.`])).addTo(group));
+}
+async function screen(side){
+  const scene=state.selected[side]; if(!scene) throw new Error(`Choose a Period ${side.toUpperCase()} scene first.`);
+  const thresholds={ndvi:num('ndvi',-1,1),ndmi:num('ndmi',-1,1)}, baseline=state.snapshots.a;
+  if(side==='b' && !baseline) throw new Error('Screen Period A first to fix the comparison extent.');
+  if(side==='b' && JSON.stringify(thresholds)!==JSON.stringify(baseline.thresholds)) throw new Error('Thresholds changed. Re-screen A before comparing B.');
+  if(side==='b' && sceneDate(scene)<=sceneDate(baseline.scene)) throw new Error('Period B must be later than the selected baseline scene.');
+  const delta=num('change',.01,2),grid=side==='a'?makeGrid():baseline.grid;
+  const samples=await sampleScene(scene,grid),hits=samples.filter(p=>candidate(p,thresholds)),stands=cluster(hits,thresholds);
+  if(!samples.length) throw new Error('No clear, valid sampled pixels in this scene/extent. Choose another scene or pan within its footprint.');
+  const snapshot={scene,thresholds,grid,samples,stands};
+  aborted();
+  if(side==='a'){
+    state.snapshots.a=snapshot; state.snapshots.b=null; groups.b.clearLayers(); drawStands(groups.a,stands);
+    text('b-result','Baseline screening updated; re-screen B to compare.');
+    if(state.season?.grid.id!==grid.id){state.season=null;auxiliary.season.clearLayers();$('season-table').replaceChildren();text('season-result','Sampling extent changed; run a new 12-month series.');}
+    text('a-result',`${samples.length.toLocaleString()} usable / ${grid.points.length.toLocaleString()} sampled pixels · ${grid.tiles.length} tiles at z${grid.z}.\n${hits.length.toLocaleString()} indicator hits → ${stands.length} candidate locations. SCL cloud/shadow screening applied.`);
+  }else{
+    const old=new Map(baseline.samples.map(p=>[p.key,p])), changes=[],counts={new:0,stable:0,loss:0}; let paired=0,unresolved=0;
+    for(const p of samples){
+      const prior=old.get(p.key); if(!prior) continue; paired++;
+      const was=candidate(prior,thresholds),now=candidate(p,thresholds),rise=p.ndvi-prior.ndvi;
+      let type=was && rise<=-delta?'loss':!was && now && rise>=delta?'new':was && now?'stable':null;
+      if(type){counts[type]++;changes.push({...p,type});}else if(was || now) unresolved++;
+    }
+    if(!paired) throw new Error('No paired clear pixels. Change cannot be assessed; choose a scene with overlapping coverage.');
+    const changeStands=cluster(changes,thresholds); snapshot.changes=changeStands; state.snapshots.b=snapshot; drawStands(groups.b,changeStands);
+    text('b-result',`${samples.length.toLocaleString()} usable pixels; ${paired.toLocaleString()} paired with A.\nSample classes: ${counts.new} new · ${counts.stable} stable · ${counts.loss} loss · ${unresolved} unresolved candidate transitions.\n${changeStands.length} change locations; ${stands.length} current candidate locations. Only paired clear pixels count. Classes may legitimately be absent.`);
+    $('swipe').checked=true; updateSwipe(); mapA.fitBounds([[grid.bbox[1],grid.bbox[0]],[grid.bbox[3],grid.bbox[2]]],{animate:false});
+  }
+  clearDerived(); updateLayers();
+}
+function monthRange(start,offset){
+  const [y,m]=start.split('-').map(Number),a=new Date(Date.UTC(y,m-1+offset,1)),b=new Date(Date.UTC(y,m+offset,0));
+  return {start:iso(a),end:iso(b),label:iso(a).slice(0,7)};
+}
+function table(id,headers,rows){
+  const t=el('table'),head=el('thead'),tr=el('tr'); headers.forEach(h=>tr.append(el('th',h)));head.append(tr);t.append(head);
+  const body=el('tbody'); rows.forEach(row=>{const r=el('tr');row.forEach(v=>r.append(el('td',v)));body.append(r);});t.append(body);$(id).replaceChildren(t);
+}
+async function seasonal(){
+  const start=$('season-start').value; if(!/^\d{4}-\d{2}$/.test(start)) throw new Error('Choose the first month.');
+  if(monthRange(start,11).end>=today()) throw new Error('Choose 12 fully completed months so a seasonal cycle can be observed.');
+  const grid=state.snapshots.a?.grid || makeGrid(),center=pointOf(grid.bbox),values=new Map(grid.points.map(p=>[p.key,[]])),months=[];
+  for(let i=0;i<12;i++){
+    const window=monthRange(start,i); status(`Month ${i+1}/12 · catalog ${window.label}`,i,12);
+    const scenes=leastCloudy(await search('sentinel-2-l2a',grid.bbox,window.start,window.end)).filter(s=>covers(s,center.lon,center.lat));
+    const scene=scenes[0];
+    if(!scene){months.push({...window,scene:null,count:0,reason:'No scene with reported cloud cover at center'});continue;}
+    const samples=await sampleScene(scene,grid,['ndvi'],`${window.label} (${i+1}/12)`);
+    samples.forEach(p=>values.get(p.key).push({value:p.ndvi,date:iso(sceneDate(scene))}));
+    months.push({...window,scene,count:samples.length});
+  }
+  const classified=grid.points.map(p=>{
+    const observations=values.get(p.key),n=observations.length,span=n? (Date.parse(observations[n-1].date)-Date.parse(observations[0].date))/DAY:0;
+    const usable=n>=5 && span>=240,min=n?Math.min(...observations.map(o=>o.value)):null,max=n?Math.max(...observations.map(o=>o.value)):null,amplitude=n?max-min:null;
+    const type=!usable?'insufficient':min>=.28 && amplitude<=.28?'woody':min<.22 && amplitude>.25?'grass':'inconclusive';
+    return {...p,n,span,min,amplitude,type,usable};
+  });
+  const usableMonths=months.filter(m=>m.count),dates=usableMonths.map(m=>iso(sceneDate(m.scene))).sort(),usable=classified.filter(p=>p.usable);
+  aborted();state.season={grid,points:classified,months};
+  auxiliary.season.clearLayers();
+  usable.forEach(p=>L.circleMarker([p.lat,p.lon],{radius:3,stroke:false,fillColor:COLORS[p.type],fillOpacity:.65}).bindPopup(popup([`${p.type} phenology · ${p.n} months`,`${p.span} day span · minimum ${p.min.toFixed(3)} · amplitude ${p.amplitude.toFixed(3)}`])).addTo(auxiliary.season));
+  text('season-result',`Requested ${monthRange(start,0).start} → ${monthRange(start,11).end} (12 separate monthly searches).\nObserved ${dates[0] || 'none'} → ${dates.at(-1) || 'none'}; ${usableMonths.length}/12 months have clear samples.\n${classified.filter(p=>p.type==='woody').length} woody · ${classified.filter(p=>p.type==='grass').length} grass · ${classified.filter(p=>p.type==='inconclusive').length} inconclusive · ${classified.filter(p=>!p.usable).length} insufficient.\n${usable.length?'Phenology is not evidence of species identity or treatment success.':'REFUSED classification: no locations have ≥5 usable months spanning ≥240 days.'}`);
+  table('season-table',['Month','Scene date / cloud','Clear samples'],months.map(m=>[m.label,m.scene?`${iso(sceneDate(m.scene))} / ${cloudLabel(m.scene)}\n${m.scene.id}`:m.reason,m.count]));
+  clearDerived();updateLayers();
+}
+async function terrainFor(bbox){
+  const margin=.01,b=[Math.max(-180,bbox[0]-margin),bbox[1]-margin,Math.min(180,bbox[2]+margin),bbox[3]+margin];
+  return {scenes:await search('cop-dem-glo-30',b),tiles:new Map(),precision:0};
+}
+async function elevation(point,terrain,z=12){
+  const scene=terrain.scenes.find(s=>covers(s,point.lon,point.lat)); if(!scene) return null;
+  const w=worldPixel(point.lon,point.lat,z),x=Math.floor(w.x),y=Math.floor(w.y);
+  const t={z,x:Math.floor(x/256),y:Math.floor(y/256)},key=`${scene.id}:${z}:${t.x}:${t.y}`;
+  if(!terrain.tiles.has(key)){
+    const coarse=await pixels(scene,t,'dem');let min=255,max=0;
+    if(coarse) for(let row=0;row<coarse.height;row++) for(let col=0;col<coarse.width;col++){
+      const v=channel(coarse,col,row);if(v!==null){min=Math.min(min,v);max=Math.max(max,v);}
+    }
+    if(!coarse || min>max) terrain.tiles.set(key,null);
+    else{
+      const low=Math.floor(-500+min/255*9500-40),high=Math.ceil(-500+max/255*9500+40);
+      const image=await pixels(scene,{...t,demRange:`${low},${high}`},'dem');
+      terrain.tiles.set(key,{image,low,high});terrain.precision=Math.max(terrain.precision,(high-low)/255);
+    }
+  }
+  const tile=terrain.tiles.get(key);if(!tile) return null;
+  const value=channel(tile.image,x%256,y%256);
+  return value===null || value===0 || value===255?null:tile.low+value/255*(tile.high-tile.low);
+}
+async function slopeAt(point,terrain){
+  const z=12,w=worldPixel(point.lon,point.lat,z),offset=4;
+  const points=[coordinate(w.x-offset,w.y,z),coordinate(w.x+offset,w.y,z),coordinate(w.x,w.y-offset,z),coordinate(w.x,w.y+offset,z)];
+  const elevations=[]; for(const p of points) elevations.push(await elevation(p,terrain,z));
+  if(elevations.some(v=>v===null)) return null;
+  const dx=(elevations[1]-elevations[0])/distance(points[0],points[1]),dy=(elevations[3]-elevations[2])/distance(points[2],points[3]);
+  return Math.atan(Math.hypot(dx,dy))*180/Math.PI;
+}
+function activeSnapshot(){ const s=state.snapshots.b || state.snapshots.a; if(!s?.stands.length) throw new Error('Screen an extent with candidate locations first. No seed-source or stand map is available.'); return s; }
+function weights(prefix,names){
+  const w=names.map(name=>num(`${prefix}-${name}`,0,100)),sum=w.reduce((a,b)=>a+b,0);
+  if(sum===0) throw new Error('At least one weight must be greater than zero.');
+  return w.map(v=>v/sum);
+}
+function nearest(point,points){ return points.length?Math.min(...points.map(p=>distance(point,p))):Infinity; }
+async function fireHistory(bbox){
+  const first=monthRange(today().slice(0,7),-24).start.slice(0,7),months=[];
+  for(let i=0;i<24;i++){
+    const m=monthRange(first,i);status(`Fire history · monthly catalog ${i+1}/24`,i,24);
+    const scenes=await search('modis-64A1-061',bbox,m.start,m.end);
+    months.push({...m,scenes});
+  }
+  return months;
+}
+async function burnedAt(point,months){
+  let observed=0,burned=false;
+  for(let i=0;i<months.length;i++){
+    for(const scene of months[i].scenes.filter(s=>covers(s,point.lon,point.lat))){
+      const w=worldPixel(point.lon,point.lat,8),t={z:8,x:Math.floor(w.x/256),y:Math.floor(w.y/256)};
+      const v=channel(await pixels(scene,t,'fire'),Math.floor(w.x)%256,Math.floor(w.y)%256);
+      if(v!==null){observed++;if(v>127) burned=true;break;}
+    }
+  }
+  return {burned,observed};
+}
+async function risk(){
+  const snapshot=activeSnapshot(),w=weights('risk',['seed','moisture','terrain','fire']),n=num('risk-cells',16,32),cols=n/4,rows=4,b=snapshot.grid.bbox;
+  const months=await fireHistory(b),sceneCount=months.reduce((a,m)=>a+m.scenes.length,0),terrain=await terrainFor(b),cells=[];
+  for(let y=0;y<rows;y++) for(let x=0;x<cols;x++){
+    const bounds=[b[0]+(b[2]-b[0])*x/cols,b[1]+(b[3]-b[1])*y/rows,b[0]+(b[2]-b[0])*(x+1)/cols,b[1]+(b[3]-b[1])*(y+1)/rows],point=pointOf(bounds);
+    status(`Risk cell ${cells.length+1}/${n} · terrain and fire tiles`,cells.length,n);
+    const samples=snapshot.samples.filter(p=>inside(p,bounds)),ndmi=samples.length?samples.reduce((a,p)=>a+p.ndmi,0)/samples.length:null;
+    const slope=await slopeAt(point,terrain),fire=sceneCount?await burnedAt(point,months):{burned:false,observed:0};
+    const terms=[Math.exp(-nearest(point,snapshot.stands)/1500),ndmi===null?null:clamp((ndmi+.2)/.7),slope===null?null:1-clamp(slope/20),fire.burned?1:0];
+    const missing=terms.some((t,i)=>t===null && w[i]>0) || (sceneCount>0 && fire.observed===0 && w[3]>0);
+    cells.push({bounds,point,ndmi,slope,fire,terms,score:missing?null:terms.reduce((a,t,i)=>a+(t || 0)*w[i],0)*100});
+  }
+  aborted();const layer=auxiliary.risk;layer.clearLayers();
+  cells.forEach(c=>L.rectangle([[c.bounds[1],c.bounds[0]],[c.bounds[3],c.bounds[2]]],{color:'#635252',weight:1,fillOpacity:.55,fillColor:c.score===null?'#88817c':`hsl(345 65% ${88-c.score*.5}%)`}).bindPopup(popup([c.score===null?'Unscored: missing required data':`Relative risk index ${c.score.toFixed(1)}/100`,`Seed proximity ${(c.terms[0]*100).toFixed(0)}/100 · NDMI ${c.ndmi?.toFixed(3) ?? 'missing'}`,`Slope ${c.slope?.toFixed(2) ?? 'missing'}° · burned ${c.fire.burned?'yes':'not observed'}`,`MODIS: ${c.fire.observed}/24 observed months`,`Weighted proxies, not probability.`])).addTo(layer));
+  text('risk-result',`${cells.filter(c=>c.score!==null).length}/${n} cells scored from the ${iso(sceneDate(snapshot.scene))} candidate map.\nFire window ${months[0].start} → ${months.at(-1).end}. ${sceneCount} MODIS scene-months.\n${sceneCount?`${cells.filter(c=>c.fire.burned).length} cells with observed burns; ${cells.filter(c=>c.fire.observed<24).length} cells have incomplete fire coverage.`:'No MODIS scenes cover the extent: fire scored zero everywhere.'}\nDEM: ~300 m neighbourhood; adaptive elevation quantization up to ${terrain.precision.toFixed(2)} m (not terrain accuracy). Smaller relief is unresolved. This is not a calibrated forecast.`);
+  updateLayers();
+}
+async function targeting(){
+  const snapshot=activeSnapshot(),season=state.season,w=weights('target',['grazing','water','erosion','density']);
+  if(!season || season.grid.id!==snapshot.grid.id || !season.points.some(p=>p.usable)) throw new Error('Run a usable full seasonal series for the same baseline extent first.');
+  const waterSamples=await sampleScene(snapshot.scene,snapshot.grid,['ndwi'],'Water-access screening'),water=waterSamples.filter(p=>p.ndwi>=.1),maxCount=Math.max(...snapshot.stands.map(c=>c.count)),terrain=await terrainFor(snapshot.grid.bbox),ranking=[];
+  if(!waterSamples.length && w[1]>0) throw new Error('No valid NDWI observations; water access cannot be scored from missing data.');
+  for(let i=0;i<snapshot.stands.length;i++){
+    const stand=snapshot.stands[i];status(`Targeting stand ${i+1}/${snapshot.stands.length} · DEM tiles`,i,snapshot.stands.length);
+    const near=season.points.filter(p=>p.usable && distance(p,stand)<=1000),grazing=near.length>=3?near.filter(p=>p.type==='grass').length/near.length:null;
+    const slope=await slopeAt(stand,terrain),waterDistance=nearest(stand,water),terms=[grazing,Math.exp(-waterDistance/1000),slope===null?null:clamp(slope/20),stand.count/maxCount];
+    const score=terms.some((t,i)=>t===null && w[i]>0)?null:100*terms.reduce((a,t,i)=>a+(t || 0)*w[i],0);
+    ranking.push({id:stand.id,lat:stand.lat,lon:stand.lon,score,grazing,grassSamples:near.length,waterDistance:Number.isFinite(waterDistance)?waterDistance:null,slope,density:terms[3],scene:snapshot.scene.id,seasonStart:season.months[0].start,seasonEnd:season.months.at(-1).end,weights:w.join(';')});
+  }
+  ranking.sort((a,b)=>(b.score??-1)-(a.score??-1));aborted();state.target=ranking;auxiliary.target.clearLayers();
+  ranking.filter(r=>r.score!==null).forEach((r,i)=>L.circleMarker([r.lat,r.lon],{radius:clamp(5+r.score/10,5,15),color:COLORS.candidate,fillOpacity:.7}).bindPopup(popup([`Rank ${i+1} · candidate ${r.id}`,`Relative score ${r.score.toFixed(1)}/100`,`Grazing ${(r.grazing*100).toFixed(0)}% · slope ${r.slope?.toFixed(1) ?? 'missing'}°`])).addTo(auxiliary.target));
+  table('target-table',['Rank / ID','Relative score','Grass share','Water distance','Slope'],ranking.map((r,i)=>[`${i+1} / ${r.id}`,r.score?.toFixed(1)??'unscored',r.grazing===null?'missing':`${(r.grazing*100).toFixed(0)}%`,r.waterDistance===null?'not detected':`${Math.round(r.waterDistance)} m`,r.slope===null?'missing':`${r.slope.toFixed(1)}°`]));
+  text('target-result',`${ranking.filter(r=>r.score!==null).length}/${ranking.length} stands ranked. Scores are relative within this extent, not absolute benefits.\n${water.length} sampled surface-water signals. No detected water is scored zero, not proof of no water. DEM elevation quantization up to ${terrain.precision.toFixed(2)} m; unscored stands lack required evidence.`);$('export-target').disabled=false;updateLayers();
+}
+function parseCSV(input){
+  const rows=[];let row=[],field='',quoted=false,closed=false;
+  for(let i=0;i<input.length;i++){
+    const c=input[i];
+    if(quoted){if(c==='"'){if(input[i+1]==='"'){field+='"';i++;}else{quoted=false;closed=true;}}else field+=c;}
+    else if(c==='"' && !field && !closed) quoted=true;
+    else if(c===',' || c==='\n' || c==='\r'){
+      row.push(field.trim());field='';closed=false;
+      if(c!==','){if(row.some(Boolean)) rows.push(row);row=[];if(c==='\r' && input[i+1]==='\n') i++;}
+    }else{if(closed && c.trim()) throw new Error('Invalid CSV: unexpected text after a quoted field.');field+=c;}
+  }
+  if(quoted) throw new Error('Invalid CSV: unclosed quote.');
+  row.push(field.trim());if(row.some(Boolean)) rows.push(row);
+  if(rows[0]?.[0]?.replace(/^\uFEFF/,'').toLowerCase()==='lat') rows.shift();
+  if(!rows.length || rows.length>30) throw new Error('Paste 1–30 field records.');
+  return rows.map((r,i)=>{
+    const [lat,lon,date,activity]=r;
+    if(r.length!==4 || !lat || !lon || !Number.isFinite(Number(lat)) || !Number.isFinite(Number(lon)) || Math.abs(Number(lat))>80 || Math.abs(Number(lon))>180 || !/^\d{4}-\d{2}-\d{2}$/.test(date) || !Number.isFinite(Date.parse(date)) || iso(date)!==date || date>today() || !activity) throw new Error(`CSV row ${i+1}: expected valid lat, lon, past YYYY-MM-DD, activity (coordinates within ±80° latitude).`);
+    return {lat:Number(lat),lon:Number(lon),date,activity};
+  });
+}
+async function observation(point,start,end){
+  if(start>end) return {reason:'No completed observation window'};
+  const e=.00001,items=leastCloudy(await search('sentinel-2-l2a',[point.lon-e,point.lat-e,point.lon+e,point.lat+e],start,end)).filter(s=>covers(s,point.lon,point.lat)),scene=items[0];
+  if(!scene) return {reason:'No scene with reported cloud cover'};
+  const w=worldPixel(point.lon,point.lat,16),t={z:16,x:Math.floor(w.x/256),y:Math.floor(w.y/256)},x=Math.floor(w.x)%256,y=Math.floor(w.y)%256;
+  const scl=await pixels(scene,t,'scl');
+  if(!clearAt(scl,x,y)) return {scene,reason:'Least-cloudy scene has local cloud/shadow/invalid SCL or no footprint'};
+  const ndvi=indexAt(await pixels(scene,t,'ndvi'),x,y);
+  return ndvi===null?{scene,reason:'No valid NDVI at coordinate'}:{scene,ndvi};
+}
+async function mrv(){
+  const records=parseCSV($('records').value),window=num('mrv-window',1,365),threshold=num('mrv-drop',.01,2),results=[];
+  if(!Number.isInteger(window)) throw new Error('MRV window must be a whole number of days.');
+  for(let i=0;i<records.length;i++){
+    const r=records[i];status(`MRV record ${i+1}/${records.length} · before/after scene and pixel requests`,i,records.length);
+    let before={},after={},result='inconclusive',reason='',drop=null;
+    if(!/\b(clear(?:ing|ed)?|remov(?:al|e|ed|ing))\b/i.test(r.activity)) reason='Activity is not a clearing/removal claim; NDVI-drop verification is not applicable';
+    else{
+      try{
+        before=await observation(r,dateAdd(r.date,-window),dateAdd(r.date,-1));
+        after=await observation(r,dateAdd(r.date,1),[dateAdd(r.date,window),today()].sort()[0]);
+        if(before.ndvi===undefined || after.ndvi===undefined) reason=`Before: ${before.reason || 'usable'}; after: ${after.reason || 'usable'}`;
+        else{drop=before.ndvi-after.ndvi;result=drop>=threshold?'verified':'not verified';reason=drop>=threshold?'Spectral drop supports the claim; cause is not established':'Satellite record does not support the claim; follow-up required, not proof of non-performance';}
+      }catch(error){if(error.name==='AbortError') throw error;reason=error.message;}
+    }
+    results.push({...r,result,drop,reason,beforeNDVI:before.ndvi??null,afterNDVI:after.ndvi??null,beforeScene:before.scene?.id || '',afterScene:after.scene?.id || '',beforeDate:before.scene?iso(sceneDate(before.scene)):'',afterDate:after.scene?iso(sceneDate(after.scene)):'',beforeCloud:before.scene?cloud(before.scene):null,afterCloud:after.scene?cloud(after.scene):null,windowDays:window,dropThreshold:threshold,checkedAt:new Date().toISOString(),method:'Sentinel-2 NDVI / PNG rescale -1,1 / local SCL 4,5,6 / nearest pixel z16'});
+  }
+  aborted();state.mrv=results;table('mrv-table',['Coordinate / claim','Result','NDVI before → after','Drop / reason'],results.map(r=>[`${r.lat}, ${r.lon}\n${r.date} · ${r.activity}`,r.result,`${r.beforeNDVI?.toFixed(3)??'—'} → ${r.afterNDVI?.toFixed(3)??'—'}\n${r.beforeDate} → ${r.afterDate}`,`${r.drop?.toFixed(3)??'—'}\n${r.reason}`]));
+  text('mrv-result',`${results.filter(r=>r.result==='verified').length} verified · ${results.filter(r=>r.result==='not verified').length} not verified · ${results.filter(r=>r.result==='inconclusive').length} inconclusive.\nVerified = spectral support only. Export includes the full scene/date/threshold audit.`);$('export-mrv').disabled=false;
+}
+function exportCSV(rows,name){
+  if(!rows.length) return;
+  const headers=Object.keys(rows[0]),escape=value=>{
+    let s=value===null || value===undefined?'':String(value);
+    if(typeof value!=='number' && /^[=+\-@\t\r]/.test(s)) s="'"+s;
+    return `"${s.replaceAll('"','""')}"`;
+  };
+  const csv=[headers,...rows.map(r=>headers.map(h=>r[h]))].map(row=>row.map(escape).join(',')).join('\r\n'),url=URL.createObjectURL(new Blob(['\uFEFF',csv],{type:'text/csv;charset=utf-8'})),link=el('a');
+  link.href=url;link.download=name;document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+}
+function updateLayers(){
+  if(!mapA) return;
+  for(const [name,group] of Object.entries(auxiliary)){if(name===state.tab) group.addTo(mapA);else mapA.removeLayer(group);}
+  if(state.tab==='map'){groups.a.addTo(mapA);groups.b.addTo(mapB);}else{mapA.removeLayer(groups.a);mapB.removeLayer(groups.b);}
+  text('legend',state.tab==='map'?($('swipe').checked?'A: rose candidates · B: red new / amber stable / blue loss':'Rose pins · spectral candidates, not confirmed Prosopis'):state.tab==='season'?'Rose: woody · olive: grass · gray: inconclusive · missing samples not mapped':state.tab==='risk'?'Pale → deep rose: relative proxy score · gray: insufficient data':state.tab==='target'?'Rose circles · ranked candidate locations; field validation required':'MRV checks exact submitted coordinates, not whole plots');
+}
+function updateSwipe(){
+  if(!mapB) return;
+  const enabled=$('swipe').checked && state.tab==='map',px=$('map-wrap').clientWidth*swipePosition/100;
+  $('mapB').style.clipPath=enabled?`inset(0 0 0 ${px}px)`:'inset(0 0 0 100%)';$('mapB').inert=!enabled;
+  $('divider').hidden=!enabled;$('divider').style.left=`${px}px`;$('label-b').hidden=!enabled;
+  if(enabled) mapB.invalidateSize({pan:false});updateLayers();
+}
+function switchTab(name){
+  state.tab=name;document.querySelectorAll('[data-tab]').forEach(t=>{const selected=t.dataset.tab===name;t.setAttribute('aria-selected',String(selected));t.tabIndex=selected?0:-1;$('panel-'+t.dataset.tab).hidden=!selected;});
+  updateSwipe();updateLayers();
+}
+let geocodeQueue=Promise.resolve(),lastGeocode=0,geocodeGeneration=0;
+function geocode(query){
+  const generation=++geocodeGeneration;
+  geocodeQueue=geocodeQueue.catch(()=>{}).then(async()=>{
+    if(generation!==geocodeGeneration) return;
+    await sleep(Math.max(0,1100-(Date.now()-lastGeocode)));
+    if(generation!==geocodeGeneration) return;
+    lastGeocode=Date.now();text('geocode-note','Searching Nominatim…');$('places').replaceChildren();
+    try{
+      const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),20000);let response;
+      try{response=await fetch(`https://nominatim.openstreetmap.org/search?${new URLSearchParams({q:query,format:'jsonv2',limit:'5'})}`,{signal:controller.signal});}finally{clearTimeout(timer);}
+      if(!response.ok) throw new Error(`Nominatim refused the search (${response.status}). Please wait and retry; you can also pan the map manually.`);
+      const places=await response.json();if(generation!==geocodeGeneration) return;
+      text('geocode-note',places.length?'Choose a result. Requests are spaced at least 1.1 seconds apart.':'No places found. Try a nearby town or pan manually.');
+      places.forEach(p=>{const b=el('button',p.display_name);b.className='scene';b.onclick=()=>{mapA.setView([Number(p.lat),Number(p.lon)],13,{animate:false});status('Both maps moved. Existing analyses retain their labeled sampling extent; re-screen A for this place.');};$('places').append(b);});
+    }catch(error){text('geocode-note',error.name==='AbortError'?'Nominatim timed out. Pan manually or retry later.':error.message.includes('Nominatim')?error.message:'Nominatim is unavailable or blocked. Pan manually or retry later.');}
+  });
+}
+function initialize(){
+  if(!window.L){$('map-message').hidden=false;text('map-message','Leaflet could not load from unpkg. Internet access is required; use a normal browser or GitHub Pages, not a OneDrive/SharePoint preview.');document.querySelectorAll('[data-action]').forEach(b=>b.disabled=true);return;}
+  const options={center:[11.78,40.96],zoom:13,minZoom:3,maxZoom:19,zoomAnimation:false,fadeAnimation:false,markerZoomAnimation:false,worldCopyJump:false};
+  mapA=L.map('mapA',options);mapB=L.map('mapB',{...options,zoomControl:false});
+  for(const map of [mapA,mapB]){
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{maxZoom:19,attribution:'Tiles © Esri, Maxar, Earthstar Geographics and the GIS User Community'}).addTo(map);
+  }
+  const sync=(source,target)=>{if(syncing)return;syncing=true;try{target.setView(source.getCenter(),source.getZoom(),{animate:false});}finally{syncing=false;}};
+  mapA.on('move zoom',()=>sync(mapA,mapB));mapB.on('move zoom',()=>sync(mapB,mapA));
+  groups={a:L.layerGroup().addTo(mapA),b:L.layerGroup().addTo(mapB)};
+  auxiliary={season:L.layerGroup(),risk:L.layerGroup(),target:L.layerGroup()};
+  L.control.scale({imperial:false}).addTo(mapA);
+  document.querySelectorAll('[data-tab]').forEach(t=>{
+    t.onclick=()=>switchTab(t.dataset.tab);
+    t.onkeydown=e=>{const tabs=[...document.querySelectorAll('[data-tab]')],i=tabs.indexOf(t);let next;if(e.key==='ArrowRight')next=(i+1)%tabs.length;if(e.key==='ArrowLeft')next=(i+tabs.length-1)%tabs.length;if(e.key==='Home')next=0;if(e.key==='End')next=tabs.length-1;if(next!==undefined){e.preventDefault();tabs[next].click();tabs[next].focus();}};
+  });
+  $('search-a').onclick=()=>run('Baseline scene search',()=>findScenes('a'));$('search-b').onclick=()=>run('Comparison scene search',()=>findScenes('b'));
+  $('screen-a').onclick=()=>run('Baseline screening',()=>screen('a'));$('screen-b').onclick=()=>run('Change screening',()=>screen('b'));
+  $('run-season').onclick=()=>run('Seasonal analysis',seasonal);$('run-risk').onclick=()=>run('Risk analysis',risk);$('run-target').onclick=()=>run('Targeting analysis',targeting);$('run-mrv').onclick=()=>run('MRV quality control',mrv);
+  $('export-target').onclick=()=>exportCSV(state.target,'prosopis-target-ranking.csv');$('export-mrv').onclick=()=>exportCSV(state.mrv,'prosopis-mrv-audit.csv');
+  $('cancel').onclick=()=>state.controller?.abort();
+  $('place-form').onsubmit=e=>{e.preventDefault();if($('place').value.trim())geocode($('place').value.trim());};
+  $('afar').onclick=()=>{mapA.setView([11.78,40.96],13,{animate:false});status('Afar example centered; re-screen A to analyze the current viewport.');};
+  $('swipe').onchange=updateSwipe;$('swipe-range').oninput=()=>{swipePosition=Number($('swipe-range').value);updateSwipe();};
+  const handle=$('handle');
+  const move=e=>{const rect=$('map-wrap').getBoundingClientRect();swipePosition=clamp((e.clientX-rect.left)/rect.width*100,0,100);$('swipe-range').value=swipePosition;updateSwipe();};
+  handle.onpointerdown=e=>{e.preventDefault();handle.setPointerCapture(e.pointerId);move(e);};
+  handle.onpointermove=e=>{if(handle.hasPointerCapture(e.pointerId))move(e);};
+  handle.onpointerup=e=>{if(handle.hasPointerCapture(e.pointerId))handle.releasePointerCapture(e.pointerId);};
+  handle.onkeydown=e=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(e.key)){e.preventDefault();swipePosition=e.key==='Home'?0:e.key==='End'?100:clamp(swipePosition+(e.key==='ArrowLeft'?-2:2),0,100);$('swipe-range').value=swipePosition;updateSwipe();}};
+  window.addEventListener('resize',()=>{mapA.invalidateSize({pan:false});mapB.invalidateSize({pan:false});sync(mapA,mapB);updateSwipe();});
+  new ResizeObserver(()=>{mapA.invalidateSize({pan:false});mapB.invalidateSize({pan:false});updateSwipe();}).observe($('map-wrap'));
+  $('b-end').value=[today(),'2026-09-30'].sort()[0];updateLayers();
+}
+initialize();
+</script>
+</body>
+</html>
