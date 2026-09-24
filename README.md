@@ -24,7 +24,9 @@ executed by this app**.
    candidate seed sources, NDMI, Copernicus DEM slope, and observed MODIS burns
    during the last 24 completed calendar months. This is **not a calibrated
    probability or time-to-invasion prediction**. Missing observations and zero
-   fire coverage are reported.
+   fire coverage are reported. With no MODIS scenes, the fire term is zero as an
+   explicit fallback; a fire-only weighting remains unscored because there is
+   no measured input contributing to that composite.
 4. **Targeting:** relative ranking using nearby seasonal grass signals, NDWI
    water proximity, slope, and sampled candidate density, with CSV export.
    Requires matching screening and seasonal analysis extents.
@@ -146,6 +148,14 @@ public services failed DNS resolution before HTTP responses could be obtained.
 This is an environment limitation, not evidence that those services are down.
 No real scene counts, detected stands, geographic patterns, or successful MRV
 claims are asserted here.
+
+Local checks performed: inline JavaScript syntax, CSV/calendar/encoding/masking/
+clustering invariants, isolated synthetic change and MRV outcomes, and twelve
+monthly queries with refusal below five usable months. Headless Chromium checks
+covered direct-file and local-HTTP startup, mobile width, the unavailable-CDN
+fallback, and absence of uncaught exceptions on those paths. Synthetic fixtures
+were validation inputs only, never app data or evidence of scientific accuracy.
+Full map interaction and real-data checks below still require network access.
 
 Before operational use, check Afar at **11.78 N, 40.96 E, zoom 13**:
 
